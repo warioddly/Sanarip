@@ -65,6 +65,8 @@ section{
 /* DESKTOP VERSION */
 
 @media (min-width: 992px){
+
+    /* Навигационный панель */
     .navbar-container{
         padding-right: 20px;
         padding-left: 20px;
@@ -82,7 +84,6 @@ section{
     .nav-link{
         padding: 20px 70px;
     }
-
 
     .navbar-brand{
         font-family: 'Russo One', sans-serif;
@@ -126,6 +127,8 @@ section{
         border-radius: 5px;
     }
 
+
+    /* Header */
     section{
         background-image: url(../img/headImage.gif);
         background-repeat: no-repeat;
@@ -134,7 +137,6 @@ section{
         padding-bottom: 0%;
     }
     
-   
     #home .headtext{
         color: white;
         font-family: 'DM Sans', sans-serif;
@@ -157,10 +159,12 @@ section{
         margin-top: -300px;
     }
 
+    /* Первый контент */
+    .first{
+        background-color: rgb(237, 237, 237);
+    }
 
     .content{
-        padding-left: 180px;
-        padding-right: 180px;
         padding-top: 40px;
         padding-bottom: 40px;
         background-color: rgb(237, 237, 237);
@@ -198,37 +202,53 @@ section{
         ;
     }
 
-    .second-content{
-        padding-left: 180px;
-        padding-right: 180px;
-        padding-top: 20px;
-        padding-bottom: 40px;
+    /* Второй контент */
+    .second{
+        background-color: rgb(255, 255, 255); 
+        padding-bottom: 50px;
+    }
+    
+    .sc-1{
+        padding-top: 40px;
+        padding-bottom: 20px;
         background-color: rgb(255, 255, 255); 
     }
 
-    .second-content .headtext{
+    .sc-2{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        background-color: rgb(255, 255, 255); 
+    }
+
+    .sc-3{
+        padding-top: 40px;
+        background-color: rgb(255, 255, 255); 
+
+    }
+    
+    .second img{
+        margin-bottom: 20px;
+    }
+
+    .sc-1 .headtext{
         color: rgb(82, 82, 82);
         font-family: 'DM Sans', sans-serif;
         font-size: 35px;
         font-weight: 200;
         text-align: center;
-        margin-top: 0px;
+        margin-top: 20px;
         padding-bottom: 20px;
     }
 
-    .second-content .second-content-head{
-        padding-top: 20px;
-    }
-
-    .second-content h4{
-        color: grey;
+    .second h4{
+        color: rgb(59, 59, 59);
         font-family: 'DM Sans', sans-serif;
         font-size: 25px;
         font-weight: 200;
         text-align: left;
     }
 
-    .second-content p{
+    .second p{
         color: grey;
         font-family: 'DM Sans', sans-serif;
         font-size: 15px;
@@ -236,32 +256,52 @@ section{
         text-align: left;
     }
 
-    .second-content .btn-primary{
+    .second .sc-btn-read{
         background-color: rgb(51, 119, 222);
         text-transform: uppercase;
+        color: bisque;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'DM Sans', sans-serif;
+        text-decoration: none;
+        margin-top: 0px;
+        border-radius: 30px;
+        border: 5px double rgb(255, 255, 255);
+        padding: 5px 15px;
+    }
+
+    .second .sc-btn-read:hover{
+        background-color: rgb(81, 146, 211);
+        text-transform: uppercase;
+        color: bisque;
         font-size: 15px;
         font-weight: 600;
         font-family: 'DM Sans', sans-serif;
         margin-top: 0px;
         border-radius: 30px;
-        border: 5px double rgb(143, 143, 143);
+        border: 5px double rgb(252, 252, 252);
         padding: 5px 15px;
     }
 
-    .second-content .know-more{
+    .second .sc-btn-know{
         background-color: rgb(51, 119, 222);
         text-transform: uppercase;
+        color: bisque;
         font-size: 15px;
         font-weight: 600;
         font-family: 'DM Sans', sans-serif;
-        margin-top: 50px;
+        text-decoration: none;
+        margin-top: 30px;
         border-radius: 3px;
         border: none;
         padding: 15px 25px;      
     }
 
-    .second-content .know-more:hover{
+    .second .sc-btn-know:hover{
         background-color: rgb(58, 111, 167);
         border-color: rgb(58, 111, 167) 
     } 
+
+    /* Третий контент */
+    
 }

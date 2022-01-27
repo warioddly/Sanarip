@@ -73,8 +73,10 @@ section{
     }
     
     .navbar, .nav-link{
+        letter-spacing: 2px;
         margin-top: -2px;
-        font-size: 12px;
+        font-size: 13px;
+        font-weight: 800;
         font-family: 'DM Sans', sans-serif;
         text-transform: uppercase;
         background-color: rgba(0, 0, 0, 0);
@@ -82,19 +84,36 @@ section{
     }
 
     .nav-link{
-        padding: 20px 70px;
+        padding: 15px 0px;
     }
 
     .navbar-brand{
         font-family: 'Russo One', sans-serif;
+        letter-spacing: 5px;
         font-weight: 800;
         font-size:40px;
         color: rgb(255, 255, 255) !important;
     }
 
     .navbar-logo{
-        margin-top: -10px;
+        margin-top: -9px;
         height: 40px;
+    }
+
+    .dropdown-menu{
+        width: 250px;
+    }
+
+    .dropdown-menu a {
+        white-space: normal;
+        letter-spacing: 2px;
+        margin-top: -2px;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0);
+        color: white !important;
     }
 
     nav.navbar .dropdown:hover > .dropdown-menu {
@@ -205,7 +224,7 @@ section{
     /* Второй контент */
     .second{
         background-color: rgb(255, 255, 255); 
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
     
     .sc-1{
@@ -230,13 +249,12 @@ section{
         margin-bottom: 20px;
     }
 
-    .sc-1 .headtext{
+    .second .headtext{
         color: rgb(82, 82, 82);
         font-family: 'DM Sans', sans-serif;
         font-size: 35px;
         font-weight: 200;
         text-align: center;
-        margin-top: 20px;
         padding-bottom: 20px;
     }
 
@@ -264,7 +282,6 @@ section{
         font-weight: 600;
         font-family: 'DM Sans', sans-serif;
         text-decoration: none;
-        margin-top: 0px;
         border-radius: 30px;
         border: 5px double rgb(255, 255, 255);
         padding: 5px 15px;
@@ -277,7 +294,6 @@ section{
         font-size: 15px;
         font-weight: 600;
         font-family: 'DM Sans', sans-serif;
-        margin-top: 0px;
         border-radius: 30px;
         border: 5px double rgb(252, 252, 252);
         padding: 5px 15px;
@@ -291,7 +307,6 @@ section{
         font-weight: 600;
         font-family: 'DM Sans', sans-serif;
         text-decoration: none;
-        margin-top: 30px;
         border-radius: 3px;
         border: none;
         padding: 15px 25px;      
@@ -304,4 +319,26 @@ section{
 
     /* Третий контент */
     
+
+    .third{
+        background-color: rgb(51, 119, 222);
+        padding-bottom: 50px; 
+        padding-top: 70px; 
+    }
+    
+    .third .headtext{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 45px;
+        font-weight: 200;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .carousel-item{
+        background-color: rgb(51, 119, 222);
+        text-align: center;
+        padding: 100px;
+    }
 }

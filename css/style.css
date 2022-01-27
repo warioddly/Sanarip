@@ -194,8 +194,7 @@ section{
 
     .btn-primary:hover{
         background-color: rgb(58, 111, 167);
-        border-color: rgb(58, 111, 167)
-        
+        border-color: rgb(58, 111, 167)     
         ;
     }
 
@@ -215,6 +214,10 @@ section{
         text-align: center;
         margin-top: 0px;
         padding-bottom: 20px;
+    }
+
+    .second-content .second-content-head{
+        padding-top: 20px;
     }
 
     .second-content h4{
@@ -244,4 +247,21 @@ section{
         border: 5px double rgb(143, 143, 143);
         padding: 5px 15px;
     }
+
+    .second-content .know-more{
+        background-color: rgb(51, 119, 222);
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'DM Sans', sans-serif;
+        margin-top: 50px;
+        border-radius: 3px;
+        border: none;
+        padding: 15px 25px;      
+    }
+
+    .second-content .know-more:hover{
+        background-color: rgb(58, 111, 167);
+        border-color: rgb(58, 111, 167) 
+    } 
 }

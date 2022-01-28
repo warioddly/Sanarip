@@ -7,80 +7,85 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <!-- Навигационный панель -->
-  <nav class="navbar navbar-expand-lg navbar-light black">
-    <div class="container-fluid navbar-container">
-      <a class="navbar-brand text-white" href="#">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light black">
+      <div class="container-fluid navbar-container">
+        <a class="navbar-brand text-white" href="#">
 
-        <!-- название сайта с логотипом -->
-        <img src="img/sanarip-logo/sanarip-logo-color-ico.png" class="navbar-logo" alt="">
-        Sanarip
-      </a>
+          <!-- название сайта с логотипом -->
+          <img src="img/sanarip-logo/sanarip-logo-color-ico.png" class="navbar-logo" alt="">
+          Sanarip
+        </a>
 
-      <!-- Кнопка для показа/сворачивания ссылок -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Кнопка для показа/сворачивания ссылок -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Ссылки, Подссылки -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto "> <!-- Ссылки упорядоченные по провому краю -->
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle linkColor" href="#" id="navbarDropdown" >
-              Services
-            </a>
-            <!-- Подссылки -->
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
-              <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-              <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" >
-              Engineering Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-              <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" >
-              About Us
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
-              <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-              <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" >
-              Resources
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
-              <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-              <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link contact text-white" aria-current="page" href="#">Contact Us</a>
-          </li>
-        </ul>
+        <!-- Ссылки, Подссылки -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto "> <!-- Ссылки упорядоченные по провому краю -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle linkColor" href="#" id="navbarDropdown" >
+                Services
+              </a>
+              <!-- Подссылки -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
+                <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
+                <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" >
+                Engineering Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
+                <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" >
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
+                <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
+                <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" >
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
+                <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
+                <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contact text-white" aria-current="page" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  
-  <!-- Заголовочные тексты, картинки, анимация партикля -->
-  <section id="home" >
+    </nav>
+    
+
+  </header>
+
+    <!-- Заголовочные тексты, картинки, анимация партикля -->
+  <section id="home">
     <!-- контейнер на всю ширину страницы -->
     <div class="container-fluid">
           <div class="row">
@@ -93,54 +98,100 @@
             </div>
           </div>
         </div>
-      </div>
-          <!-- Подключаем анимацию партикля -->
-      <div class="count-particles">
-        <div id="particles-js"></div>
-          <script src="js/particles.js"></script>
-          <script src="js/app.js"></script>
-      </div>
-    </div> 
-  </section>
+    </div>
+  </div>
+    <!-- <div class="count-particles">
+      <div id="particles-js"></div>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+    </div> -->
+  </div>
+</section>
 
   <!-- Контент -->
-  <div class="first">
-    <div class="container">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col content">
-              <h2 class="headtext">Digital Solutions to accelerate your growth story</h2>
-              <p class="undertext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure veritatis quas saepe numquam accusantium hic doloribus architecto, earum maxime accusamus, dicta reiciendis et aliquam consectetur laboriosam voluptatem minima, animi nisi. Eligendi, aperiam impedit accusamus incidunt corrupti illum molestias quo nulla quis error. Quia deleniti tempore neque libero corporis reiciendis incidunt.</p>
-              <a href="#" class="btn btn-primary">Know More</a>    
-            </div>
+  <main>
+    <!-- Первая часть контента -->
+    <div class="first">
+      <div class="container">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col content">
+                <h2>Digital Solutions to accelerate your growth story</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure veritatis quas saepe numquam accusantium hic doloribus architecto, earum maxime accusamus, dicta reiciendis et aliquam consectetur laboriosam voluptatem minima, animi nisi. Eligendi, aperiam impedit accusamus incidunt corrupti illum molestias quo nulla quis error. Quia deleniti tempore neque libero corporis reiciendis incidunt.</p>
+                <a href="#" class="btn btn-primary">Know More</a>    
+              </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="second">
-    <div class="container">
-      <div class="container-fluid">
-        <div class="sc-1">
-          <h2 class="headtext">What we help with</h2>
-          <div class="row">
-            <div class="col">
-              <img src="https://cdn-icons-png.flaticon.com/512/2004/2004580.png" alt="" width="100px" height="100px">
-              <h4>Web and Mobile App Development</h4>
+    <!-- Вторая часть контента -->
+    <div class="second">
+      <div class="container">
+        <div class="container-fluid">
+          <div class="sc-1">
+            <h2>What we help with</h2>
+            <div class="row">
+              <div class="col">
+                <img src="https://cdn-icons-png.flaticon.com/512/2004/2004580.png" alt="" width="100px" height="100px">
+                <h4>Web and Mobile App Development</h4>
+              </div>
+              <div class="col">
+                <img src="https://img.icons8.com/external-itim2101-lineal-itim2101/344/external-server-computer-technology-itim2101-lineal-itim2101-1.png" alt="" width="100px" height="100px">
+                <h4>Cloud Infrastructure Services</h4>
+              </div>
+              <div class="col">
+                <img src="https://img.icons8.com/ios/344/open-document.png" alt="" width="100px" height="100px">
+                <h4>Enterprise Content Management</h4>
+              </div>
+              <div class="col">
+                <img src="https://img.icons8.com/external-itim2101-lineal-itim2101/344/external-intelligence-internet-of-things-itim2101-lineal-itim2101.png" alt="" width="100px" height="100px">
+                <h4>Business Intelligence and Analytics</h4>
+              </div>
             </div>
-            <div class="col">
-              <img src="https://img.icons8.com/external-itim2101-lineal-itim2101/344/external-server-computer-technology-itim2101-lineal-itim2101-1.png" alt="" width="100px" height="100px">
-              <h4>Cloud Infrastructure Services</h4>
+            <div class="row">
+              <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aut, ea non fuga similique nemo.</p>
+              </div>
+              <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore sapiente non cupiditate, atque voluptates.</p>   
+              </div>
+              <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus unde repellat error non amet sequi assumenda eius!</p>
+              </div>
+              <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint aperiam voluptatibus consequuntur sit soluta.</p>
+              </div>
             </div>
-            <div class="col">
-              <img src="https://img.icons8.com/ios/344/open-document.png" alt="" width="100px" height="100px">
-              <h4>Enterprise Content Management</h4>
+            <div class="row">
+              <div class="col">
+                <a href="#" class="sc-btn-read">Read More</a>   </div>
+              <div class="col">
+                <a href="#" class="sc-btn-read">Read More</a>  
+              </div>
+              <div class="col">
+                <a href="#" class="sc-btn-read">Read More</a>  
+              </div>
+              <div class="col">
+                <a href="#" class="sc-btn-read">Read More</a>  </div>
+            </div> 
+          </div> 
+          <div class="sc-2">
+            <div class="row">
+              <div class="col">
+                <img src="https://img.icons8.com/external-photo3ideastudio-lineal-photo3ideastudio/344/external-technological-support-online-business-photo3ideastudio-lineal-photo3ideastudio.png" alt="" width="100px" height="100px">
+                <h4>Telematics</h4>
+              </div>
+              <div class="col">
+                <img src="https://img.icons8.com/wired/344/technic-launcher.png" alt="" width="100px" height="100px">
+                <h4>Enterprise Asset Management</h4>
+              </div>
+              <div class="col">
+                <img src="https://img.icons8.com/wired/344/tesseract.png" alt="" width="100px" height="100px">
+                <h4>Engineering Services</h4>
             </div>
-            <div class="col">
-              <img src="https://img.icons8.com/external-itim2101-lineal-itim2101/344/external-intelligence-internet-of-things-itim2101-lineal-itim2101.png" alt="" width="100px" height="100px">
-              <h4>Business Intelligence and Analytics</h4>
-            </div>
-          </div>
+          </div> 
+
           <div class="row">
             <div class="col">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aut, ea non fuga similique nemo.</p>
@@ -151,10 +202,8 @@
             <div class="col">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus unde repellat error non amet sequi assumenda eius!</p>
             </div>
-            <div class="col">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint aperiam voluptatibus consequuntur sit soluta.</p>
-            </div>
           </div>
+
           <div class="row">
             <div class="col">
               <a href="#" class="sc-btn-read">Read More</a>   </div>
@@ -164,67 +213,115 @@
             <div class="col">
               <a href="#" class="sc-btn-read">Read More</a>  
             </div>
-            <div class="col">
-              <a href="#" class="sc-btn-read">Read More</a>  </div>
           </div> 
-        </div> 
-        <div class="sc-2">
-          <div class="row">
+          </div>
+          <div class="row text-center sc-3">
             <div class="col">
-              <img src="https://img.icons8.com/external-photo3ideastudio-lineal-photo3ideastudio/344/external-technological-support-online-business-photo3ideastudio-lineal-photo3ideastudio.png" alt="" width="100px" height="100px">
-              <h4>Telematics</h4>
+              <a href="#" class="sc-btn-know">Know More</a>  
             </div>
-            <div class="col">
-              <img src="https://img.icons8.com/wired/344/technic-launcher.png" alt="" width="100px" height="100px">
-              <h4>Enterprise Asset Management</h4>
-            </div>
-            <div class="col">
-              <img src="https://img.icons8.com/wired/344/tesseract.png" alt="" width="100px" height="100px">
-              <h4>Engineering Services</h4>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="col">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aut, ea non fuga similique nemo.</p>
-          </div>
-          <div class="col">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore sapiente non cupiditate, atque voluptates.</p>   
-          </div>
-          <div class="col">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus unde repellat error non amet sequi assumenda eius!</p>
-          </div>
+          </div> 
         </div>
-
-        <div class="row">
-          <div class="col">
-            <a href="#" class="sc-btn-read">Read More</a>   </div>
-          <div class="col">
-            <a href="#" class="sc-btn-read">Read More</a>  
-          </div>
-          <div class="col">
-            <a href="#" class="sc-btn-read">Read More</a>  
-          </div>
-        </div> 
-        </div>
-        <div class="row text-center sc-3">
-          <div class="col">
-            <a href="#" class="sc-btn-know">Know More</a>  
-          </div>
-        </div> 
       </div>
     </div>
-  </div>
 
-  <div class="third">
-    <div class="container">
-      <div class="container-fluid">
+    <!-- Третяя часть контента -->
+    <div class="third">
+      <div class="container">
+        <div class="container-fluid">
           <h2 class="headtext">What Our Client Say</h2>
+           <!-- Карусель -->
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p><i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore fugiat, laboriosam veritatis dolore asperiores perferendis impedit possimus voluptas iusto ut corporis cupiditate minus maiores, eveniet harum natus adipisci et. Rerum, quo? Ratione aspernatur deleniti non, impedit omnis, aut, quo eos officia quae soluta veritatis aliquam molestias accusamus harum laboriosam necessitatibus!</i></p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1177/1177568.png" alt="" >
+                <h4>Johny Sins</h4>  
+                <p class="vacant"><i>Co-founder, SVP at CaratLane</i></p>
+              </div>
+              <div class="carousel-item">
+                <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, vel quam eligendi iste eveniet quidem eos quae voluptatem officia iure dolorem earum debitis error excepturi iusto dicta id nulla laborum mollitia. Culpa eos suscipit, voluptatibus veritatis, aspernatur incidunt nostrum ut magni porro a cupiditate, temporibus quibusdam eaque aut explicabo nulla ratione qui necessitatibus vel impedit rerum pariatur exercitationem. Iusto inventore natus minima maiores sit. Obcaecati consectetur recusandae id consequatur harum.</i></p>
+                <img src="https://cdn-icons-png.flaticon.com/512/3237/3237472.png" alt="">
+                <h4>Van Darkholme</h4>  
+                <p class="vacant"><i>Director - Asset Tradex</i></p>
+              </div>
+              <div class="carousel-item">
+                <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste hic provident a recusandae error iusto accusamus aperiam soluta eum quia maxime, maiores dignissimos quasi, autem voluptates ab architecto dolore, possimus consequatur voluptatem itaque natus. Molestiae eos odit aperiam sapiente neque, pariatur atque deserunt, accusantium labore similique natus minima eligendi error?</i></p>  
+                <img src="https://cdn-icons.flaticon.com/png/512/3177/premium/3177465.png?token=exp=1643299313~hmac=7af59119d69eab168acbf8b487a5a68c" alt="">               
+                <h4>Bekeev Imankadyr</h4>
+                <p class="vacant"><i>Founder, Sharing Culture</i></p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Четвертая часть контента -->
+    <div class="fourth">
+      <div class="container">
+        <div class="container-fluid">
+
+          <div class="row">
+            <div class="col text-center">
+              <h2>Innovative Products. Game-changing Results</h2>
+              <h4>Sanarip</h4>
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="col-6">
+              <img src="img/sanarip-logo/sanarip-logo-color.png" alt="">
+            </div>
+            <div class="col-6">
+              <p class="headtext">Sanarip Project</p>
+              <hr>
+              <div class="row">
+                <div class="col">
+                  <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
+                  <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="sc-btn-know">Know More</a>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Пятая часть контента -->
+    <div class="fifth">
+      <div class="container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col text-center">
+              <h2>Our Key Clients</h2>
+            </div>
+          </div>
+           
+
+
+
 
 
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  </main>
+
+
+
+  
 </body>
 </html>

@@ -32,46 +32,17 @@ body{
     padding-right: 6px;
 }
 
-section{
-    background-image: url(../img/headImage.gif);
-    background-repeat: no-repeat;
-    margin-top: -85px;
-}
 
-#home{
-    margin-bottom: -8.50%;
-}
-
-#home .headtext{
-    color: rgba(255, 255, 255, 0);
-    font-family: 'Poppins', sans-serif;
-    font-size: 0px;
-    font-weight: 100;
-    margin-top: 150px;
-    text-align: center;
-    transition-property: rgb(255, 255, 255);
-    transition-duration: 1200ms;
-}
-
-#home .undertext{
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    text-align: center;
-    color:white;
-}
-
-.count-particles{
-    margin-top: -100px;
-}
 
 /* DESKTOP VERSION */
 
-@media (min-width: 1093px){
+@media (min-width: 992px){
 
     /* Навигационный панель */
     
-    header{
+    .navbar{
     position: fixed;
+    background: rgba(0, 0, 0, 0);
     top: 0;
     left: 0;
     width: 100%;
@@ -79,32 +50,48 @@ section{
     z-index: 10000;
     }
     
-    header.sticky{
-        background: rgb(0, 0, 0);
-        padding: 10px 0px;
+    .navbar.sticky{
+        background-color: rgb(29, 27, 27);
+        padding: 0px 0px;
     }
     
-          
-    .navbar, .nav-link{
+    .navbar li{
+        padding: 10px 10px;
+        margin: 0px 3px;
+    }
+
+    .nav-link{
         letter-spacing: 2px;
-        margin: 0px 2px;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 700;
         font-family: 'Poppins';
         text-transform: uppercase;
+        transition: 1s;
         background-color: rgba(0, 0, 0, 0);
-        color: white !important;
+        color: rgb(255, 255, 255) !important;
     }
+
+    .navbar.sticky .nav-link{
+        letter-spacing: 2px;
+        font-size: 11px;
+        font-weight: 700;
+        font-family: 'Poppins';
+        text-transform: uppercase;
+        transition: 1s;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255) !important;
+    }
+
     .navbar-brand{
         color: rgb(255, 255, 255) !important;
         font-family: 'Poppins';
         letter-spacing: 5px;
         font-weight: 800;
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .navbar-logo{
-        margin-top: -20px;
+        margin-top: -10px;
         height: 50px;
     }
 
@@ -119,57 +106,58 @@ section{
         font-weight: 400;
         font-family: 'Poppins';
         text-transform: uppercase;
-        background-color: rgba(0, 0, 0, 0);
         color: white !important;
     }
 
     nav.navbar .dropdown:hover > .dropdown-menu {
         display: block;
-        background-color: rgb(1, 194, 191);
+        background-color: rgb(117, 155, 180);
     } 
     
     .contact{
-        border-radius: 5px;
-        background-color: rgb(72, 208, 94);
+        background-color: rgb(61, 165, 78);
     }     
 
     .active{
-        border-radius: 5px;
         background-color: rgb(255, 255, 255);
-        color: black !important;
     }
 
-    .navbar-nav>.nav-item>.nav-link{
+    .navbar .active-link{
+        color:rgb(0, 0, 0) !important;
+    }
+
+    .navbar.sticky .active-link{
+        color:rgb(0, 0, 0) !important;
+    }
+
+    .navbar .nav-item{
         outline: 2px solid rgba(255, 255, 255, 0);
         border-radius: 5px;
         border-color: rgba(255, 255, 255, 0);
-        transition-property: outline;
-        transition-duration: 200ms;
     }
 
-    .navbar-nav>.nav-item>.nav-link:hover{
+    .navbar .nav-item:hover{
         outline: 2px solid rgb(255, 255, 255);
         border-color: rgba(255, 255, 255, 0);
         border-radius: 5px;
+        transition: 1s;
     }
 
     /* Header */
-
     #home{
-        background-image: url(../img/headImage.gif);
+        background-image: url("../img/headImage.gif");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         margin-top: -86px;
         padding-bottom: 370px;
     }
-
     #home .headtext{
         color: white;
         font-family: 'Poppins';
         font-size: 80px;
         font-weight: 700;
         text-align: left;
-        margin-top: 200px;
+        padding-top: 200px;
     }
 
     #home .undertext{
@@ -180,10 +168,6 @@ section{
         color:white;
     }
     
-    .count-particles{
-        margin-top: -450px;
-        margin-bottom: -230px;
-    }
     
 
     /* Первый контент */
@@ -246,13 +230,7 @@ section{
     }
 
     .sc-2{
-        padding-top: 50px;
         padding-bottom: 20px;
-    }
-
-    .sc-3{
-        padding-top: 50px;
-
     }
     
     .second img{
@@ -266,7 +244,7 @@ section{
         font-weight: 400;
         user-select: none; 
         text-align: center;
-        padding-bottom: 65px;
+        padding-bottom: 50px;
     }
 
     .second h4{
@@ -288,50 +266,6 @@ section{
         margin: 0px 0px 20px;
     }
 
-    .second .sc-btn-read{
-        background-color: rgb(51, 119, 222);
-        text-transform: uppercase;
-        color: rgb(255, 255, 255);
-        font-family: 'Poppins';
-        font-size: 13px;
-        font-weight: 600;
-        text-decoration: none;
-        border-radius: 30px;
-        border: 5px double rgb(255, 255, 255);
-        padding: 10px 20px;
-    }
-
-    .second .sc-btn-read:hover{
-        background-color: rgb(88, 146, 234);
-        text-transform: uppercase;
-        color: rgb(255, 255, 255);
-        font-family: 'Poppins';
-        font-size: 13px;
-        font-weight: 600;
-        text-decoration: none;
-        border-radius: 30px;
-        border: 5px double rgb(255, 255, 255);
-        padding: 10px 20px;
-    }
-
-    .second .sc-btn-know{
-        background-color: rgb(51, 119, 222);
-        color: white;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-family: 'Poppins';
-        font-size: 14px;
-        letter-spacing: 2px;
-        text-decoration: none;
-        border-radius: 3px;
-        border: none;
-        padding: 15px 25px;      
-    }
-
-    .second .sc-btn-know:hover{
-        background-color: rgb(58, 111, 167);
-        border-color: rgb(58, 111, 167) 
-    } 
 
     /* Третий контент */
 

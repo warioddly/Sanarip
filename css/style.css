@@ -111,6 +111,19 @@ nav ul li .active:hover{
     transition: 0.6s;
 }
 
+nav ul li .contact{
+    border-radius: 5px;
+    position: relative;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 177, 133);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
 /* Navbar when sticky */
 nav.sticky{
     position: fixed;
@@ -178,6 +191,19 @@ nav.sticky ul li .active:hover{
     font-weight: 500;
     color: rgb(0, 0, 0);
     background: cornsilk;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+nav.sticky ul li .contact{
+    border-radius: 5px;
+    position: relative;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 177, 133);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -477,7 +503,7 @@ nav.sticky ul li .active:hover{
 
 #sixth{
     background-color: rgb(255, 255, 255);
-    padding: 50px 0px;  
+    padding: 50px 0;  
 }
 
 #sixth h2{
@@ -524,14 +550,6 @@ footer .first-ft-headtext{
     margin-bottom: 30px;
 }
 
-.bg-picture{
-    background-image: url("/img/sanarip-logo/sanarip-logo-black.png");
-    background-size: 420px auto;
-    background-repeat: no-repeat;
-    background-position: 50px 0px;
-    height: 400px;
-}
-
 footer .box{
     top: 0px;
     position: relative;
@@ -541,8 +559,6 @@ footer .box{
     background: rgba(255, 255, 255, 0.48);
     border-radius: 16px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.359);
-    backdrop-filter: blur(11.5px);
-    -webkit-backdrop-filter: blur(11.5px);
     border: 1px solid rgba(255, 255, 255, 0.324);
     transition: 0.3s;
 }
@@ -555,7 +571,6 @@ footer .box:hover{
     width: 509px;
     box-shadow: 2px 10px 25px  rgba(0, 0, 0, 0.653);
     backdrop-filter: blur(11.5px);
-    -webkit-backdrop-filter: blur(11.5px);
     border: 1px solid rgb(255, 255, 255);
 }
 
@@ -594,3 +609,21 @@ footer .copyright h2{
     margin: 0px 0px -4px;
     color: rgb(255, 255, 255);
 }
+
+#two{
+    margin-top: -50px;
+    padding-top: 50px;  
+}
+
+#five{
+    margin-top: -200px;
+    padding-top: 200px;
+}
+
+#six{
+    margin-top: -170px;
+    padding-top: 170px;
+}
+
+/* MEDIA QUERES */
+

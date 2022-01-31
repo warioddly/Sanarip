@@ -9,24 +9,25 @@
     <link rel="stylesheet" href="css/lightslider.css" />  
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/main.js"></script>           
-    <script src="js/lightslider.js"></script>     
+    <script src="js/lightslider.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
 </head>
 <body>
-
   <header>
-    <nav> <!-- Навигационный панель -->
-      <div class="logo"><span><img class="brand-ico" id="brand-ico" src="img/sanarip-logo/sanarip-logo-color-ico.png" alt=""></span>
-        <a class="brand" href="#">Sanarip</a></div>
-      <ul class="CatalogMenu">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#second">About</a></li>
-          <li><a href="#fifth">Clients</a></li>
-          <li><a href="#sixth">Partners</a></li>
-          <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
 
- 
+      <nav> <!-- Навигационный панель -->
+        <div class="logo"><span><img class="brand-ico" id="brand-ico" src="img/sanarip-logo/sanarip-logo-color-ico.png" alt=""></span>
+          <a class="brand" href="#">Sanarip</a>
+        </div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#two">About</a></li>
+            <li><a href="#five">Clients</a></li>
+            <li><a href="#six">Partners</a></li>
+            <li><a href="#contact" class="contact">Contact</a></li>
+        </ul>
+      </nav>
+
     <section id="home"> <!-- Заголовочные тексты, картинки, анимация партикля -->
       <div class="container">
       <div class="container-fluid"> <!-- контейнер на всю ширину страницы -->
@@ -54,21 +55,24 @@
 
   <main>
     <!-- Первая часть контента -->
-    <section id="first">
-      <div class="container">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <h2>Digital Solutions to accelerate your growth story</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure veritatis quas saepe numquam accusantium hic doloribus architecto, earum maxime accusamus, dicta reiciendis et aliquam consectetur laboriosam voluptatem minima, animi nisi. Eligendi, aperiam impedit accusamus incidunt corrupti illum molestias quo nulla quis error. Quia deleniti tempore neque libero corporis reiciendis incidunt.</p>
-              </div>
+    <section id="one">
+      <div id="first">
+        <div class="container">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col">
+                  <h2>Digital Solutions to accelerate your growth story</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure veritatis quas saepe numquam accusantium hic doloribus architecto, earum maxime accusamus, dicta reiciendis et aliquam consectetur laboriosam voluptatem minima, animi nisi. Eligendi, aperiam impedit accusamus incidunt corrupti illum molestias quo nulla quis error. Quia deleniti tempore neque libero corporis reiciendis incidunt.</p>
+                </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Вторая часть контента -->
-    <section id="second">
+    <section id="two">
+      <div id="second">
       <div class="container">
         <div class="container-fluid">
           <div class="sc-1">
@@ -135,10 +139,12 @@
         </div>
       </div>
     </div>
+      </div>
     </section>
 
     <!-- Третяя часть контента -->
-    <section id="third">
+    <div id="third">
+      <section id="three"></section>
       <div class="container">
         <div class="container-fluid">
           <h2 class="headtext">What Our Client Say</h2>
@@ -175,172 +181,178 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Четвертая часть контента -->
-    <section id="fourth">
-      <div class="container">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Innovative Products. Game-changing Results</h2>
-              <h4>Sanarip</h4>
-            </div>
-          </div>
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">   
-                <div class="row">
-                  <div class="col-6">
-                    <img src="img/sanarip-logo/sanarip-logo-color.png" alt="">
-                  </div>
-                  <div class="col-6">
-                    <p class="header-text">Sanarip Project</p>
-                    <hr>
-                    <div class="row">
-                      <div class="col">
-                        <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
-                        <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">     
-                <div class="row">
-                  <div class="col-6">
-                    <img src="img/sanarip-logo/sanarip-logo-black.png" alt="">
-                  </div>
-                  <div class="col-6">
-                    <p class="headtext">Sanarip Project</p>
-                    <hr>
-                    <div class="row">
-                      <div class="col">
-                        <p class="subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati at id iure accusantium eveniet odio quis omnis necessitatibus rem nostrum? Aspernatur dolore quaerat soluta quae voluptas, ad accusamus incidunt dignissimos, quisquam animi qui libero beatae in, quas saepe nostrum dolor dolore laborum natus. Nostrum.</p>
-                        <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-6">
-                    <img src="img/sanarip-logo/sanarip-logo-color-ico.png" alt="">
-                  </div>
-                  <div class="col-6">
-                    <p class="headtext">Sanarip Project</p>
-                    <hr>
-                    <div class="row">
-                      <div class="col">
-                        <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
-                        <p class="subtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, laboriosam? Pariatur repellendus minima illum repellat eius, fugit cupiditate aut, ipsa velit ea non fuga saepe maiores doloribus vitae enim officiis beatae nulla quisquam atque tenetur dolorem eos! Temporibus quia quo corrupti minima eum dolorem cumque omnis hic accusamus. At, quis recusandae modi asperiores ipsam porro enim blanditiis suscipit soluta possimus impedit hic quas!</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    <section id="four">
+      <div id="fourth">
+        <div class="container">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col text-center">
+                <h2>Innovative Products. Game-changing Results</h2>
+                <h4>Sanarip</h4>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">   
+                  <div class="row">
+                    <div class="col-6">
+                      <img src="img/sanarip-logo/sanarip-logo-color.png" alt="">
+                    </div>
+                    <div class="col-6">
+                      <p class="header-text">Sanarip Project</p>
+                      <hr>
+                      <div class="row">
+                        <div class="col">
+                          <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
+                          <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">     
+                  <div class="row">
+                    <div class="col-6">
+                      <img src="img/sanarip-logo/sanarip-logo-black.png" alt="">
+                    </div>
+                    <div class="col-6">
+                      <p class="headtext">Sanarip Project</p>
+                      <hr>
+                      <div class="row">
+                        <div class="col">
+                          <p class="subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati at id iure accusantium eveniet odio quis omnis necessitatibus rem nostrum? Aspernatur dolore quaerat soluta quae voluptas, ad accusamus incidunt dignissimos, quisquam animi qui libero beatae in, quas saepe nostrum dolor dolore laborum natus. Nostrum.</p>
+                          <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-6">
+                      <img src="img/sanarip-logo/sanarip-logo-color-ico.png" alt="">
+                    </div>
+                    <div class="col-6">
+                      <p class="headtext">Sanarip Project</p>
+                      <hr>
+                      <div class="row">
+                        <div class="col">
+                          <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
+                          <p class="subtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, laboriosam? Pariatur repellendus minima illum repellat eius, fugit cupiditate aut, ipsa velit ea non fuga saepe maiores doloribus vitae enim officiis beatae nulla quisquam atque tenetur dolorem eos! Temporibus quia quo corrupti minima eum dolorem cumque omnis hic accusamus. At, quis recusandae modi asperiores ipsam porro enim blanditiis suscipit soluta possimus impedit hic quas!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+    </div>
     </section>
 
     <!-- Пятая часть контента -->
-    <section id="fifth">
+    <section id="five">
       <script>
-        $(document).ready(function() {
-        $("#content-slider").lightSlider({
-                  loop:true,
-              });
-      });
-    </script>
-    <div class="container">
-      <div class="container-fluid"></div>
-      <h2 class="headtext">Our Key Clients</h2>
-        <div class="item">
-          <ul id="content-slider" class="content-slider">
-            <li>
-              <img src="img/sanarip-logo/sanarip-logo-color.png" alt="">
-            </li>
-            <li>
-              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/clnt-ic8.png" alt="">
-            </li>
-            <li>
-              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic9-xerox.png" alt="">
-            </li>
-            <li>
-              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic8-knorr.png" alt="">
-            </li>
-            <li>
-              <img src="img/sanarip-logo/sanarip-logo-black.svg" alt="">
-            </li>
-            <li>
-              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic7-yogowa.png" alt="">
-            </li>
-            <li>
-              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic6-lt.png" alt="">
-            </li>
-            <li>
-               <img src="img/sanarip-logo/sanarip-logo-color-ico.png" alt="">
-            </li>
-            <li>
-              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic3-gsh.png" alt="">
-            </li>
-          </ul>
+          $(document).ready(function() {
+          $("#content-slider").lightSlider({
+                    loop:true,
+                });
+        });
+      </script>
+      <div id="fifth">
+        <div class="container">
+        <div class="container-fluid"></div>
+        <h2 class="headtext">Our Key Clients</h2>
+          <div class="item">
+            <ul id="content-slider" class="content-slider">
+              <li>
+                <img src="img/sanarip-logo/sanarip-logo-color.png" alt="">
+              </li>
+              <li>
+                <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/clnt-ic8.png" alt="">
+              </li>
+              <li>
+                <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic9-xerox.png" alt="">
+              </li>
+              <li>
+                <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic8-knorr.png" alt="">
+              </li>
+              <li>
+                <img src="img/sanarip-logo/sanarip-logo-black.svg" alt="">
+              </li>
+              <li>
+                <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic7-yogowa.png" alt="">
+              </li>
+              <li>
+                <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic6-lt.png" alt="">
+              </li>
+              <li>
+                <img src="img/sanarip-logo/sanarip-logo-color-ico.png" alt="">
+              </li>
+              <li>
+                <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic3-gsh.png" alt="">
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
   <!-- Пятая часть контента -->
-    <section id="sixth">
-    <div class="container">
-      <div class="container-fluid">
-        <h2 class="headtext">Partners</h2>
+    <section id="six">
+      <div id="sixth">
+        <div class="container">
+          <div class="container-fluid">
+            <h2 class="headtext">Partners</h2>
 
-        <div class="row">
-          <div class="col-3">
-            <img src="https://sedintechnologies.com/wp-content/uploads/2018/07/microsoft-gold-partner.png" alt="">
-          </div>
-          <div class="col-3">
-            <img src="https://sedintechnologies.com/wp-content/uploads/2021/05/ibm-gold.png" alt="">
-          </div>
-          <div class="col-3">
-            <img src="https://sedintechnologies.com/wp-content/uploads/2019/10/opentext.png" alt="">
-          </div>
-          <div class="col-3">
-            <img src="https://sedintechnologies.com/wp-content/uploads/2020/05/tablu.png" alt="">
+            <div class="row">
+              <div class="col-3">
+                <img src="https://sedintechnologies.com/wp-content/uploads/2018/07/microsoft-gold-partner.png" alt="">
+              </div>
+              <div class="col-3">
+                <img src="https://sedintechnologies.com/wp-content/uploads/2021/05/ibm-gold.png" alt="">
+              </div>
+              <div class="col-3">
+                <img src="https://sedintechnologies.com/wp-content/uploads/2019/10/opentext.png" alt="">
+              </div>
+              <div class="col-3">
+                <img src="https://sedintechnologies.com/wp-content/uploads/2020/05/tablu.png" alt="">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-3">
+                <img src="https://sedintechnologies.com/wp-content/uploads/2019/12/aws-new-partner.png" alt="">
+              </div>
+              <div class="col-3">
+                <img src="https://sedintechnologies.com/wp-content/uploads/2019/01/nasscom.png" alt="">
+              </div>
+              <div class="col-3">
+                <img src="https://sedintechnologies.com/wp-content/uploads/2020/09/sales-partner.png" alt="">
+              </div>
+            </div>
+
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-3">
-            <img src="https://sedintechnologies.com/wp-content/uploads/2019/12/aws-new-partner.png" alt="">
-          </div>
-          <div class="col-3">
-            <img src="https://sedintechnologies.com/wp-content/uploads/2019/01/nasscom.png" alt="">
-          </div>
-          <div class="col-3">
-            <img src="https://sedintechnologies.com/wp-content/uploads/2020/09/sales-partner.png" alt="">
-          </div>
-        </div>
-
       </div>
-    </div>
     </section>
   </main>
 
   <footer>
     <section class="contact" id="contact">
-    <div class="container">
+      <div class="container">
       <div class="container-fluid">
         <div class="row">
           <div class="col-6">
@@ -348,7 +360,6 @@
             </iframe>
           </div>
           <div class="col">
-            <div class="bg-picture">  
             <h2 class="first-ft-headtext">Contacts:</h2>
               <div class="box">
                 <p class="information-text">Need immediate sales assistance? Call us, email us, chat with us, We can help your business grow. Contact Sedin Sales.</p>
@@ -356,15 +367,13 @@
                 <p>US/Canada: <a href="#">+1 5062301305</a><p>
                 <p>Switzerland: <a href="#">+41(0)442146267</a><p>  
                 <p>Email: <a href="#">sales@sedintechnologies.com</a><p> 
+              </div>
             </div>
-          </div>
-          </div>
           </div>
         </div>
         
       </div>
     </section>
-    </div>
 
     <section class="copyright">
     <div class="container">

@@ -9,6 +9,7 @@ body{
 
 /* Навигационный панель */
 nav{
+    position: relative;
     position: fixed;
     top: 0;
     left: 0;
@@ -627,3 +628,42 @@ footer .copyright h2{
 
 /* MEDIA QUERES */
 
+@media (min-width: 768px){
+    nav {
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+      }
+      
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      nav #myLinks {
+        display: none;
+      }
+      
+      nav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+}
+
+@media (min-width: 992px){
+    nav {
+        overflow: visible;
+        background-color: rgb(255, 0, 0);
+      }
+      nav ul{
+        margin: 0 0;
+        position: relative;
+        display: flex;
+        text-align: center;
+    }
+      nav a.icon {
+        background: black;
+        overflow: visible;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+}

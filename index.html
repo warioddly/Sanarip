@@ -3,130 +3,72 @@
 <head>
     <title>SANARIP</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightslider.css" />  
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>           
+    <script src="js/lightslider.js"></script>     
 </head>
 <body>
 
-  <!-- Навигационный панель -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light black">
-      <div class="container-fluid navbar-container">
-        <a class="navbar-brand text-white" href="#">
-
-          <!-- название сайта с логотипом -->
-          <img src="img/sanarip-logo/sanarip-logo-color-ico.png" class="navbar-logo" alt="">
-          Sanarip
-        </a>
-
-        <!-- Кнопка для показа/сворачивания ссылок -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Ссылки, Подссылки -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto "> <!-- Ссылки упорядоченные по провому краю -->
-            <li class="nav-item active">
-              <a class="nav-link active-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle linkColor" href="#" id="navbarDropdown" >
-                Services
-              </a>
-              <!-- Подссылки -->
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
-                <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-                <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" >
-                Engineering Services
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-                <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" >
-                About Us
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
-                <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-                <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" >
-                Resources
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
-                <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-                <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-              </ul>
-            </li>
-            <li class="nav-item contact">
-              <a class="nav-link text-white" aria-current="page" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav> <!-- Навигационный панель -->
+      <div class="logo"><span><img class="brand-ico" id="brand-ico" src="img/sanarip-logo/sanarip-logo-color-ico.png" alt=""></span>
+        <a class="brand" href="#">Sanarip</a></div>
+      <ul class="CatalogMenu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#second">About</a></li>
+          <li><a href="#fifth">Clients</a></li>
+          <li><a href="#sixth">Partners</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    
 
-  </header>
-
-  <!-- Заголовочные тексты, картинки, анимация партикля -->
-  <section id="home">
-    <!-- контейнер на всю ширину страницы -->
-    <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-              <!-- Заголовчный текст -->
-              <p class="headtext">Sanarip Project</p>
-          <div class="row">
-            <div class="col-12">
-              <p class="undertext">Lorem ipsum dolor sit amet consectetur, adipisicing elit!</p>
+ 
+    <section id="home"> <!-- Заголовочные тексты, картинки, анимация партикля -->
+      <div class="container">
+      <div class="container-fluid"> <!-- контейнер на всю ширину страницы -->
+            <div class="row">
+              <div class="col-12">      
+                <p class="header-text">Sanarip Project</p> <!-- Заголовчный текст -->
+            <div class="row">
+              <div class="col-12">
+                <p class="subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit!</p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
-  </div>
+
     <!-- <div class="count-particles">
       <div id="particles-js"></div>
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>
     </div> -->
-  </div>
-</section>
 
-  <!-- Контент -->
+    </section>
+  </header>
+
   <main>
     <!-- Первая часть контента -->
-    <div class="first">
+    <section id="first">
       <div class="container">
           <div class="container-fluid">
             <div class="row">
-              <div class="col content">
+              <div class="col">
                 <h2>Digital Solutions to accelerate your growth story</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure veritatis quas saepe numquam accusantium hic doloribus architecto, earum maxime accusamus, dicta reiciendis et aliquam consectetur laboriosam voluptatem minima, animi nisi. Eligendi, aperiam impedit accusamus incidunt corrupti illum molestias quo nulla quis error. Quia deleniti tempore neque libero corporis reiciendis incidunt.</p>
-                <a href="#" class="btn btn-primary">Know More</a>    
               </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Вторая часть контента -->
-    <div class="second">
+    <section id="second">
       <div class="container">
         <div class="container-fluid">
           <div class="sc-1">
@@ -179,7 +121,6 @@
                 <h4>Engineering Services</h4>
             </div>
           </div> 
-
           <div class="row">
             <div class="col">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aut, ea non fuga similique nemo.</p>
@@ -194,10 +135,10 @@
         </div>
       </div>
     </div>
-    </div>
+    </section>
 
     <!-- Третяя часть контента -->
-    <div class="third">
+    <section id="third">
       <div class="container">
         <div class="container-fluid">
           <h2 class="headtext">What Our Client Say</h2>
@@ -234,66 +175,208 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Четвертая часть контента -->
-    <div class="fourth">
+    <section id="fourth">
       <div class="container">
         <div class="container-fluid">
-
           <div class="row">
             <div class="col text-center">
               <h2>Innovative Products. Game-changing Results</h2>
               <h4>Sanarip</h4>
             </div>
           </div>
-        
-          <div class="row">
-            <div class="col-6">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">   
+                <div class="row">
+                  <div class="col-6">
+                    <img src="img/sanarip-logo/sanarip-logo-color.png" alt="">
+                  </div>
+                  <div class="col-6">
+                    <p class="header-text">Sanarip Project</p>
+                    <hr>
+                    <div class="row">
+                      <div class="col">
+                        <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
+                        <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">     
+                <div class="row">
+                  <div class="col-6">
+                    <img src="img/sanarip-logo/sanarip-logo-black.png" alt="">
+                  </div>
+                  <div class="col-6">
+                    <p class="headtext">Sanarip Project</p>
+                    <hr>
+                    <div class="row">
+                      <div class="col">
+                        <p class="subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati at id iure accusantium eveniet odio quis omnis necessitatibus rem nostrum? Aspernatur dolore quaerat soluta quae voluptas, ad accusamus incidunt dignissimos, quisquam animi qui libero beatae in, quas saepe nostrum dolor dolore laborum natus. Nostrum.</p>
+                        <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="img/sanarip-logo/sanarip-logo-color-ico.png" alt="">
+                  </div>
+                  <div class="col-6">
+                    <p class="headtext">Sanarip Project</p>
+                    <hr>
+                    <div class="row">
+                      <div class="col">
+                        <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
+                        <p class="subtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, laboriosam? Pariatur repellendus minima illum repellat eius, fugit cupiditate aut, ipsa velit ea non fuga saepe maiores doloribus vitae enim officiis beatae nulla quisquam atque tenetur dolorem eos! Temporibus quia quo corrupti minima eum dolorem cumque omnis hic accusamus. At, quis recusandae modi asperiores ipsam porro enim blanditiis suscipit soluta possimus impedit hic quas!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Пятая часть контента -->
+    <section id="fifth">
+      <script>
+        $(document).ready(function() {
+        $("#content-slider").lightSlider({
+                  loop:true,
+              });
+      });
+    </script>
+    <div class="container">
+      <div class="container-fluid"></div>
+      <h2 class="headtext">Our Key Clients</h2>
+        <div class="item">
+          <ul id="content-slider" class="content-slider">
+            <li>
               <img src="img/sanarip-logo/sanarip-logo-color.png" alt="">
+            </li>
+            <li>
+              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/clnt-ic8.png" alt="">
+            </li>
+            <li>
+              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic9-xerox.png" alt="">
+            </li>
+            <li>
+              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic8-knorr.png" alt="">
+            </li>
+            <li>
+              <img src="img/sanarip-logo/sanarip-logo-black.svg" alt="">
+            </li>
+            <li>
+              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic7-yogowa.png" alt="">
+            </li>
+            <li>
+              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic6-lt.png" alt="">
+            </li>
+            <li>
+               <img src="img/sanarip-logo/sanarip-logo-color-ico.png" alt="">
+            </li>
+            <li>
+              <img src="https://sedintechnologies.com/wp-content/uploads/2020/07/ic3-gsh.png" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  <!-- Пятая часть контента -->
+    <section id="sixth">
+    <div class="container">
+      <div class="container-fluid">
+        <h2 class="headtext">Partners</h2>
+
+        <div class="row">
+          <div class="col-3">
+            <img src="https://sedintechnologies.com/wp-content/uploads/2018/07/microsoft-gold-partner.png" alt="">
+          </div>
+          <div class="col-3">
+            <img src="https://sedintechnologies.com/wp-content/uploads/2021/05/ibm-gold.png" alt="">
+          </div>
+          <div class="col-3">
+            <img src="https://sedintechnologies.com/wp-content/uploads/2019/10/opentext.png" alt="">
+          </div>
+          <div class="col-3">
+            <img src="https://sedintechnologies.com/wp-content/uploads/2020/05/tablu.png" alt="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <img src="https://sedintechnologies.com/wp-content/uploads/2019/12/aws-new-partner.png" alt="">
+          </div>
+          <div class="col-3">
+            <img src="https://sedintechnologies.com/wp-content/uploads/2019/01/nasscom.png" alt="">
+          </div>
+          <div class="col-3">
+            <img src="https://sedintechnologies.com/wp-content/uploads/2020/09/sales-partner.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="contact" id="contact">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <iframe class="map" frameborder="0" scrolling="no" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=Bishkek%20%D0%90%D1%85%D1%83%D0%BD%D0%B1%D0%B0%D0%B5%D0%B2%D0%B0%20199+(Sanarip)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+          </div>
+          <div class="col">
+            <div class="bg-picture">  
+            <h2 class="first-ft-headtext">Contacts:</h2>
+              <div class="box">
+                <p class="information-text">Need immediate sales assistance? Call us, email us, chat with us, We can help your business grow. Contact Sedin Sales.</p>
+                <p>India: <a href="#">+91 73388 15294 / +91 7397747122</a><p>
+                <p>US/Canada: <a href="#">+1 5062301305</a><p>
+                <p>Switzerland: <a href="#">+41(0)442146267</a><p>  
+                <p>Email: <a href="#">sales@sedintechnologies.com</a><p> 
             </div>
-            <div class="col-6">
-              <p class="headtext">Sanarip Project</p>
-              <hr>
-              <div class="row">
-                <div class="col">
-                  <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
-                  <p class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis, voluptatum quo enim provident, tempore vero culpa alias tenetur, porro nobis mollitia ipsum distinctio ipsa quaerat qui est expedita nam?</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <a href="#" class="sc-btn-know">Know More</a>  
-                </div>
-              </div>
-            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    </div>
+
+    <section class="copyright">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h2>Copyright All Rights Reserved © 2021</h2>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Пятая часть контента -->
-    <div class="fifth">
-      <div class="container">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Our Key Clients</h2>
-            </div>
-          </div>
-           
-
-
-
-
-
-      </div>
-    </div>
-  </div>
-  </main>
-
-
-
-  
+    </section>
+  </footer>
 </body>
 </html>

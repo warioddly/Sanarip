@@ -1,7 +1,7 @@
 (function ($, undefined) {
     'use strict';
     var defaults = {
-        item: 5,
+        item: 1,
         autoWidth: false,
         slideMove: 1,
         slideMargin: 0,

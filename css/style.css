@@ -1,217 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     scroll-behavior: smooth;
 }
+
 body{
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(241, 0, 0);
 }
 
-/* Навигационный панель */
-nav{
-    position: relative;
+.container{
+    max-width: 1500px;
+}
+
+.nav {
+    width: 495px;
+    min-width: 495px;
+    height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 10px 10px;
-}
-
-nav .logo{
-    display: inline-block;
-}
-
-nav .logo .brand{ 
-    position: relative;
-    font-weight: 700;
-    font-size: 3em;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-
-nav .logo .brand-ico{
-    margin-top: -28px;
-    position: relative;
-    width: 58px;
-    transition: 1s;
-}
-
-nav ul{
-    margin: 0 0;
-    position: relative;
-    display: flex;
-    text-align: center;
-}
-
-nav ul li{
-    position: relative;
-    list-style: none;
-    transition: 0.6s;
-}
-
-nav ul li a{
-    outline: 1px solid rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    padding: 10px;
-    position: relative;
-    margin: 0 5px;
-    font-weight: 500;
-    color: rgb(145, 145, 145);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 1s;
-}
-
-nav ul li a:hover{
-    filter: brightness(1.75);
-    outline: 1px solid #fff;
-    border-radius: 5px;
-    padding: 10px;
-    position: relative;
-    margin: 0 5px;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 1s;
-}
-
-nav ul li .active{
-    outline: 1px solid #fff;
-    border-radius: 5px;
-    position: relative;
-    padding: 10px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-
-nav ul li .active:hover{
-    border-radius: 5px;
-    position: relative;
-    padding: 10px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    background: cornsilk;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-
-nav ul li .contact{
-    border-radius: 5px;
-    position: relative;
-    padding: 10px;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    background: rgb(0, 177, 133);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-
-/* Navbar when sticky */
-nav.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.4s;
-    padding: 0 10px;
-    background: rgba(53, 53, 53, 0.38);
+    bottom: 0;
+    margin: 0;
+    right: -495px;
+    padding: 0 20px;
+    -webkit-transition: right 0.3s;
+    -moz-transition: right 0.3s;
+    transition: right 0.3s;
+    background: rgba(113, 104, 104, 0.51);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(16.3px);
-    z-index: 999999;
-    -webkit-backdrop-filter: blur(16.3px);
+    backdrop-filter: blur(12.1px);
+    -webkit-backdrop-filter: blur(12.1px);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    z-index: 2000;
 }
 
-nav.sticky ul li a{
-    outline: 1px solid rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    padding: 10px;
-    position: relative;
-    margin: 0 5px;
-    font-weight: 500;
+.nav-toggle {
+    position: absolute;
+    right: 495px;
+    top: 0.50em;
+    background-color: rgba(0, 0, 0, 0.975);
+    color: #dadada;
+    font-size: 12em;
+    line-height: 0;
+    z-index: 2001;
+}
+
+.nav-toggle:after {
+    content: '\2630';
+    text-decoration: none;
+}
+
+[id='nav-toggle']:checked ~ .nav > .nav-toggle {
+    left: auto;
+    right: 2px;
+    top: 0.50em;
+}
+
+[id='nav-toggle']:checked ~ .nav {
+    right: 0;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0, 0.5);
+    -moz-box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);
+    -webkit-box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);
+    overflow-y: auto;
+}
+
+[id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
+    content: '\2715';
+}
+
+.nav h2 {
+    width: 100%;
+    padding: 0 20px;
+    margin: 180px 0 0 0;
+    text-align: left;
+    font-size: 6em;
+    opacity: 0;
+}
+
+.nav h2 a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+[id='nav-toggle']:checked ~ .nav h2 {
+    opacity: 1;
+}
+
+.nav > ul {
+    margin-top: -300px;
+    display: block;
+    list-style: none;
+}
+
+.nav > ul > li {
+    line-height: 2.5;
+    opacity: 0;
+    margin-bottom: 10px;
+}
+
+[id='nav-toggle']:checked ~ .nav > ul > li {
+    opacity: 1;
+}
+
+.nav > ul > li > a {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 4em;
+    color: #dadada;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 20px;
+    text-align: center;
+    transition: 0.50s;
+}
+
+.nav > ul > li > a:hover,
+.nav > ul > li > a.active {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
     color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 1s;
+    padding-right: 100%;
 }
 
-nav.sticky ul li a:hover{
-    outline: 1px solid #fff;
-    border-radius: 5px;
-    padding: 10px;
-    position: relative;
-    margin: 0 5px;
-    font-weight: 500;
+.nav > ul > li > div > a {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 4em;
+    color: #dadada;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(45, 163, 163);
+    border-radius: 10px;
     color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 1s;
+    padding-right: 100%;
+    padding-left: 10px;
+    text-align: center;
+    transition: 0.50s;
 }
-
-nav.sticky ul li .active{
-    outline: 1px solid #fff;
-    border-radius: 5px;
-    position: relative;
-    padding: 10px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    background: cornsilk;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-
-nav.sticky ul li .active:hover{
-    border-radius: 5px;
-    position: relative;
-    padding: 10px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    background: cornsilk;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-
-nav.sticky ul li .contact{
-    border-radius: 5px;
-    position: relative;
-    padding: 10px;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    background: rgb(0, 177, 133);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-
-/* Заголовок */
 
 #home{
     background-image: url("../img/headImage.gif");
@@ -219,38 +147,35 @@ nav.sticky ul li .contact{
     background-size: cover;
     margin-top: -86px;
     padding-bottom: 370px;
-    max-height: 720px;
-    min-height: 720px;
+    max-height: 1200px;
+    min-height: 1200px;
 }
 
 #home .header-text{
     color: white;
     font-family: 'Poppins';
-    font-size: 80px;
+    font-size: 120px;
     font-weight: 700;
-    text-align: left;
-    padding-top: 330px;
+    text-align: center;
+    padding-top: 500px;
 }
 
 #home .subtext{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 17px;
-    text-align: left;
-    margin-left: 120px;
+    font-family: 'Poppins';
+    font-size: 30px;
+    text-align: center;
     color:white;
 }
 
-/* Первый контент */
-
 #first{
-    padding: 50px 0px;
+    padding: 30px 0px;
     background-color: rgb(237, 237, 237);
 }
 
 #first h2{
     color: rgb(79, 79, 79);
     font-family: 'Poppins';
-    font-size: 35px;
+    font-size: 80px;
     font-weight: 400;
     user-select: none;
     letter-spacing: 5px;
@@ -261,25 +186,15 @@ nav.sticky ul li .contact{
 #first p{
     color: rgb(75, 75, 75);
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 40px;
     user-select: none; 
     text-align: left;
 }
 
-/* Второй контент */
 
 #second{
     background-color: rgb(255, 255, 255); 
-    padding: 50px 0px 0px;
-}
-
-.sc-1{
-    padding-bottom: 20px;
-
-}
-
-.sc-2{
-    padding-bottom: 50px;
+    padding: 30px 0px;
 }
 
 #second img{
@@ -289,18 +204,18 @@ nav.sticky ul li .contact{
 #second h2{
     color: rgb(79, 79, 79);
     font-family: 'Poppins';
-    font-size: 35px;
+    font-size: 80px;
     font-weight: 400;
     user-select: none; 
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 #second h4{
     color: rgb(59, 59, 59);
     font-family: 'Poppins';
-    font-size: 22px;
-    font-weight: 200;
+    font-size: 44px;
+    font-weight: 500;
     user-select: none;
     padding: 20px 0px 10px;
     margin: 0px;
@@ -309,25 +224,24 @@ nav.sticky ul li .contact{
 #second p{
     color: grey;
     font-family: 'Poppins';
-    font-size: 16px;
+    font-size: 40px;
     font-weight: 200;
     text-align: left;
     margin: 0px 0px 20px;
 }
 
-
-/* Третий контент */
-
 #third{
     background-color: rgb(46, 112, 183);
-    padding: 50px 0px; 
+    padding: 30px 0px; 
+    max-height: 900px;
+    min-height: 900px;
 }
 
 #third h2{
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Dosis';
-    font-size: 48px;
+    font-size: 80px;
     font-weight: 400;
     user-select: none; 
     text-align: center;
@@ -336,26 +250,27 @@ nav.sticky ul li .contact{
 
 #third .carousel-item{
     background-color: rgb(46, 112, 183);
-    height: 420px;
-    padding-top: 10px;
+    max-height: 900px;
+    min-height: 900px;
 }
 
 #third p{
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Poppins';
-    font-size: 16px;
+    font-size: 30px;
     user-select: none; 
-    height: 220px;
-    padding-right: 230px;
-    padding-left: 230px;
+    min-height: 530px;
+    max-height: 530px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 #third .vacant{
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Poppins';
-    font-size: 12px;
+    font-size: 30px;
     user-select: none; 
     height: 10px;
     padding-right: auto;
@@ -367,7 +282,7 @@ nav.sticky ul li .contact{
     text-transform: uppercase;
     text-align: center;
     font-family: 'Poppins';
-    font-size: 14px;
+    font-size: 40px;
     font-weight: 600;
     letter-spacing: 1px;
     user-select: none; 
@@ -377,26 +292,24 @@ nav.sticky ul li .contact{
 }
 
 #third img{
-    width: 8%;  
+    width: 18%;  
     display: block;
     margin-left: auto;
     margin-right: auto;  
 }
 
-/* Четвертый контент */
-
- #fourth{
+#fourth{
     background-color: rgb(255, 255, 255);
     padding: 50px 0px; 
-    max-height: 680px;
-    min-height: 680px;
+    max-height: 930px;
+    max-height: 930px;
 }
 
 #fourth h2{
     color: rgb(82, 82, 82);
     text-align: center;
     font-family: 'Poppins';
-    font-size: 35px;
+    font-size: 80px;
     font-weight: 400;
     user-select: none; 
     text-align: center;
@@ -409,27 +322,37 @@ nav.sticky ul li .contact{
     text-align: center;
     text-transform: uppercase;
     font-family: 'Poppins';
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     user-select: none; 
-    margin-top: 10px;
     margin-bottom: 50px;
     padding-right: auto;
     padding-left: auto;
 } 
 
 #fourth img{
-    width: 60%;
+    min-width: 60%;
+    max-width: 60%;
     display: block;
-    margin-left: auto;
+    margin-top: 50px;
+    margin-left: 150px;
     margin-right: auto;  
 }
 
 #fourth .header-text{
     color: rgb(52, 52, 52);
     font-family: 'Poppins';
-    font-size: 18px;
+    font-size: 40px;
     font-weight: 600;
+    user-select: none; 
+}
+
+#fourth .subtext{
+    color: rgb(101, 101, 101);
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 500;
+    width: 400px;
     user-select: none; 
 }
 
@@ -441,32 +364,20 @@ nav.sticky ul li .contact{
     margin: 15px 367px 25px 0px;
 }
 
-#fourth .subtext{
-    color: rgb(101, 101, 101);
-    font-family: 'Poppins';
-    font-size: 14px;
-    font-weight: 500;
-    width: 400px;
-    user-select: none; 
-}
-
-
 .carousel-control-prev-icon, .carousel-control-next-icon{
     filter: brightness(0);
 }
 
-/* Пятый контент */
-
 #fifth{
     background-color: rgb(220, 235, 244);
-    padding: 50px 0px; 
+    padding: 30px 0px; 
 }
 
 #fifth h2{
     color: rgb(96, 96, 96);
     text-align: center;
     font-family: 'Poppins';
-    font-size: 40px;
+    font-size: 80px;
     font-weight: 400;
     user-select: none; 
     letter-spacing: 3px;
@@ -492,7 +403,6 @@ nav.sticky ul li .contact{
 
 .content-slider li:hover{
     background-color: #b0b0b087;
-    text-align: center;
     transition: 1s;
 }
 
@@ -500,18 +410,16 @@ nav.sticky ul li .contact{
     padding: 20px 0px;
 }
 
-/* Шестой контент */
-
 #sixth{
     background-color: rgb(255, 255, 255);
-    padding: 50px 0;  
+    padding: 30px 0;  
 }
 
 #sixth h2{
     color: rgb(96, 96, 96);
     text-align: center;
     font-family: 'Poppins';
-    font-size: 40px;
+    font-size: 80px;
     font-weight: 400;
     user-select: none; 
     letter-spacing: 3px;
@@ -521,42 +429,44 @@ nav.sticky ul li .contact{
 
 #sixth img{
     background-color: rgba(232, 232, 232, 0.722);
-    margin: 10px 0px;
-    padding: 6px;
+    margin: 10px 10px;
+    padding: 5px;
+    width: 440px;
     transition: 1s;
 }
 
 #sixth img:hover{
     background-color: rgba(183, 183, 183, 0.516);
-    margin: 10px 0px;
-    padding: 6px;
     transition: 1s;
 }
 
-
-/* footer */
 footer .contact{
     background-color: rgb(237, 237, 237);
-    padding: 50px 0px;  
+    padding: 30px 0px;  
 }
 
 footer .map{
     border-radius: 10px;
-    width: 100%;
-    height: 400px;
+    width: 955px;
+    height: 500px;
+    margin-bottom: 30px;
 }
 
 footer .first-ft-headtext{
-    color:rgb(48, 48, 48);
+    color: rgb(96, 96, 96);
+    font-size: 80px;
+    text-align: center;
     margin-bottom: 30px;
 }
 
 footer .box{
     top: 0px;
+    left: 130px;
     position: relative;
-    max-height: 250px;
-    min-height: 250px;
-    width: 509px;
+    max-height: 450px;
+    min-height: 450px;
+    width: 700px;
+    margin-bottom: 30px;
     background: rgba(255, 255, 255, 0.48);
     border-radius: 16px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.359);
@@ -566,10 +476,11 @@ footer .box{
 
 footer .box:hover{
     top: -2px;
+    left: 130px;
     position: relative;
-    max-height: 250px;
-    min-height: 250px;
-    width: 509px;
+    max-height: 450px;
+    min-height: 450px;
+    width: 700px;
     box-shadow: 2px 10px 25px  rgba(0, 0, 0, 0.653);
     backdrop-filter: blur(11.5px);
     border: 1px solid rgb(255, 255, 255);
@@ -585,9 +496,9 @@ footer .box .information-text{
 footer .box p{
     color: rgb(59, 59, 59);
     font-family: 'Poppins';
-    font-size: 13px;
+    font-size: 30px;
     font-weight: 700;
-    padding: 0px 20px;
+    padding: 0px 25px;
 }
 
 footer .box a{
@@ -611,59 +522,12 @@ footer .copyright h2{
     color: rgb(255, 255, 255);
 }
 
-#two{
-    margin-top: -50px;
-    padding-top: 50px;  
-}
-
 #five{
-    margin-top: -200px;
-    padding-top: 200px;
+    margin-top: -10px;
+    padding-top: 10px;
 }
 
-#six{
-    margin-top: -170px;
-    padding-top: 170px;
-}
-
-/* MEDIA QUERES */
-
-@media (min-width: 768px){
-    nav {
-        overflow: hidden;
-        background-color: rgb(0, 0, 0);
-      }
-      
-      /* Hide the links inside the navigation menu (except for logo/home) */
-      nav #myLinks {
-        display: none;
-      }
-      
-      nav a.icon {
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-}
-
-@media (min-width: 992px){
-    nav {
-        overflow: visible;
-        background-color: rgb(255, 0, 0);
-      }
-      nav ul{
-        margin: 0 0;
-        position: relative;
-        display: flex;
-        text-align: center;
-    }
-      nav a.icon {
-        background: black;
-        overflow: visible;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
+#three{
+    margin-top: -300px;
+    padding-top: 300px; 
 }

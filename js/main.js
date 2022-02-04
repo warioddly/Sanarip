@@ -19,36 +19,40 @@ $(window).scroll(function(){
 
 function ScreenWidth(){
   width = document.body.clientWidth;
-  
-  if(width >= 1200){
+
+  if(width >= 992){
     document.getElementById("nav-toggle").checked = true;
   }
 
-  if(width < 1200){
+  if(width <= 992){
     document.getElementById("nav-toggle").checked = false;
   }
 }
 
 window.addEventListener('resize', function(){
   width = document.body.clientWidth;
-  
-    if(width >= 1200){
-      document.getElementById("nav-toggle").checked = true;
-    }
+  if(width >= 992){
+    document.getElementById("nav-toggle").checked = true;
+  }
 
-    if(width < 1200){
-      document.getElementById("nav-toggle").checked = false;
-    }
+  if(width <= 992){
+    document.getElementById("nav-toggle").checked = false;
+  }
 })
+
+
+
+
 var flag = false
 (function ($, undefined) {
   'use strict';
   var width = $(window).width();
-  var defaults = {
-        item: 5,
-        autoWidth: true,
+  if (width <= 992){
+    var defaults = {
+        item: 3,
+        autoWidth: false,
         slideMove: 1,
-        slideMargin: 0,
+        slideMargin: 5,
         addClass: '',
         mode: 'slide',
         useCSS: true,
@@ -65,7 +69,7 @@ var flag = false
         prevHtml: '',
         nextHtml: '',
         rtl: false,
-        adaptiveHeight: false,
+        adaptiveHeight: true,
         vertical: false,
         verticalHeight: 100,
         vThumbWidth: 300,
@@ -88,7 +92,106 @@ var flag = false
         onBeforeNextSlide: function ($el, scene) {},
         onBeforePrevSlide: function ($el, scene) {}
         /* jshint ignore:end */
+        
     };
+  } 
+  if (width <= 1199){
+    var defaults = {
+        item: 4,
+        autoWidth: false,
+        slideMove: 1,
+        slideMargin: 10,
+        addClass: '',
+        mode: 'slide',
+        useCSS: true,
+        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',
+        easing: 'linear', //'for jquery animation',//
+        speed: 400, //ms'
+        auto: true,
+        pauseOnHover: false,
+        loop: true,
+        slideEndAnimation: true,
+        pause: 2000,
+        keyPress: false,
+        controls: false,
+        prevHtml: '',
+        nextHtml: '',
+        rtl: false,
+        adaptiveHeight: true,
+        vertical: false,
+        verticalHeight: 100,
+        vThumbWidth: 300,
+        thumbItem: 10,
+        pager: false,
+        gallery: false,
+        galleryMargin: 5,
+        thumbMargin: 5,
+        currentPagerPosition: 'middle',
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: true,
+        swipeThreshold: 40,
+        responsive: [],
+        /* jshint ignore:start */
+        onBeforeStart: function ($el) {},
+        onSliderLoad: function ($el) {},
+        onBeforeSlide: function ($el, scene) {},
+        onAfterSlide: function ($el, scene) {},
+        onBeforeNextSlide: function ($el, scene) {},
+        onBeforePrevSlide: function ($el, scene) {}
+        /* jshint ignore:end */
+        
+    };
+  }
+  if (width >= 1200){
+    var defaults = {
+        item: 5,
+        autoWidth: false,
+        slideMove: 1,
+        slideMargin: 15,
+        addClass: '',
+        mode: 'slide',
+        useCSS: true,
+        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',
+        easing: 'linear', //'for jquery animation',//
+        speed: 400, //ms'
+        auto: true,
+        pauseOnHover: false,
+        loop: true,
+        slideEndAnimation: true,
+        pause: 2000,
+        keyPress: false,
+        controls: false,
+        prevHtml: '',
+        nextHtml: '',
+        rtl: false,
+        adaptiveHeight: true,
+        vertical: false,
+        verticalHeight: 100,
+        vThumbWidth: 300,
+        thumbItem: 10,
+        pager: false,
+        gallery: false,
+        galleryMargin: 5,
+        thumbMargin: 5,
+        currentPagerPosition: 'middle',
+        enableTouch: true,
+        enableDrag: true,
+        freeMove: true,
+        swipeThreshold: 40,
+        responsive: [],
+        /* jshint ignore:start */
+        onBeforeStart: function ($el) {},
+        onSliderLoad: function ($el) {},
+        onBeforeSlide: function ($el, scene) {},
+        onAfterSlide: function ($el, scene) {},
+        onBeforeNextSlide: function ($el, scene) {},
+        onBeforePrevSlide: function ($el, scene) {}
+        /* jshint ignore:end */
+        
+    };
+  }
+
   $.fn.lightSlider = function (options) {
       if (this.length === 0) {
           return this;

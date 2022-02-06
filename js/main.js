@@ -47,12 +47,12 @@ var flag = false
 (function ($, undefined) {
   'use strict';
   var width = $(window).width();
-  if (width <= 992){
+  if (width >= 768){
     var defaults = {
-        item: 3,
+        item: 2,
         autoWidth: false,
         slideMove: 1,
-        slideMargin: 5,
+        slideMargin: 10,
         addClass: '',
         mode: 'slide',
         useCSS: true,
@@ -95,7 +95,7 @@ var flag = false
         
     };
   } 
-  if (width <= 1199){
+  if (width >= 992){
     var defaults = {
         item: 4,
         autoWidth: false,

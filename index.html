@@ -3,172 +3,444 @@
 <head>
     <title>SANARIP</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/lightslider.css" />
+    <script src="js/bootstrap.bundle.js"></script>  
+    <script src="js/main.js"></script>           
 </head>
-<body>
-
-  <!-- Навигационный панель -->
-  <nav class="navbar navbar-expand-lg navbar-light black">
-    <div class="container-fluid navbar-container">
-      <a class="navbar-brand text-white" href="#">
-
-        <!-- название сайта с логотипом -->
-        <img src="img/sanarip-logo/sanarip-logo-color-ico.png" class="navbar-logo" alt="">
-        Sanarip
-      </a>
-
-      <!-- Кнопка для показа/сворачивания ссылок -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Ссылки, Подссылки -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto "> <!-- Ссылки упорядоченные по провому краю -->
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle linkColor" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <!-- Подссылки -->
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
-              <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-              <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Engineering Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li class="nav-item dropdown">
-                <a class="dropdown-item" href="#">CAD Services</a>
-                <ul class="dropdown-menu dropright" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-                </ul>
-              </li>
-              <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-              <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About Us
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
-              <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-              <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Resources
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Enterpise assets managment</a></li>
-              <li><a class="dropdown-item" href="#">Enterprise Content Management Solutions</a></li>
-              <li><a class="dropdown-item" href="#">Business Intelligence and Analytics Services</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link contact text-white" aria-current="page" href="#">Contact Us</a>
-          </li>
+<body onload="ScreenWidth()">
+  <header>
+    <input type="checkbox" id="nav-toggle" hidden>
+    <nav class="nav">
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        
+        <h2 class="logo"><img class="logo-ico" src="img/sanarip-logo/sanarip-logo-color-ico.png" alt="">
+          <a href="#">Санарип</a>
+        </h2>
+        <ul>
+            <li><a href="#home" class="active">Главная</a>
+            <li><a href="#one">О нас</a>
+            <li><a href="#two">Проекты</a>
+            <li><a href="#three">Продукты </a>
+            <li><a href="#five">Клиенты</a>
+            <li><div><a href="#cntct">Contacts</a></div>
         </ul>
+    </nav>
+
+    <section id="home">     
+      <p class="header-text">Санарип Долбоор</p>
+      <p class="subtext">Профиль компании</p>
+    </section>
+  </header>
+
+  <main>
+    <section id="one">
+      <div id="first">
+          <div class="container">
+            <h2>О компании</h2>
+            <p>Компания «Санарип Долбоор» была основана в 2019 году для предоставления своим клиентам комплекса услуг начиная от консалтинга до разработки и внедрения IT продуктов. В настоящее время компания накопила большой багаж знаний и опыта в реализации проектов которые имеют уровень национального масштаба.
+            </p>
+            <h4>Миссия</h4>
+            <p>Миссия компании заключается в предоставлении передовых технологий и решений которые позволили бы эффективно и качественно предоставлять нашим Клиентам услуги для конечных пользователей.
+            </p>
+          </div>
+      </div>
+    </section>
+
+    <section id="two">
+      <div id="second">
+        <h2>Проекты</h2>
+        <h4>Sanarip</h4>
+        <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">   
+              <div class="row">
+                <div class="col-4">
+                  <img class="usaid-logo" src="img/logos/usaid-logo.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <p class="header-text">Usaid</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">Система Дистанционного Обучения «Okuu Keremet». Повышение квалификаций учителей начальных классов. https://okuukeremet.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">     
+              <div class="row">
+                <div class="col-4">
+                  <img src="img/logos/coa-logo.png" alt="">
+                </div>
+                <div class="col-6">
+                  <p class="header-text">ГАГН при МЭП КР</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">Автоматизированная информационная система Государственного агентства геологии и недропользования при Министерстве энергетики и промышленности Кыргызской республики. https://s.geology.kg/</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4">
+                  <img src="img/logos/soros-logo.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <p class="header-text">ФОНД «СОРОС-КЫРГЫЗСТАН»</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">Бизнес-анализ и техническое задание по проекту «Платформа City Dashboard»</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4">
+                  <img class="mvd-logo" src="img/logos/mvd-logo.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <p class="header-text">ГУОБДД МВД КР</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">Автоматизированная информационно-управляющая система Учета дорожно-транспортных происшествий для Главного Управления по Обеспечению Безопасности Дорожного Движения КР.</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4">
+                  <img src="img/logos/gts-logo.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <p class="header-text">ГТС КР</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">Бизнес-анализ и техническое задание по проекту «Платформа City Dashboard»</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4">
+                  <img src="img/logos/coa-logo.png" alt="">
+                </div>
+                <div class="col-6">
+                  <p class="header-text">МОиН КР</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">Электронная библиотека. https://kitep.edu.gov.kg/</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4">
+                  <img src="img/logos/osh-ums-logo.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <p class="header-text">УМС г. ОШ</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">Информационная система «Геопортал г.Ош»</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
-  </nav>
-  
-  <!-- Заголовочные тексты, картинки, анимация партикля -->
-  <section id="home" >
-    <!-- контейнер на всю ширину страницы -->
-    <div class="container-fluid">
+    </section>
+
+    <section id="three">
+      <div id="third">
+          <h2>Продукты Компании</h2>
+          <h4 class="subtitle">Sanarip</h4>
+          <div class="container">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h4>МАЕК</h4>  
+                  <p><i>Платформа для проведения онлайн видеоконференций, используемая для онлайн совещаний, вебинаров и онлайн уроков.</i></p>
+                </div>
+                <div class="carousel-item">
+                  <h4>EL:OKUU</h4>  
+                  <p><i>Система дистанционного обучения на платформе Moodle, переведена более чем на 100 языков и поддерживает свыше 1500 плагинов.</i></p>
+                </div>
+                <div class="carousel-item">
+                  <h4>CALL-CENTER</h4>
+                  <p><i>Система объединила в себе следующие подсистемы:<br />
+                    Call-центр;<br />
+                    Базы данных обращений клиентов и  контрагентов;<br />
+                    CRM<br />
+                    IP-телефония.
+                    </i></p>  
+                 </div>
+                <div class="carousel-item">
+                  <h4>ГЕОПОРТАЛ</h4>
+                  <p><i>Были автоматизированы следующие процессы:<br />
+                    Ведение реестра объектов муниципальной собственности;<br />
+                    Ведение реестра земельного: Государственные, муниципальные, частные земельные площади;<br />
+                    Получение статистики по земельному фонду.              
+                    </i></p>  
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="four">
+      <div id="fourth">
+        <h2>Продукты</h2>
+        <h4>Sanarip</h4>
+        <div class="container">
+        <div id="carouselExampleControls2" class="carousel slide " data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">   
+              <div class="row">
+                <div class="col">
+                  <p class="header-text">МАЕК</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">НАШИ ПРЕИМУЩЕСТВА:<br />
+                        Демонстрация экрана и контента.<br />
+                        Достаточно использовать браузер с любого устройства: телефон, планшет, ноутбук, компьютер.<br />
+                        В одной комнате может находится до 250 пользователей одновременно.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">     
+              <div class="row">
+                <div class="col">
+                  <p class="header-text">EL:OKUU</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">В системе EL:OKUU, созданный опытным преподавателем, выглядит как структура из дополняющих друг друга элементов, которые различаются по своему виду и назначению. Помимо стандартных элементов обучения, таких как лекции, задания и тесты, в системе EL:OKUU используются — глоссарий, вики, блоги, форумы, практикумы, которые помогают разнообразить процесс обучения. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">     
+              <div class="row">
+                <div class="col">
+                  <p class="header-text">EL:OKUU</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">
+                        Стоит отметить хорошо развитую систему коммуникаций EL:OKUU. На форуме можно проводить обсуждение по группам, оценивать сообщения, прикреплять к ним файлы любых форматов. В личных сообщениях и комментариях — обсудить конкретную проблему с преподавателем лично. В чате обсуждение происходит в режиме реального времени.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <p class="header-text">CALL-CENTER</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">Функционал Системы включает большое количество функций:<br />
+                        IVR: разветвленное дерево автоответчика с разными схемами обработки звонков;<br />
+                        Информирования клиента о его позиции в очереди, примерном времени ответа, предложение заказать обратный звонок или голосовое сообщение;
+                        </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <p class="header-text">CALL-CENTER</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">
+                        Модуль мониторинга текущей загрузки Call-центра (сколько разговаривают, сколько на очереди и т.п.);<br />
+                        Управление звонками: прием звонка, удержание звонка, перевод звонка в режиме «слепой перевод» и «перевод с консультацией»;<br />
+                        Сервис голосовой почты.
+                        </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <p class="header-text">ГЕОПОРТАЛ</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">Информационная система нацелена на сокращение времени рассмотрения заявок и обращений, повышение качества обслуживания граждан и содействие устойчивому развитию.
+                        В ходе реализации проекта «Геопортал» были  произведены следующие работы по ГИС части:
+                        </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <p class="header-text">ГЕОПОРТАЛ</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <p class="subtext">аэрофотосъемка 3,5 тыс. гектар г.Ош;
+                        Оцифровка и дешифрование 50 гектаров;<br />
+                        проведен сравнительный анализ, выявление разницы фактических и юридических площадей;<br />
+                        Создание ГИС базы пространственных данных и их развертывание;<br />
+                        Созданы web сервисы для интеграции с СМЭВ «Тундук»<br />
+                        </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="five">
+      <div id="fifth">
+        <script>
+          $(document).ready(function() {
+          $("#content-slider").lightSlider({
+                    loop:true,
+                });
+        });
+        </script>
+          <div class="container">
+            <h2>Клиенты</h2>
+              <div class="item">
+                <ul id="content-slider" class="content-slider">
+                  <li>
+                    <img src="img/logos/coa-logo.png" alt="">
+                  </li>
+                  <li>
+                    <img src="img/logos/economic-logo.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="img/logos/foms-logo.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="img/logos/gts-logo.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="img/logos/mvd-logo.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="img/logos/osh-ums-logo.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="img/logos/soros-logo.jpg" alt="">
+                  </li>
+                  <li>
+                    <img class="usaid-logo" src="img/logos/usaid-logo.jpg" alt="">
+                  </li>
+                </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section id="cntct">
+      <div class="contact">
+        <div class="container">
           <div class="row">
-            <div class="col-12">
-              <!-- Заголовчный текст -->
-              <p class="headtext">Sanarip Project</p>
-          <div class="row">
-            <div class="col-12">
-              <p class="undertext">Lorem ipsum dolor sit amet consectetur, adipisicing elit!</p>
+            <div class="col">
+              <h2 class="first-ft-headtext">Контакты:</h2>
+                <div class="box">
+                  <p class="information-text">САНАРИП ДОЛБООР</p>
+                  <p>Телефон: <a href="#">+996 551 551 543</a><p>
+                  <p>Адрес: <a href="#">Иса-Ахунбаева 199 г. Бишкек</a><p> 
+                  <p>Email: <a href="#">sanaripdolbor@gmail.com </a><p> 
+                  <img src="img/sanarip-logo/sanarip-logo-black.png" alt="">
+                </div>
+              </div>
+            <div class="col">
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d517.1388124035863!2d74.5799466300694!3d42.843732277385364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9b8bdad69ed%3A0xce76e22493fb67a0!2sAkademiya%20Tsifrovykh%20Innovatsiy!5e0!3m2!1sen!2skg!4v1643996069562!5m2!1sen!2skg" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </iframe>
             </div>
           </div>
         </div>
       </div>
-          <!-- Подключаем анимацию партикля -->
-      <div class="count-particles">
-        <div id="particles-js"></div>
-          <script src="js/particles.js"></script>
-          <script src="js/app.js"></script>
-      </div>
-    </div> 
-  </section>
+    </section>
 
-  <!-- Контент -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col content">
-        <h2 class="headtext">Digital Solutions to accelerate your growth story</h2>
-        <p class="undertext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure veritatis quas saepe numquam accusantium hic doloribus architecto, earum maxime accusamus, dicta reiciendis et aliquam consectetur laboriosam voluptatem minima, animi nisi. Eligendi, aperiam impedit accusamus incidunt corrupti illum molestias quo nulla quis error. Quia deleniti tempore neque libero corporis reiciendis incidunt.</p>
-        <a href="#" class="btn btn-primary">Know More</a>    
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="myfooter">
+              <h2>Copyright All Rights Reserved © 2022</h2>
+              <h2>Санарип Долбоор</h2>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="second-content">
-
-      <h2 class="headtext">What we help with</h2>
-    <div class="row">
-      <div class="col">
-        <h4>Web and Mobile App Development</h4>
-      </div>
-      <div class="col">
-        <h4>Cloud Infrastructure Services</h4>
-       </div>
-      <div class="col">
-        <h4>Enterprise Content Management</h4>
-     </div>
-      <div class="col">
-        <h4>Business Intelligence and Analytics</h4>
-      </div>
-    </div> 
-
-    <div class="row">
-      <div class="col">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aut, ea non fuga similique nemo.</p>
-      </div>
-      <div class="col">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore sapiente non cupiditate, atque voluptates.</p>   
-      </div>
-      <div class="col">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus unde repellat error non amet sequi assumenda eius!</p>
-      </div>
-      <div class="col">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint aperiam voluptatibus consequuntur sit soluta.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <a href="#" class="btn btn-primary">Read More</a>   </div>
-      <div class="col">
-        <a href="#" class="btn btn-primary">Read More</a>  
-      </div>
-      <div class="col">
-        <a href="#" class="btn btn-primary">Read More</a>  
-      </div>
-      <div class="col">
-        <a href="#" class="btn btn-primary">Read More</a>  </div>
-    </div> 
-    
-  </div>
-  </div>
-
+    </section>
+  </footer>
 </body>
 </html>

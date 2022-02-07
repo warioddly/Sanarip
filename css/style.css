@@ -206,7 +206,7 @@ body{
 }
 
 #first p{
-    color: rgb(75, 75, 75);
+    color: rgb(79, 79, 79);
     font-family: 'Exo', sans-serif;
     font-weight: 300;
     font-size: 40px;
@@ -260,7 +260,7 @@ body{
 }
 
 #second .subtext{
-    color: rgb(101, 101, 101);
+    color: rgb(79, 79, 79);
     font-family: 'Exo', sans-serif;
     font-size: 28px;
     user-select: none; 
@@ -543,7 +543,7 @@ footer .copyright h2{
         padding: 0 20px;
         margin: 0;
         justify-content: space-between;
-        background: rgba(71, 71, 71, 0.582);
+        background: rgba(71, 71, 71, 0);
         box-shadow: 0 0 0 rgba(255, 255, 255, 0);
         backdrop-filter: blur();
         -webkit-backdrop-filter: blur();
@@ -569,9 +569,19 @@ footer .copyright h2{
         transition: 0.60s;
     }
 
+    /* .nav h2 .subtext {
+        font-size: 16px;
+        margin: 34px 0 0 320px;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.60s;
+    } */
+
     .nav h2 .subtext {
-        font-size: 20px;
-        margin: 40px 0 0 350px;
+        font-size: 16px;
+        margin: 43px 0 0 150px;
         position: absolute;
         color: #ffffff;
         text-decoration: none;
@@ -580,7 +590,7 @@ footer .copyright h2{
     }
     
     .nav h2 a{
-        margin-top: -10px;
+        margin-top: -7px;
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
@@ -719,7 +729,7 @@ footer .copyright h2{
     }
 
     .nav.sticky .logo-ico{
-        margin-top: 7px;
+        margin-top: 6px;
         padding-right: 9px;
         padding-left: 9px;
         position: relative;
@@ -745,7 +755,7 @@ footer .copyright h2{
     .home .header-text{
         font-size: 50px;
         padding-top: 0px;
-        margin-top: -200px;
+        margin-top: -230px;
     }
     
     #first{
@@ -758,7 +768,7 @@ footer .copyright h2{
         font-size: 46px;
         font-weight: 500;
         user-select: none;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
         margin: 0 0 10px;
         padding: 0;
     }
@@ -767,7 +777,7 @@ footer .copyright h2{
         color: rgb(58, 58, 58);
         font-size: 46px;
         user-select: none;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         font-weight: 500;
         margin: 0;
         padding: 30px 0px 10px;
@@ -818,7 +828,7 @@ footer .copyright h2{
     #second h4{
         letter-spacing: 2px;
         font-size: 16px;
-        color: rgba(32, 136, 221, 0.941);
+        color: rgba(59, 116, 164, 0.941);
         font-weight: 700;
         margin-bottom: 0px;
     } 
@@ -1036,7 +1046,7 @@ footer .copyright h2{
 
     footer .first-ft-headtext{
         color: rgba(36, 36, 36, 0.941);
-        font-size: 36px;
+        font-size: 46px;
         text-align: left;
     }
 
@@ -1082,7 +1092,7 @@ footer .copyright h2{
 
     footer .box img{
         margin-left: 370px;
-        margin-top: -170px;
+        margin-top: -150px;
         width: 100px;
         height: auto;
     }
@@ -1129,13 +1139,13 @@ footer .copyright h2{
         max-width: 100%;
         min-width: 100%;
         width: auto;
-        height: 75px;
+        height: 70px;
         top: 0;
         left: 0;
         padding: 0 15px;
         margin: 0;
         justify-content: space-between;
-        background: rgba(255, 0, 0, 0);
+        background: rgba(71, 71, 71, 0);
         box-shadow: 0 0 0 rgba(255, 255, 255, 0);
         backdrop-filter: blur();
         -webkit-backdrop-filter: blur();
@@ -1152,26 +1162,54 @@ footer .copyright h2{
         display: flex;
         width: 0;
         padding: 0;
-        margin: 10px 0 0 0;
+        margin: 5.5px 0 0 0;
         max-height: 0;
         min-height: 0;
         text-align: left;
-        font-size: 50px;
+        font-size: 45px;
         opacity: 0;
+        transition: 0.60s;
+    }
+
+    /* .nav h2 .subtext {
+        font-size: 16px;
+        margin: 34px 0 0 320px;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.60s;
+    } */
+
+    .nav h2 .subtext {
+        font-size: 14px;
+        margin: 39px 0 0 133px;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.60s;
+    }
+    
+    .nav h2 a{
+        margin-top: -3px;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
         transition: 0.60s;
     }
 
     .nav > ul {
         float: right;
         margin: 0;
-        margin: 12.5px 0 0 0;
+        margin: 13.5px 0 0 0;
         display: flex;
         list-style: none;
         transition: 0.60s;
     }
     
     .nav > ul > li {
-        line-height: 2.0;
+        line-height: 2.1;
         margin: 0 2.5px;
         transition: 0.60s;
     }
@@ -1179,7 +1217,7 @@ footer .copyright h2{
     .nav > ul > li > a {
         display: block;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 14px;
         border-radius: 5px;        
         padding: 5px 10px;
         text-align: center;
@@ -1188,7 +1226,7 @@ footer .copyright h2{
     
     .nav > ul > li > a.active {
         font-weight: 400;
-        font-size: 20px;
+        font-size: 14px;
         background-color: rgb(255, 255, 255);
         border-radius: 5px;
         color: rgb(0, 0, 0);
@@ -1198,7 +1236,7 @@ footer .copyright h2{
     
     .nav > ul > li > div > a {
         font-weight: 300;
-        font-size: 20px;
+        font-size: 14px;
         background-color: rgb(53, 167, 216);
         border-radius: 5px;
         color: rgb(239, 239, 239);
@@ -1208,23 +1246,23 @@ footer .copyright h2{
     }
 
     .nav .logo-ico{
-        margin-top: -5px;
+        margin-top: 4px;
         padding-right: 5px;
         position: relative;
-        width: 75px;
-        height: 65px;
+        width: 65px;
+        height: 55px;
         transition: 0.60s;
     }
 
     .nav.sticky{
         width: auto;
-        height: 65px;
+        height: 60px;
         top: 0;
         left: 0;
         padding: 0 15px;
         margin: 0 ;
         justify-content: space-between;
-        background: rgba(113, 104, 104, 0.51);
+        background: rgba(116, 116, 116, 0.575);
         box-shadow: 0 4px 30px rgb(0, 0, 0);
         backdrop-filter: blur(12.1px);
         -webkit-backdrop-filter: blur(12.1px);
@@ -1234,24 +1272,34 @@ footer .copyright h2{
     .nav.sticky h2 {
         width: 0;
         padding: 0;
-        margin: 3px 0;
+        margin: 0px 0;
         max-height: 0;
         min-height: 0;
         text-align: left;
-        font-size: 50px;
+        font-size: 45px;
         opacity: 0;
     }
     
     .nav.sticky h2 a {
+        margin-top: -5px;
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
     }
 
+    .nav.sticky h2 .subtext {
+        font-size: 14px;
+        margin: 36px 0 0 133px;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.60s;
+    }
     .nav.sticky > ul {
         float: right;
         margin: 0;
-        margin: 12.5px 0 0 0;
+        margin: 9px 0 0 0;
         display: flex;
         list-style: none;
     }
@@ -1262,42 +1310,42 @@ footer .copyright h2{
     }
     
     .nav.sticky > ul > li > a {
-        font-size: 25px;
-        color: rgb(203, 203, 203);
+        font-size: 13px;
+        color: rgb(255, 255, 255);
         display: block;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 14px;
         border-radius: 5px;
-        padding: 0 10px;
+        padding: 5px 10px;
         text-align: center;
     }
     
     .nav.sticky > ul > li > a.active {
         font-weight: 400;
-        font-size: 20px;
+        font-size: 14px;
         background-color: rgb(255, 255, 255);
         border-radius: 5px;
         color: rgb(0, 0, 0);
-        padding: 0 10px;
+        padding: 5px 10px;
     }
     
     .nav.sticky > ul > li > div > a {
         font-weight: 300;
-        font-size: 20px;
+        font-size: 14px;
         background-color: rgb(53, 167, 216);
         border-radius: 5px;
         color: rgb(239, 239, 239);
-        padding: 0 10px;
+        padding: 5px 10px;
         text-align: center;
     }
 
     .nav.sticky .logo-ico{
-        margin-top: 3px;
-        padding-right: 9px;
-        padding-left: 9px;
+        margin-top: 5px;
+        padding-right: 6px;
+        padding-left: 6px;
         position: relative;
-        width: 55x;
-        height: 52px;
+        width: 65px;
+        height: 48px;
     }
 
     .container{
@@ -1305,116 +1353,97 @@ footer .copyright h2{
     }
 
     #home{
-        padding-bottom: 370px;
+        padding-bottom: 350px;
         max-height: 662px;
         min-height: 662px;
     }
-    
-    #home .header-text{
-        text-transform: uppercase;
-        font-size: 100px;
-        padding-top: 290px;
-    }
-    
-    #home .subtext{
-        font-size: 36px;
-    }
 
+    .home{
+        display: flex;
+        align-items: center;
+    }    
+
+    .home .header-text{
+        font-size: 46px;
+        padding-top: 0px;
+        margin-top: -180px;
+    }
+    
     #first{
         padding: 20px 0;
-        height: 300px;
+        height: 280px;
     }
     
     #first h2{
-        color: #3a3a3a;
-        font-size: 43px;
-        font-weight: 400;
+        color: rgb(58, 58, 58);
+        font-size: 38px;
+        font-weight: 500;
         user-select: none;
-        letter-spacing: 2px;
-        padding: 0px 0px 10px;
-        margin: 0;
+        letter-spacing: 1px;
+        margin: 0 0 5px;
+        padding: 0;
     }
     
     #first h4{
         color: rgb(58, 58, 58);
-        font-size: 43px;
+        font-size: 36px;
         user-select: none;
         letter-spacing: 1px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0;
-        padding: 20px 0px 10px ;
+        padding: 20px 0px 5px;
     }
 
     #first p{
         text-align: justify;
-        font-size: 14px;
-        font-weight: 400;
+        font-size: 15px;
+        font-weight: 300;
         margin: 0;
     }
     
     #second{
         background: rgb(255, 255, 255);
         padding: 20px 0px; 
-        max-height: 290px;
-        min-height: 290px;
+        max-height: 650px;
+        min-height: 650px;
     }
     
     #second h2{
-        font-size: 43px;
-        font-weight: 600;
-        color: rgba(36, 36, 36, 0.941)
+        font-size: 38px;
+        font-weight: 400;
+        color: rgba(43, 43, 43, 0.941)
     }
     
-    #second h4{
-        letter-spacing: 2px;
-        font-size: 13px;
-        font-weight: 700;
-        color: rgba(36, 36, 36, 0.941)
-    } 
-    
-    #second .mvd-logo{
-        min-width: 25%;
-        max-width: 25%;
-        display: block;
-        margin-top: 10px;
-        margin-left: 180px;
-        margin-right: auto;  
-    }
-    
-    #second .usaid-logo{
-        min-width: 40%;
-        max-width: 40%;
-        display: block;
-        margin-top: 0px;
-        margin-left: 140px;
-        margin-right: auto;  
-    }
-
     #second img{
-        min-width: 40%;
-        max-width: 40%;
-        display: block;
-        margin-top: 0px;
-        margin-left: 160px;
-        margin-right: auto;  
+        width: 70px;
+        height: auto;
+        margin-top: 20px;
     }
     
     #second .header-text{
-        margin-top: 0px;
-        font-size: 26px;
-        color: rgba(36, 36, 36, 0.941)
+        margin: 0;
+        font-size: 20px;
+        color: rgba(17, 17, 17, 0.941);
+        padding: 0 0 5px 0;
     }
     
     #second .subtext{
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 500;
-        text-align: justify;
+        text-align: left;
         color: rgb(58, 58, 58);
-        width: 650px;
         user-select: none; 
     }
     
-    #second hr{
+    #second h4{
+        letter-spacing: 1px;
+        font-size: 15px;
+        color: rgba(59, 116, 164, 0.941);
+        font-weight: 700;
+        margin-bottom: 0px;
+    } 
+
+    /* #second hr{
         color:rgb(0, 0, 0);
         opacity: 1;
         width: 30px;
@@ -1423,14 +1452,14 @@ footer .copyright h2{
     }
     
     #second .carousel-control-prev{
-        max-height: 80px;
-        min-height: 80px;
+        max-height: 90px;
+        min-height: 90px;
         margin-left: -60px;
     }
 
     #second .carousel-control-next{
-        max-height: 80px;
-        min-height: 80px;
+        max-height: 90px;
+        min-height: 90px;
         margin-right: -60px;
     }
     
@@ -1439,103 +1468,116 @@ footer .copyright h2{
     }
 
     #second .carousel-inner{
-        margin-top: -20px;
-        height: 150px;
+        height: 200px;
         background: rgb(255, 255, 255);
-    }
+    } */
 
     #third{
-        padding: 20px 0px;
-        max-height: 300px;
-        min-height: 300px;
+        padding: 20px 0;
+        max-height: 450px;
+        min-height: 450px;
     }
 
     #third h2{
         color: rgb(255, 255, 255);
-        letter-spacing: 2px;
-        font-size: 43px;
-        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 38px;
+        font-weight: 400;
         user-select: none; 
-        margin-bottom: 8px;
+        margin-bottom: 2px;
         padding-bottom: 10px;
     }
     
+    #third p.comment{
+        font-size: 15px;
+        padding: 0 200px 0 200px;
+        max-height: 130px;
+        min-height: 130px;
+    }
+
     #third p{
         font-size: 13px;
         padding: 0 300px 0 300px;
+        max-height: 170px;
+        min-height: 170px;
     }
     
-    #third h4{
-        color: rgb(247, 247, 247);
-        letter-spacing: 2px;
-        font-size: 30px;
-        font-weight: 700;
-        user-select: none; 
-        margin: 0 0 10px 0;
+    #third .client-photo{
+        margin: 0 500px 0 475px;
+        padding: 0;
     }
 
-    #third h4.subtitle{
+    #third .client{
+        color: rgb(247, 247, 247);
+        letter-spacing: 1px;
+        font-size: 23px;
+        font-weight: 600;
+        user-select: none; 
+        margin-top: 10px;
+    }
+
+    /* #third h4.subtitle{
         letter-spacing: 2px;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 600;
         color: rgb(255, 255, 255);
         margin: 0 0 30px;
-    } 
+    }  */
 
     #third .carousel-control-prev{
-        max-height: 50px;
-        min-height: 50px;
+        max-height: 280px;
+        min-height: 280px;
         margin-left: -60px;
     }
 
     #third .carousel-control-next{
-        max-height: 50px;
-        min-height: 50px;
+        max-height: 280px;
+        min-height: 280px;
         margin-right: -60px;
     }
 
     #third .carousel-item{
-        margin-top: -10px;
-        max-height: 160px;
-        min-height: 160px;
+        max-height: 350px;
+        min-height: 350px;
     }
 
     #fourth{
         background-color: rgb(255, 255, 255);
         padding: 20px 0px; 
-        max-height: 300px;
-        min-height: 300px;
+        max-height: 280px;
+        min-height: 280px;
     }
 
     #fourth h2{
         color: rgba(36, 36, 36, 0.941);
-        letter-spacing: 2px;
-        font-size: 43px;
+        letter-spacing: 1px;
+        font-size: 42px;
         font-weight: 500;
         user-select: none; 
-        margin-bottom: 8px;
+        margin-bottom: 2px;
         padding-bottom: 10px;
     }
     
     #fourth h4{
         letter-spacing: 2px;
-        font-size: 13px;
+        font-size: 15px;
         color: rgba(36, 36, 36, 0.941);
         font-weight: 700;
         margin-bottom: 0px;
     } 
     
     #fourth .header-text{
-        font-size: 26px;
-        margin-left: 80px;
+        font-size: 30px;
+        margin-left: 70px;
+        margin-bottom: 0px;
     }
     
     #fourth .subtext{
-        margin-left: 80px;
-        font-size: 13px;
-        font-weight: 400;
+        margin-left: 70px;
+        font-size: 15px;
+        font-weight: 500;
         text-align: justify;
-        width: 920px;
+        width: 930px;
         color: rgb(58, 58, 58);
         max-height: 105px;
         min-height: 105px;
@@ -1547,29 +1589,29 @@ footer .copyright h2{
         opacity: 1;
         width: 40px;
         height: 2px;
-        margin: 15px 0 15px 80px;
+        margin: 5px 0 10px 70px;
     }
     
     #fourth .carousel-control-prev{
-        max-height: 130px;
-        min-height: 130px;
+        max-height: 140px;
+        min-height: 140px;
         margin-left: -60px;
     }
 
     #fourth .carousel-control-next{
-        max-height: 130px;
-        min-height: 130px;
+        max-height: 140px;
+        min-height: 140px;
         margin-right: -60px;
     }
 
     #fifth{
-        padding: 20px 0px 40px 0;
+        padding: 20px 0px 30px 0;
     }
 
     #fifth h2{
         color: rgba(36, 36, 36, 0.941);
         letter-spacing: 2px;
-        font-size: 46px;
+        font-size: 38px;
         font-weight: 500;
         padding: 0 0 10px;
     }
@@ -1610,13 +1652,13 @@ footer .copyright h2{
 
     footer .map{
         width: 535px;
-        height: 500px;
+        height: 470px;
         margin-bottom: 0;
     }
 
     footer .first-ft-headtext{
         color: rgba(36, 36, 36, 0.941);
-        font-size: 36px;
+        font-size: 38px;
         text-align: left;
     }
 
@@ -1624,8 +1666,8 @@ footer .copyright h2{
         top: 0px;
         left: 0;
         position: relative;
-        max-height: 280px;
-        min-height: 280px;
+        max-height: 310px;
+        min-height: 310px;
         width: 500px;
         margin-bottom: 0;
     }
@@ -1633,8 +1675,8 @@ footer .copyright h2{
     footer .box:hover{
         top: -2px;
         left: 0;
-        max-height: 280px;
-        min-height: 280px;
+        max-height: 310px;
+        min-height: 310px;
         width: 500px;
         margin-bottom: 0;
     }
@@ -1646,8 +1688,17 @@ footer .copyright h2{
     footer .box p{
         color: rgb(59, 59, 59);
         font-family: 'Exo', sans-serif;
-        font-size: 16px;
-        font-weight: 700;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 0px 25px;
+    }
+
+    footer .box a{
+        color: rgb(59, 59, 59);
+        font-family: 'Exo', sans-serif;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
         padding: 0px 25px;
     }
 
@@ -1663,6 +1714,10 @@ footer .copyright h2{
         justify-content: space-between;
     }
     
+    .copyright{
+        padding: 20px 0;
+    }
+
     #one{
         margin-top: -65px;
         padding-top: 65px;
@@ -1700,13 +1755,13 @@ footer .copyright h2{
         max-width: 100%;
         min-width: 100%;
         width: auto;
-        height: 60px;
+        height: 70px;
         top: 0;
         left: 0;
         padding: 0 15px;
         margin: 0;
         justify-content: space-between;
-        background: rgba(255, 0, 0, 0);
+        background: rgba(71, 71, 71, 0);
         box-shadow: 0 0 0 rgba(255, 255, 255, 0);
         backdrop-filter: blur();
         -webkit-backdrop-filter: blur();
@@ -1723,26 +1778,54 @@ footer .copyright h2{
         display: flex;
         width: 0;
         padding: 0;
-        margin: 5px 0 0 0;
+        margin: 5.5px 0 0 0;
         max-height: 0;
         min-height: 0;
         text-align: left;
-        font-size: 43px;
+        font-size: 45px;
         opacity: 0;
+        transition: 0.60s;
+    }
+
+    /* .nav h2 .subtext {
+        font-size: 16px;
+        margin: 34px 0 0 320px;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.60s;
+    } */
+
+    .nav h2 .subtext {
+        font-size: 14px;
+        margin: 39px 0 0 133px;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.60s;
+    }
+    
+    .nav h2 a{
+        margin-top: -3px;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
         transition: 0.60s;
     }
 
     .nav > ul {
         float: right;
         margin: 0;
-        margin: 10px 0 0 0;
+        margin: 13.5px 0 0 0;
         display: flex;
         list-style: none;
         transition: 0.60s;
     }
     
     .nav > ul > li {
-        line-height: 2.0;
+        line-height: 2.1;
         margin: 0 2.5px;
         transition: 0.60s;
     }
@@ -1750,52 +1833,52 @@ footer .copyright h2{
     .nav > ul > li > a {
         display: block;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 14px;
         border-radius: 5px;        
-        padding: 5px 5px;
+        padding: 5px 10px;
         text-align: center;
         transition: 0.60s;
     }
     
     .nav > ul > li > a.active {
         font-weight: 400;
-        font-size: 15px;
+        font-size: 14px;
         background-color: rgb(255, 255, 255);
         border-radius: 5px;
         color: rgb(0, 0, 0);
-        padding: 5px 5px;
+        padding: 5px 10px;
         transition: 0.6s;
     }
     
     .nav > ul > li > div > a {
         font-weight: 300;
-        font-size: 15px;
+        font-size: 14px;
         background-color: rgb(53, 167, 216);
         border-radius: 5px;
         color: rgb(239, 239, 239);
-        padding: 5px 5px;
+        padding: 5px 10px;
         text-align: center;
         transition: 0.60s;
     }
 
     .nav .logo-ico{
-        margin-top: 2px;
+        margin-top: 4px;
         padding-right: 5px;
         position: relative;
-        width: 55px;
-        height: 45px;
+        width: 65px;
+        height: 55px;
         transition: 0.60s;
     }
 
     .nav.sticky{
         width: auto;
-        height: 50px;
+        height: 60px;
         top: 0;
         left: 0;
         padding: 0 15px;
         margin: 0 ;
         justify-content: space-between;
-        background: rgba(113, 104, 104, 0.51);
+        background: rgba(116, 116, 116, 0.575);
         box-shadow: 0 4px 30px rgb(0, 0, 0);
         backdrop-filter: blur(12.1px);
         -webkit-backdrop-filter: blur(12.1px);
@@ -1805,24 +1888,34 @@ footer .copyright h2{
     .nav.sticky h2 {
         width: 0;
         padding: 0;
-        margin: -0.9px 0;
+        margin: 0px 0;
         max-height: 0;
         min-height: 0;
         text-align: left;
-        font-size: 43px;
+        font-size: 45px;
         opacity: 0;
     }
     
     .nav.sticky h2 a {
+        margin-top: -5px;
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
     }
 
+    .nav.sticky h2 .subtext {
+        font-size: 14px;
+        margin: 36px 0 0 133px;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.60s;
+    }
     .nav.sticky > ul {
         float: right;
         margin: 0;
-        margin: 7px 0 0 0;
+        margin: 9px 0 0 0;
         display: flex;
         list-style: none;
     }
@@ -1833,177 +1926,157 @@ footer .copyright h2{
     }
     
     .nav.sticky > ul > li > a {
-        color: rgb(203, 203, 203);
+        font-size: 13px;
+        color: rgb(255, 255, 255);
         display: block;
         font-weight: 400;
-        font-size: 15px;
-        border-radius: 5px;        
-        padding: 3px 5px;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 5px 10px;
         text-align: center;
     }
     
     .nav.sticky > ul > li > a.active {
         font-weight: 400;
-        font-size: 15px;
+        font-size: 14px;
         background-color: rgb(255, 255, 255);
         border-radius: 5px;
         color: rgb(0, 0, 0);
-        padding: 3px 5px;
+        padding: 5px 10px;
     }
     
     .nav.sticky > ul > li > div > a {
         font-weight: 300;
-        font-size: 15px;
+        font-size: 14px;
         background-color: rgb(53, 167, 216);
         border-radius: 5px;
         color: rgb(239, 239, 239);
-        padding: 3px 5px;
+        padding: 5px 10px;
         text-align: center;
     }
 
     .nav.sticky .logo-ico{
-        margin-top: 6px;
+        margin-top: 5px;
         padding-right: 6px;
         padding-left: 6px;
         position: relative;
-        width: 60px;
-        height: 38px;
+        width: 65px;
+        height: 48px;
     }
 
     .container{
-        max-width: 950px;
+        max-width: 970px;
     }
 
     #home{
-        padding-bottom: 330px;
-        max-height: 593px;
-        min-height: 593px;
-    }
-    
-    #home .header-text{
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        font-size: 90px;
-        padding-top: 260px;
-    }
-    
-    #home .subtext{
-        font-family: 'Oswald', sans-serif;
-        font-size: 30px;
+        padding-bottom: 350px;
+        max-height: 662px;
+        min-height: 662px;
     }
 
+    .home{
+        display: flex;
+        align-items: center;
+    }    
+
+    .home .header-text{
+        font-size: 40px;
+        padding-top: 0px;
+        margin-top: -240px;
+    }
+    
     #first{
-        padding: 10px 0;
+        padding: 20px 0;
         height: 250px;
     }
     
     #first h2{
         color: rgb(58, 58, 58);
-        font-size: 36px;
-        font-weight: 400;
+        font-size: 33px;
+        font-weight: 500;
         user-select: none;
         letter-spacing: 1px;
-        padding: 0px 0px 5px;
         margin: 0;
+        padding: 0;
     }
     
     #first h4{
         color: rgb(58, 58, 58);
-        font-size: 36px;
+        font-size: 33px;
         user-select: none;
         letter-spacing: 1px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0;
-        padding: 20px 0px 5px ;
+        padding: 20px 0px 0;
     }
 
     #first p{
         text-align: justify;
-        font-size: 12px;
-        font-weight: 400;
+        font-size: 13px;
+        font-weight: 300;
         margin: 0;
     }
     
     #second{
         background: rgb(255, 255, 255);
-        padding: 10px 0px; 
-        max-height: 245px;
-        min-height: 245px;
+        padding: 20px 0px; 
+        max-height: 650px;
+        min-height: 650px;
     }
     
     #second h2{
-        font-size: 36px;
-        font-weight: 600;
-        color: rgba(36, 36, 36, 0.941)
+        font-size: 38px;
+        font-weight: 400;
+        color: rgba(43, 43, 43, 0.941)
     }
     
-    #second h4{
-        letter-spacing: 2px;
-        font-size: 12px;
-        font-weight: 700;
-        color: rgba(36, 36, 36, 0.941)
-    } 
-    
-    #second .mvd-logo{
-        min-width: 25%;
-        max-width: 25%;
-        display: block;
-        margin-top: 10px;
-        margin-left: 170px;
-        margin-right: auto;  
-    }
-    
-    #second .usaid-logo{
-        min-width: 40%;
-        max-width: 40%;
-        display: block;
-        margin-top: 0px;
-        margin-left: 150px;
-        margin-right: auto;  
-    }
-
     #second img{
-        min-width: 35%;
-        max-width: 35%;
-        display: block;
-        margin-top: 0px;
-        margin-left: 160px;
-        margin-right: auto;  
+        width: 70px;
+        height: auto;
+        margin-top: 20px;
     }
     
     #second .header-text{
-        margin-top: 0px;
+        margin: 0;
         font-size: 20px;
-        color: rgba(36, 36, 36, 0.941)
+        color: rgba(17, 17, 17, 0.941);
+        padding: 0 0 5px 0;
     }
     
     #second .subtext{
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 500;
-        text-align: justify;
+        text-align: left;
         color: rgb(58, 58, 58);
-        width: 590px;
         user-select: none; 
     }
     
-    #second hr{
+    #second h4{
+        letter-spacing: 1px;
+        font-size: 15px;
+        color: rgba(59, 116, 164, 0.941);
+        font-weight: 700;
+        margin-bottom: 0px;
+    } 
+
+    /* #second hr{
         color:rgb(0, 0, 0);
         opacity: 1;
         width: 30px;
-        height: 1px;
+        height: 2px;
         margin: 15px 0 25px 0px;
     }
     
     #second .carousel-control-prev{
-        max-height: 50px;
-        min-height: 50px;
-        margin-left: -50px;
+        max-height: 90px;
+        min-height: 90px;
+        margin-left: -60px;
     }
 
     #second .carousel-control-next{
-        max-height: 50px;
-        min-height: 50px;
-        margin-right: -50px;
+        max-height: 90px;
+        min-height: 90px;
+        margin-right: -60px;
     }
     
     .carousel-control-prev-icon, .carousel-control-next-icon{
@@ -2011,104 +2084,116 @@ footer .copyright h2{
     }
 
     #second .carousel-inner{
-        margin-top: -20px;
-        height: 130px;
+        height: 200px;
         background: rgb(255, 255, 255);
-    }
+    } */
 
     #third{
-        padding: 10px 0px;
-        max-height: 260px;
-        min-height: 260px;
+        padding: 20px 0;
+        max-height: 450px;
+        min-height: 450px;
     }
 
     #third h2{
         color: rgb(255, 255, 255);
-        letter-spacing: 2px;
-        font-size: 36px;
-        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 38px;
+        font-weight: 400;
         user-select: none; 
-        margin-bottom: 3px;
+        margin-bottom: 2px;
         padding-bottom: 10px;
     }
     
+    #third p.comment{
+        font-size: 15px;
+        padding: 0 200px 0 200px;
+        max-height: 130px;
+        min-height: 130px;
+    }
+
     #third p{
-        font-size: 12px;
+        font-size: 13px;
         padding: 0 300px 0 300px;
+        max-height: 170px;
+        min-height: 170px;
     }
     
-    #third h4{
-        color: rgb(247, 247, 247);
-        letter-spacing: 2px;
-        font-size: 25px;
-        font-weight: 700;
-        user-select: none; 
-        margin: 0 0 10px 0;
+    #third .client-photo{
+        margin: 0 500px 0 475px;
+        padding: 0;
     }
 
-    #third h4.subtitle{
+    #third .client{
+        color: rgb(247, 247, 247);
+        letter-spacing: 1px;
+        font-size: 23px;
+        font-weight: 600;
+        user-select: none; 
+        margin-top: 10px;
+    }
+
+    /* #third h4.subtitle{
         letter-spacing: 2px;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 600;
         color: rgb(255, 255, 255);
-        margin: 0 0 10px;
-    } 
+        margin: 0 0 30px;
+    }  */
 
     #third .carousel-control-prev{
-        max-height: 50px;
-        min-height: 50px;
-        margin-left: -50px;
+        max-height: 280px;
+        min-height: 280px;
+        margin-left: -60px;
     }
 
     #third .carousel-control-next{
-        max-height: 50px;
-        min-height: 50px;
-        margin-right: -50px;
+        max-height: 280px;
+        min-height: 280px;
+        margin-right: -60px;
     }
 
     #third .carousel-item{
-        margin-top: 0px;
-        max-height: 160px;
-        min-height: 160px;
+        max-height: 350px;
+        min-height: 350px;
     }
 
     #fourth{
         background-color: rgb(255, 255, 255);
-        padding: 10px 0px; 
-        max-height: 240px;
-        min-height: 240px;
+        padding: 20px 0px; 
+        max-height: 280px;
+        min-height: 280px;
     }
 
     #fourth h2{
         color: rgba(36, 36, 36, 0.941);
-        letter-spacing: 2px;
-        font-size: 36px;
+        letter-spacing: 1px;
+        font-size: 42px;
         font-weight: 500;
         user-select: none; 
-        margin-bottom: 3px;
+        margin-bottom: 2px;
         padding-bottom: 10px;
     }
     
     #fourth h4{
         letter-spacing: 2px;
-        font-size: 12px;
+        font-size: 15px;
         color: rgba(36, 36, 36, 0.941);
         font-weight: 700;
         margin-bottom: 0px;
     } 
     
     #fourth .header-text{
-        font-size: 25px;
-        margin-left: 60px;
+        font-size: 30px;
+        margin-left: 70px;
         margin-bottom: 0px;
     }
     
     #fourth .subtext{
-        margin-left: 60px;
-        font-size: 12px;
-        font-weight: 400;
+        margin-left: 70px;
+        font-size: 15px;
+        font-weight: 500;
         text-align: justify;
-        width: 810px;
+        width: 930px;
         color: rgb(58, 58, 58);
         max-height: 105px;
         min-height: 105px;
@@ -2120,29 +2205,29 @@ footer .copyright h2{
         opacity: 1;
         width: 40px;
         height: 2px;
-        margin: 10px 0 10px 60px;
+        margin: 5px 0 10px 70px;
     }
     
     #fourth .carousel-control-prev{
-        max-height: 100px;
-        min-height: 100px;
-        margin-left: -50px;
+        max-height: 140px;
+        min-height: 140px;
+        margin-left: -60px;
     }
 
     #fourth .carousel-control-next{
-        max-height: 100px;
-        min-height: 100px;
-        margin-right: -50px;
+        max-height: 140px;
+        min-height: 140px;
+        margin-right: -60px;
     }
 
     #fifth{
-        padding: 10px 0px 30px 0;
+        padding: 20px 0px 30px 0;
     }
 
     #fifth h2{
         color: rgba(36, 36, 36, 0.941);
         letter-spacing: 2px;
-        font-size: 36px;
+        font-size: 38px;
         font-weight: 500;
         padding: 0 0 10px;
     }
@@ -2182,14 +2267,14 @@ footer .copyright h2{
     }
 
     footer .map{
-        width: 450px;
-        height: 420px;
+        width: 535px;
+        height: 470px;
         margin-bottom: 0;
     }
 
     footer .first-ft-headtext{
         color: rgba(36, 36, 36, 0.941);
-        font-size: 36px;
+        font-size: 38px;
         text-align: left;
     }
 
@@ -2197,38 +2282,46 @@ footer .copyright h2{
         top: 0px;
         left: 0;
         position: relative;
-        max-height: 230px;
-        min-height: 230px;
-        width: 400px;
+        max-height: 310px;
+        min-height: 310px;
+        width: 500px;
         margin-bottom: 0;
     }
 
     footer .box:hover{
         top: -2px;
         left: 0;
-        max-height: 230px;
-        min-height: 230px;
-        width: 400px;
+        max-height: 310px;
+        min-height: 310px;
+        width: 500px;
         margin-bottom: 0;
     }
 
     footer .box .information-text{
-        font-size: 30px;
         padding: 10px 10px 0 25px;
     }
 
     footer .box p{
         color: rgb(59, 59, 59);
         font-family: 'Exo', sans-serif;
-        font-size: 13px;
-        font-weight: 700;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 0px 25px;
+    }
+
+    footer .box a{
+        color: rgb(59, 59, 59);
+        font-family: 'Exo', sans-serif;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
         padding: 0px 25px;
     }
 
     footer .box img{
-        margin-left: 250px;
-        margin-top: -140px;
-        width: 80px;
+        margin-left: 320px;
+        margin-top: -150px;
+        width: 100px;
         height: auto;
     }
 
@@ -2236,49 +2329,39 @@ footer .copyright h2{
         display: flex;
         justify-content: space-between;
     }
-
-    footer .copyright{
-        padding: 15px 0px;
-        background-color: rgba(116, 116, 116, 0.633);
-    }
-
-    footer .copyright h2{
-        font-size: 13px;
-        font-family: 'Exo', sans-serif;
-        font-weight: 500;
-        letter-spacing: 2px;
-        margin: 0px 0px -4px;
-        color: rgb(255, 255, 255);
-    }
     
+    .copyright{
+        padding: 20px 0;
+    }
+
     #one{
-        margin-top: -45px;
-        padding-top: 45px;
+        margin-top: -65px;
+        padding-top: 65px;
     }
 
     #two{
-        margin-top: -45px;
-        padding-top: 45px;
+        margin-top: -65px;
+        padding-top: 65px;
     }
 
     #three{
-        margin-top: -45px;
-        padding-top: 45px;
+        margin-top: -65px;
+        padding-top: 65px;
     }
     
     #four{
-        margin-top: -45px;
-        padding-top: 45px;
+        margin-top: -65px;
+        padding-top: 65px;
     }
     
     #five{
-        margin-top: -145px;
-        padding-top: 145px;
+        margin-top: -165px;
+        padding-top: 165px;
     }
 
     #cntct{
-        margin-top: -45px;
-        padding-top: 45px;  
+        margin-top: -65px;
+        padding-top: 65px;  
     }
 }
 

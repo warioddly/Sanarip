@@ -40,9 +40,6 @@ window.addEventListener('resize', function(){
   }
 })
 
-
-
-
 var flag = false
 (function ($, undefined) {
   'use strict';

@@ -19,12 +19,12 @@ $(window).scroll(function(){
 
 function ScreenWidth(){
   width = document.body.clientWidth;
-
+  
   if(width >= 992){
     document.getElementById("nav-toggle").checked = true;
   }
 
-  if(width <= 992){
+  if(width <= 768){
     document.getElementById("nav-toggle").checked = false;
   }
 }
@@ -35,7 +35,7 @@ window.addEventListener('resize', function(){
     document.getElementById("nav-toggle").checked = true;
   }
 
-  if(width <= 992){
+  if (width <= 768){
     document.getElementById("nav-toggle").checked = false;
   }
 })

@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>SANARIP</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">.
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -14,25 +15,28 @@
   <header>
     <input type="checkbox" id="nav-toggle" hidden>
     <nav class="nav">
-        <label for="nav-toggle" class="nav-toggle" onclick></label>
-        
-        <h2 class="logo"><img class="logo-ico" src="img/sanarip-logo/sanarip-logo-color-ico.png" alt="">
+        <label for="nav-toggle" class="nav-toggle" onclick></label>    
+        <h2 class="logo"><img class="logo-ico" src="img/sanarip-logo/sanarip-logo-white-ico.png" alt="">
+          <div class="vl"></div>
           <a href="#">Санарип</a>
+          <a class="subtext" href="#">Долбоор</a>
         </h2>
         <ul>
             <li><a href="#home" class="active">Главная</a>
             <li><a href="#one">О нас</a>
-            <li><a href="#two">Проекты</a>
-            <li><a href="#three">Продукты </a>
+            <li><a href="#three">Проекты</a>
+            <li><a href="#four">Продукты </a>
             <li><a href="#five">Клиенты</a>
-            <li><div><a href="#cntct">Contacts</a></div>
+            <li><div><a href="#cntct">Контакты</a></div>
         </ul>
     </nav>
 
-    <section id="home">     
-      <p class="header-text">Санарип Долбоор</p>
-      <p class="subtext">Профиль компании</p>
+    <section id="home">  
+      <div class="background"></div>  
     </section>
+    <div class="home">
+      <p class="header-text">Вдохновлящие IT-решения для революционного мира завтрашнего дня</p>
+    </div>
   </header>
 
   <main>
@@ -51,138 +55,221 @@
 
     <section id="two">
       <div id="second">
-        <h2>Проекты</h2>
-        <h4>Sanarip</h4>
+        <h2>Чем мы помогаем</h2>
         <div class="container">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">   
-              <div class="row">
-                <div class="col-4">
-                  <img class="usaid-logo" src="img/logos/usaid-logo.jpg" alt="">
-                </div>
-                <div class="col-6">
-                  <p class="header-text">Usaid</p>
-                  <hr>
-                  <div class="row">
-                    <div class="col">
-                      <p class="subtext">Система Дистанционного Обучения «Okuu Keremet». Повышение квалификаций учителей начальных классов. https://okuukeremet.com</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="row">
+            <div class="col-4">
+              <img src="img/logos/web-and-mobile-app-development.png" alt="">
+           </div>
+            <div class="col-4">
+              <img src="img/logos/cloud-infrastructure-services.png" alt="">
             </div>
-            <div class="carousel-item">     
-              <div class="row">
-                <div class="col-4">
-                  <img src="img/logos/coa-logo.png" alt="">
-                </div>
-                <div class="col-6">
-                  <p class="header-text">ГАГН при МЭП КР</p>
-                  <hr>
-                  <div class="row">
-                    <div class="col">
-                      <p class="subtext">Автоматизированная информационная система Государственного агентства геологии и недропользования при Министерстве энергетики и промышленности Кыргызской республики. https://s.geology.kg/</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-4">
-                  <img src="img/logos/soros-logo.jpg" alt="">
-                </div>
-                <div class="col-6">
-                  <p class="header-text">ФОНД «СОРОС-КЫРГЫЗСТАН»</p>
-                  <hr>
-                  <div class="row">
-                    <div class="col">
-                      <p class="subtext">Бизнес-анализ и техническое задание по проекту «Платформа City Dashboard»</p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-4">
-                  <img class="mvd-logo" src="img/logos/mvd-logo.jpg" alt="">
-                </div>
-                <div class="col-6">
-                  <p class="header-text">ГУОБДД МВД КР</p>
-                  <hr>
-                  <div class="row">
-                    <div class="col">
-                      <p class="subtext">Автоматизированная информационно-управляющая система Учета дорожно-транспортных происшествий для Главного Управления по Обеспечению Безопасности Дорожного Движения КР.</p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-4">
-                  <img src="img/logos/gts-logo.jpg" alt="">
-                </div>
-                <div class="col-6">
-                  <p class="header-text">ГТС КР</p>
-                  <hr>
-                  <div class="row">
-                    <div class="col">
-                      <p class="subtext">Бизнес-анализ и техническое задание по проекту «Платформа City Dashboard»</p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-4">
-                  <img src="img/logos/coa-logo.png" alt="">
-                </div>
-                <div class="col-6">
-                  <p class="header-text">МОиН КР</p>
-                  <hr>
-                  <div class="row">
-                    <div class="col">
-                      <p class="subtext">Электронная библиотека. https://kitep.edu.gov.kg/</p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-4">
-                  <img src="img/logos/osh-ums-logo.jpg" alt="">
-                </div>
-                <div class="col-6">
-                  <p class="header-text">УМС г. ОШ</p>
-                  <hr>
-                  <div class="row">
-                    <div class="col">
-                      <p class="subtext">Информационная система «Геопортал г.Ош»</p>
-                  </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-4">
+              <img src="img/logos/enterprise-content-management.png" alt="">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="row">
+            <div class="col-4">
+              <p class="header-text">Разработка веб-приложений и мобильных приложений</p>
+            </div>
+              <div class="col-4">
+                <p class="header-text">Услуги облачной инфраструктуры</p>
+              </div>
+              <div class="col-4">
+                <p class="header-text">Управление корпоративным контентом</p>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <p class="subtext">Кроссплатформенные, адаптивные, нативные и гибридные приложения с использованием новейших технологий в разработке приложений.</p>
+            </div>
+              <div class="col-4">
+                <p class="subtext">Полное внедрение облачных технологий, миграция и расширенные услуги поддержки</p>    
+              </div>
+              <div class="col-4">
+                <p class="subtext">Интуитивно понятные и масштабируемые системы управления контентом для стартапов и предприятий</p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              <img class="mvd-logo" src="img/logos/telematics.png" alt="">
+           </div>
+            <div class="col-4">
+              <img src="img/logos/manage-maintenance-processes-1.png" alt="">
+            </div>
+            <div class="col-3">
+              <img src="img/logos/business-intelligence-and-analytics.png" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <p class="header-text">Телематика</p>
+            </div>
+              <div class="col-4">
+                <p class="header-text">Управление корпоративными активами</p>
+             </div>
+              <div class="col-4">
+                <p class="header-text">Бизнес-аналитика и аналитика</p>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <p class="subtext">Решения для управления логистикой и телематики для кабин сотрудников, перемещения имущества, отслеживания машин скорой помощи и перемещения корпоративных ресурсов</p>
+            </div>
+              <div class="col-4">
+                <p class="subtext">Управление процессами технического обслуживания – профилактическое, техническое обслуживание по состоянию/корректирующее и оперативное техническое обслуживание</p>
+              </div>
+              <div class="col-4">
+                <p class="subtext">Инструменты для работы с большими данными и аналитики, которые поразят ваших клиентов персонализированным и контекстным опытом.</p>
+              </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section id="two-mobile">
+      <div id="second-mobile">
+        <h2>Чем мы помогаем</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <img src="img/logos/web-and-mobile-app-development.png" alt="">
+              <p class="header-text">Разработка веб-приложений и мобильных приложений</p>
+           </div>
+            <div class="col-6">
+              <img src="img/logos/cloud-infrastructure-services.png" alt="">
+              <p class="header-text">Услуги облачной инфраструктуры</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p class="subtext">Кроссплатформенные, адаптивные, нативные и гибридные приложения с использованием новейших технологий в разработке приложений.</p>
+            </div>
+            <div class="col-6">
+              <p class="subtext">Полное внедрение облачных технологий, миграция и расширенные услуги поддержки</p>               
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <img src="img/logos/enterprise-content-management.png" alt="">
+              <p class="header-text">Управление корпоративным контентом</p>
+            </div>
+            <div class="col-6">
+              <img class="mvd-logo" src="img/logos/telematics.png" alt="">
+              <p class="header-text">Телематика</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p class="subtext">Интуитивно понятные и масштабируемые системы управления контентом для стартапов и предприятий</p>
+            </div>
+            <div class="col-6">
+              <p class="subtext">Решения для управления логистикой и телематики для кабин сотрудников, перемещения имущества, отслеживания машин скорой помощи и перемещения корпоративных ресурсов</p>
+           </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <img src="img/logos/manage-maintenance-processes-1.png" alt="">
+              <p class="header-text">Управление корпоративными активами</p>
+            </div>
+            <div class="col-6">
+              <img src="img/logos/business-intelligence-and-analytics.png" alt="">
+              <p class="header-text">Бизнес-аналитика и аналитика</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p class="subtext">Управление процессами технического обслуживания – профилактическое, техническое обслуживание по состоянию/корректирующее и оперативное техническое обслуживание</p>
+            </div>
+            <div class="col-6">
+              <p class="subtext">Инструменты для работы с большими данными и аналитики, которые поразят ваших клиентов персонализированным и контекстным опытом.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="three">
+      <div id="third">
+          <h2>Реализованные проекты</h2>
+          <div class="container">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <p class="comment">Автоматизированная система единого реестра технического осмотра транспортных средств КР
+                    Аналитическая информационная система технического осмотра автотранспортного средства «АИС ТО АТС».</p>
+                  <img class="client-photo" src="img/logos/economic-logo.png" alt="">
+                  <h4 class="client">МИНИСТЕРСТВО ЭКОНОМИКИ</h4>
+                </div>
+                <div class="carousel-item">
+                  <p class="comment">Автоматизированная информационно-управляющая система Учета дорожно- транспортных происшествий для Главного Управления по Обеспечению Безопасности Дорожного Движения КР.</p>
+                  <img class="client-photo" src="img/logos/mvd-logo.png" alt="">
+                  <h4 class="client">ГУОБДД МВД КР</h4>
+                </div>
+                <div class="carousel-item">
+                  <p class="comment">Бизнес-анализ и техническое задание по проекту «Платформа City Dashboard»</p>
+                  <img class="client-photo" src="img/logos/soros-logo.png" alt="">
+                  <h4 class="client">ФОНД «СОРОС-КЫРГЫЗСТАН»</h4>
+                </div>
+                <div class="carousel-item">
+                  <p class="comment">Ситуационный центр Государственной Таможенной Службы Кыргызской Республики</p>
+                  <img class="client-photo" src="img/logos/gts-logo.png" alt="">
+                  <h4 class="client">ГТС КР</h4>
+                </div>
+                <div class="carousel-item">
+                  <p class="comment">Система Дистанционного Обучения «Okuu Keremet». Повышение квалификаций учителей начальных классов.</p>
+                  <img class="client-photo" src="img/logos/usaid-logo.png" alt="">
+                  <h4 class="client">USAID</h4>
+                </div>
+                <div class="carousel-item">
+                  <p class="comment">Разработка и внедрение программно-аппаратного комплекса Call-центра и IP-телефонии для ФОМС при ПКР</p>
+                  <img class="client-photo" src="img/logos/foms-logo.png" alt="">
+                  <h4 class="client">ФОМС при ПКР</h4>
+                </div>
+                <div class="carousel-item">
+                  <p class="comment">Автоматизированная информационная система Государственного агентства геологии и недропользования при Министерстве энергетики и промышленности Кыргызской республики.</p>
+                  <img class="client-photo" src="img/logos/coa-logo.png" alt="">
+                  <h4 class="client">ГАГН при МЭП КР</h4>
+                </div>
+                <div class="carousel-item">
+                  <p class="comment">Электронная библиотека.</p>
+                  <img class="client-photo" src="img/logos/coa-logo.png" alt="">
+                  <h4 class="client">МОиН КР</h4>
+                </div>
+                <div class="carousel-item">
+                  <p class="comment">Информационная система «Геопортал г.Ош»</p>
+                  <img class="client-photo" src="img/logos/osh-ums-logo.png" alt="">
+                  <h4 class="client">УМС г. ОШ</h4>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="3"></li>
+                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="4"></li>
+                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="5"></li>
+                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="6"></li>
+                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="7"></li>
+                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="8"></li>
+              </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="three">
       <div id="third">
           <h2>Продукты Компании</h2>
           <h4 class="subtitle">Sanarip</h4>
@@ -226,7 +313,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="four">
       <div id="fourth">
@@ -371,32 +458,32 @@
         });
         </script>
           <div class="container">
-            <h2>Клиенты</h2>
+            <h2>Нам доверяют</h2>
               <div class="item">
                 <ul id="content-slider" class="content-slider">
                   <li>
                     <img src="img/logos/coa-logo.png" alt="">
                   </li>
                   <li>
-                    <img src="img/logos/economic-logo.jpg" alt="">
+                    <img src="img/logos/economic-logo.png" alt="">
                   </li>
                   <li>
-                    <img src="img/logos/foms-logo.jpg" alt="">
+                    <img src="img/logos/foms-logo-black.png" alt="">
                   </li>
                   <li>
-                    <img src="img/logos/gts-logo.jpg" alt="">
+                    <img src="img/logos/gts-logo.png" alt="">
                   </li>
                   <li>
-                    <img src="img/logos/mvd-logo.jpg" alt="">
+                    <img src="img/logos/mvd-logo.png" alt="">
                   </li>
                   <li>
-                    <img src="img/logos/osh-ums-logo.jpg" alt="">
+                    <img src="img/logos/osh-ums-logo.png" alt="">
                   </li>
                   <li>
-                    <img src="img/logos/soros-logo.jpg" alt="">
+                    <img src="img/logos/soros-logo.png" alt="">
                   </li>
                   <li>
-                    <img class="usaid-logo" src="img/logos/usaid-logo.jpg" alt="">
+                    <img class="usaid-logo" src="img/logos/usaid-logo.png" alt="">
                   </li>
                 </ul>
             </div>
@@ -415,9 +502,9 @@
                 <div class="box">
                   <p class="information-text">САНАРИП ДОЛБООР</p>
                   <p>Телефон: <a href="#">+996 551 551 543</a><p>
-                  <p>Адрес: <a href="#">Иса-Ахунбаева 199 г. Бишкек</a><p> 
-                  <p>Email: <a href="#">sanaripdolbor@gmail.com </a><p> 
-                  <img src="img/sanarip-logo/sanarip-logo-black.png" alt="">
+                  <p>Адрес: &nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">Иса-Ахунбаева 199 г. Бишкек</a><p> 
+                  <p>Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">sanaripdolbor@gmail.com </a><p> 
+                  <img src="img/sanarip-logo/sanarip-logo-color.png" alt="">
                 </div>
               </div>
             <div class="col">

@@ -889,14 +889,14 @@ footer .copyright h2{
     } */
 
     #third{
-        max-height: 500px;
-        min-height: 500px;
+        max-height: 430px;
+        min-height: 430px;
     }
 
     #third h2{
         color: rgb(255, 255, 255);
         letter-spacing: 2px;
-        font-size: 46px;
+        font-size: 43px;
         font-weight: 500;
         user-select: none; 
         margin-bottom: 8px;
@@ -906,17 +906,17 @@ footer .copyright h2{
     #third p.comment{
         font-size: 16px;
         padding: 0 250px 0 250px;
-        max-height: 130px;
-        min-height: 130px;
+        max-height: 80px;
+        min-height: 80px;
     }
 
-    #third p{
+    /* #third p{
         font-size: 16px;
         padding: 0 300px 0 300px;
-        max-height: 200px;
-        min-height: 200px;
+        max-height: 1z0px;
+        min-height: 110px;
     }
-    
+     */
     #third .client-photo{
         margin: 0 500px 0 520px;
         padding: 0;
@@ -952,8 +952,8 @@ footer .copyright h2{
     }
 
     #third .carousel-item{
-        max-height: 370px;
-        min-height: 370px;
+        max-height: 320px;
+        min-height: 320px;
     }
 
     #fourth{
@@ -1097,6 +1097,7 @@ footer .copyright h2{
 
     footer .box .information-text{
         padding: 10px 10px 0 25px;
+        margin-bottom: 40px;
     }
 
     footer .box p{
@@ -1112,8 +1113,7 @@ footer .copyright h2{
         font-family: 'Exo', sans-serif;
         text-decoration: none;
         font-size: 16px;
-        font-weight: 700;
-        padding: 0px 25px;
+        font-weight: 500;
     }
 
     footer .box img{
@@ -1121,6 +1121,14 @@ footer .copyright h2{
         margin-top: -150px;
         width: 100px;
         height: auto;
+    }
+
+    footer .data{
+        text-align: left;
+        position: absolute;
+        margin: -130px 10px 0 120px;
+        padding: 10px 0 30px 0;
+        background-color: blue;
     }
 
     .myfooter{
@@ -1412,7 +1420,7 @@ footer .copyright h2{
         font-size: 45px;
         padding-top: 0px;
         margin-top: -170px;
-        margin-right: 40px;
+        margin-right: 30px;
     }
     
     #first{
@@ -1728,6 +1736,7 @@ footer .copyright h2{
 
     footer .box .information-text{
         padding: 10px 10px 0 25px;
+        margin-bottom: 50px;
     }
 
     footer .box p{
@@ -1764,33 +1773,33 @@ footer .copyright h2{
     }
 
     #one{
-        margin-top: -65px;
-        padding-top: 65px;
+        margin-top: -55px;
+        padding-top: 55px;
     }
 
     #two{
-        margin-top: -65px;
-        padding-top: 65px;
+        margin-top: -55px;
+        padding-top: 55px;
     }
 
     #three{
-        margin-top: -65px;
-        padding-top: 65px;
+        margin-top: -55px;
+        padding-top: 55px;
     }
     
     #four{
-        margin-top: -65px;
-        padding-top: 65px;
+        margin-top: -55px;
+        padding-top: 55px;
     }
     
     #five{
-        margin-top: -165px;
-        padding-top: 165px;
+        margin-top: -155px;
+        padding-top: 155px;
     }
 
     #cntct{
-        margin-top: -65px;
-        padding-top: 65px;  
+        margin-top: -55px;
+        padding-top: 55px;  
     }
 }
 
@@ -2044,9 +2053,9 @@ footer .copyright h2{
     }    
 
     .home .header-text{
-        font-size: 40px;
+        font-size: 39px;
         padding-top: 0px;
-        margin-top: -110px;
+        margin: -120px 60px 0 45px;
     }
     
     #first{
@@ -2203,15 +2212,23 @@ footer .copyright h2{
     }  */
 
     #third .carousel-control-prev{
-        max-height: 280px;
-        min-height: 280px;
-        margin-left: -60px;
+        max-height: 220px;
+        min-height: 250px;
+        margin-left: 0px;
     }
 
     #third .carousel-control-next{
-        max-height: 280px;
-        min-height: 280px;
-        margin-right: -60px;
+        max-height: 180px;
+        min-height: 180px;
+        margin-right: 0px;
+    }
+
+    #third .carousel-control-prev-icon{
+        margin-left: 0px;
+    }
+
+    #third .carousel-control-next-icon{
+        margin-right: 0px;
     }
 
     #third .carousel-item{
@@ -2269,17 +2286,29 @@ footer .copyright h2{
         height: 1.5px;
         margin: 5px 0 10px 50px;
     }
-    
+
+        
     #fourth .carousel-control-prev{
         max-height: 100px;
         min-height: 100px;
-        margin-left: -60px;
     }
 
     #fourth .carousel-control-next{
         max-height: 100px;
         min-height: 100px;
+    }
+    
+    #fourth .carousel-control-prev-icon{
+        max-height: 100px;
+        min-height: 100px;
+        margin-left: -80px;
+    }
+
+    #fourth .carousel-control-next-icon{
+        max-height: 100px;
+        min-height: 100px;
         margin-right: -60px;
+        padding: 0;
     }
 
     #fifth{
@@ -2344,8 +2373,8 @@ footer .copyright h2{
         top: 0px;
         left: 0;
         position: relative;
-        max-height: 310px;
-        min-height: 310px;
+        max-height: 280px;
+        min-height: 280px;
         width: 450px;
         margin-bottom: 0;
     }
@@ -2353,8 +2382,8 @@ footer .copyright h2{
     footer .box:hover{
         top: -2px;
         left: 0;
-        max-height: 310px;
-        min-height: 310px;
+        max-height: 280px;
+        min-height: 280px;
         width: 450px;
         margin-bottom: 0;
     }
@@ -2362,6 +2391,7 @@ footer .copyright h2{
     footer .box .information-text{
         font-size: 30px;
         padding: 10px 10px 0 25px;
+        margin-bottom: 50px;
     }
 
     footer .box p{
@@ -2382,8 +2412,8 @@ footer .copyright h2{
     }
 
     footer .box img{
-        margin-left: 270px;
-        margin-top: -130px;
+        margin-left: 290px;
+        margin-top: -150px;
         width: 100px;
         height: auto;
     }
@@ -2428,7 +2458,7 @@ footer .copyright h2{
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px){ 
+@media (min-width: 820px) and (max-width: 991.98px){ 
 
     body{
         background-color: rgb(70, 70, 70);
@@ -2466,7 +2496,7 @@ footer .copyright h2{
         top: 0.50em;
         background-color: rgba(0, 0, 0, 0.975);
         color: #dadada;
-        font-size: 9em;
+        font-size: 7em;
         line-height: 0;
         z-index: 2001;
     }
@@ -2500,11 +2530,11 @@ footer .copyright h2{
         font-family: 'Kelly Slab', cursive;
         width: 100%;
         padding: 0 10px;
-        margin: 180px 0 0 0px;
+        margin: 180px 0 0px 0p;
         max-height: 300px;
         min-height: 300px;
         text-align: center;
-        font-size: 5.5em;
+        font-size: 4.5em;
         font-weight: 600;
         opacity: 0;
     }
@@ -2520,7 +2550,7 @@ footer .copyright h2{
     }
     
     .nav > ul {
-        margin-top: -300px;
+        margin-top: 0px;
         display: block;
         list-style: none;
     }
@@ -2540,7 +2570,7 @@ footer .copyright h2{
         display: inline-block;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
-        font-size: 2.5em;
+        font-size: 1.8em;
         color: #dadada;
         text-transform: uppercase;
         text-decoration: none;
@@ -2550,7 +2580,7 @@ footer .copyright h2{
     }
     
     .nav > ul > li > a.active {
-        font-size: 2.5em;
+        font-size: 1.8em;
         display: flex;
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
@@ -2563,7 +2593,7 @@ footer .copyright h2{
         display: inline-block;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
-        font-size: 2.5em;
+        font-size: 1.8em;
         color: #dadada;
         text-transform: uppercase;
         text-decoration: none;
@@ -2571,7 +2601,6 @@ footer .copyright h2{
         border-radius: 10px;
         color: rgb(60, 60, 60);
         padding: 0 150px 0 20px;
-    
         text-align: center;
         transition: 0.50s;
     }
@@ -2579,40 +2608,53 @@ footer .copyright h2{
     .nav .logo{
         display: block;
         padding-bottom: 10px;
+        margin-top: 130px;
     }
 
     .nav .logo-ico{
-        margin-top: 140px;
+        margin-top: 170px;
+        margin-left: -85px;
         padding-right: 5px;
         position: absolute;
-        margin-left: 80px;
-        width: 250px;
-        height: 228px;
-        z-index: -1;
+        width: 200px;
+        height: 190px;
     }
     
     #home{
         background-image: url("../img/headimage.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: -650px;
         margin-top: -86px;
         padding-bottom: 370px;
         max-height: 1200px;
         min-height: 1200px;
     }
+
+    .home{
+        display: flex;
+        align-items: center;
+        margin-top: -200px;
+        padding-bottom: 200px;
+    }
     
-    #home .header-text{
-        color: white;
+    .home .header-text{
+        user-select: none;
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-family: 'Cormorant Garamond', serif;
+        text-transform: uppercase;
+        font-size: 50px;
+        padding-top: 0px;
+        margin-top: -800px;
+        font-weight: 600;
+        text-align: center;
+        
+    }
+    
+    #home .subtext{
         font-family: 'Kelly Slab', cursive;
         font-size: 100px;
-        font-weight: 700;
-        text-align: center;
-        padding-top: 500px;
-    }
-    
-    #home .subtext{
-        font-family: 'Kelly Slab', cursive;
-        font-size: 40px;
         text-align: center;
         color:white;
     }
@@ -2652,12 +2694,17 @@ footer .copyright h2{
         font-size: 28px;
         user-select: none; 
     }
-    
+
+    #second-mobile{
+        display: none;
+    }
+
     #second{
         background-color: rgb(255, 255, 255);
         padding: 30px 0px; 
-        max-height: 660px;
-        min-height: 660px;
+        max-height: 1670px;
+        min-height: 1670px;
+        display: block;
     }
     
     #second h2{
@@ -2686,18 +2733,16 @@ footer .copyright h2{
     } 
     
     #second img{
-        min-width: 60%;
-        max-width: 60%;
-        display: block;
+        text-align: left;
+        min-width: 50%;
+        max-width: 50%;
         margin-top: 50px;
-        margin-left: 110px;
-        margin-right: auto;  
     }
     
     #second .header-text{
         color: rgb(58, 58, 58);
         font-family: 'Exo', sans-serif;
-        font-size: 40px;
+        font-size: 28px;
         font-weight: 600;
         user-select: none; 
     }
@@ -2708,7 +2753,8 @@ footer .copyright h2{
         font-size: 28px;
         font-weight: 500;
         text-align: justify;
-        width: 500px;
+        word-break: break-all;
+        width: 250px;
         user-select: none; 
     }
     
@@ -2732,8 +2778,8 @@ footer .copyright h2{
     #third{
         background-color: rgb(46, 112, 183);
         padding: 30px 0px 0 0px; 
-        max-height: 590px;
-        min-height: 590px;
+        max-height: 600px;
+        min-height: 600px;
         
     }
     
@@ -2741,7 +2787,7 @@ footer .copyright h2{
         color: rgb(255, 255, 255);
         text-align: center;
         font-family: 'Exo', sans-serif;
-        font-size: 80px;
+        font-size: 70px;
         font-weight: 400;
         user-select: none; 
         text-align: center;
@@ -2750,22 +2796,32 @@ footer .copyright h2{
     
     #third .carousel-item{
         background-color: rgb(46, 112, 183);
-        max-height: 350px;
-        min-height: 350px;
+        max-height: 460px;
+        min-height: 460px;
     }
     
-    #third p{
+    #third img{
+        margin: 0 0px 0 330px;
+    }
+
+    #third .client{
+        font-size: 30px;
+    }
+
+    #third p.comment{
         color: rgb(255, 255, 255);
         text-align: center;
         font-family: 'Exo', sans-serif;
         font-weight: 300;
-        font-size: 30px;
+        max-height: 200px;
+        min-height: 200px;
+        font-size: 24px;
         user-select: none; 
         padding-right: 100px;
         padding-left: 100px;
     }
     
-    #third h4{
+    /* #third h4{
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         text-align: center;
@@ -2777,9 +2833,9 @@ footer .copyright h2{
         margin: 0px 0px 10px;
         padding-right: auto;
         padding-left: auto;
-    }
+    } */
 
-    #third h4.subtitle{
+    /* #third h4.subtitle{
         color: rgb(255, 255, 255);
         letter-spacing: 3px;
         text-align: center;
@@ -2791,11 +2847,11 @@ footer .copyright h2{
         margin-bottom: 30px;
         padding-right: auto;
         padding-left: auto;
-    }
+    } */
     
     #third .carousel-control-prev, #third .carousel-control-next{
-        max-height: 200px;
-        min-height: 200px;
+        max-height: 550px;
+        min-height: 550px;
     }
     
     #fourth{
@@ -2841,13 +2897,14 @@ footer .copyright h2{
     
     #fourth .subtext{
         text-align: justify;
+        word-break: break-all;
         color: rgb(58, 58, 58);
         font-family: 'Exo', sans-serif;
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 500;
         max-height: 450px;
         min-height: 450px;
-        width: 750px;
+        width: 590px;
         margin-left: 100px;
         user-select: none; 
     }
@@ -2862,6 +2919,7 @@ footer .copyright h2{
     
     .carousel-control-prev-icon, .carousel-control-next-icon{
         filter: brightness(0);
+        margin: -220px 0 0 0;
     }
     
     #fifth{
@@ -2909,26 +2967,26 @@ footer .copyright h2{
     
     footer .map{
         border-radius: 10px;
-        width:450px;
-        height: 500px;
-        margin-bottom: 30px;
+        width: 800px;
+        height: 550px;
+        margin-bottom: 0px;
     }
     
     footer .first-ft-headtext{
         color: rgba(36, 36, 36, 0.941);
         font-family: 'Exo', sans-serif;
-        font-size: 70px;
+        font-size: 80px;
         text-align: center;
         margin-bottom: 30px;
     }
     
     footer .box{
         top: 0px;
-        left: 135px;
+        left: 50px;
         position: relative;
         max-height: 450px;
         min-height: 450px;
-        width: 400px;
+        width: 700px;
         margin-bottom: 30px;
         background: rgba(255, 255, 255, 0.48);
         border-radius: 16px;
@@ -2939,11 +2997,11 @@ footer .copyright h2{
     
     footer .box:hover{
         top: -2px;
-        left: 135px;
+        left: 50px;
         position: relative;
         max-height: 450px;
         min-height: 450px;
-        width: 400px;
+        width: 700px;
         box-shadow: 2px 10px 25px  rgba(0, 0, 0, 0.653);
         backdrop-filter: blur(11.5px);
         border: 1px solid rgb(255, 255, 255);
@@ -2977,6 +3035,7 @@ footer .copyright h2{
         font-family: 'Exo', sans-serif;
         font-weight: 300;
         padding: 0px 20px;
+        text-decoration: none;
     }
     
     .myfooter{
@@ -3023,11 +3082,7 @@ footer .copyright h2{
     } 
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-}
-
-/* @media (max-width: 575.98px) { 
+@media (min-width: 768px) and (max-width: 819.98px) { 
 
     body{
         background-color: rgb(70, 70, 70);
@@ -3065,7 +3120,7 @@ footer .copyright h2{
         top: 0.50em;
         background-color: rgba(0, 0, 0, 0.975);
         color: #dadada;
-        font-size: 9em;
+        font-size: 7em;
         line-height: 0;
         z-index: 2001;
     }
@@ -3099,11 +3154,11 @@ footer .copyright h2{
         font-family: 'Kelly Slab', cursive;
         width: 100%;
         padding: 0 10px;
-        margin: 180px 0 0 0px;
+        margin: 170px 0 0px 0p;
         max-height: 300px;
         min-height: 300px;
         text-align: center;
-        font-size: 5.5em;
+        font-size: 4.5em;
         font-weight: 600;
         opacity: 0;
     }
@@ -3119,13 +3174,12 @@ footer .copyright h2{
     }
     
     .nav > ul {
-        margin-top: -300px;
+        margin-top: 0px;
         display: block;
         list-style: none;
     }
     
     .nav > ul > li {
-        
         line-height: 2.5;
         opacity: 0;
         margin-bottom: 10px;
@@ -3139,7 +3193,7 @@ footer .copyright h2{
         display: inline-block;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
-        font-size: 2.5em;
+        font-size: 1.7em;
         color: #dadada;
         text-transform: uppercase;
         text-decoration: none;
@@ -3149,7 +3203,7 @@ footer .copyright h2{
     }
     
     .nav > ul > li > a.active {
-        font-size: 2.5em;
+        font-size: 1.7em;
         display: flex;
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
@@ -3162,7 +3216,7 @@ footer .copyright h2{
         display: inline-block;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
-        font-size: 2.5em;
+        font-size: 1.7em;
         color: #dadada;
         text-transform: uppercase;
         text-decoration: none;
@@ -3170,7 +3224,6 @@ footer .copyright h2{
         border-radius: 10px;
         color: rgb(60, 60, 60);
         padding: 0 150px 0 20px;
-    
         text-align: center;
         transition: 0.50s;
     }
@@ -3178,40 +3231,53 @@ footer .copyright h2{
     .nav .logo{
         display: block;
         padding-bottom: 10px;
+        margin-top: 100px;
     }
 
     .nav .logo-ico{
-        margin-top: 140px;
+        margin-top: 170px;
+        margin-left: -85px;
         padding-right: 5px;
         position: absolute;
-        margin-left: 80px;
-        width: 250px;
-        height: 228px;
-        z-index: -1;
+        width: 190px;
+        height: 180px;
     }
     
     #home{
         background-image: url("../img/headimage.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: -650px;
         margin-top: -86px;
         padding-bottom: 370px;
         max-height: 1200px;
         min-height: 1200px;
     }
+
+    .home{
+        display: flex;
+        align-items: center;
+        margin-top: -200px;
+        padding-bottom: 200px;
+    }
     
-    #home .header-text{
-        color: white;
-        font-family: 'Kelly Slab', cursive;
+    .home .header-text{
+        user-select: none;
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-family: 'Cormorant Garamond', serif;
+        text-transform: uppercase;
         font-size: 50px;
-        font-weight: 700;
+        padding-top: 0px;
+        margin-top: -800px;
+        font-weight: 600;
         text-align: center;
-        padding-top: 500px;
+        
     }
     
     #home .subtext{
         font-family: 'Kelly Slab', cursive;
-        font-size: 20px;
+        font-size: 100px;
         text-align: center;
         color:white;
     }
@@ -3251,12 +3317,17 @@ footer .copyright h2{
         font-size: 28px;
         user-select: none; 
     }
-    
+
+    #second-mobile{
+        display: none;
+    }
+
     #second{
         background-color: rgb(255, 255, 255);
         padding: 30px 0px; 
-        max-height: 660px;
-        min-height: 660px;
+        max-height: 1730px;
+        min-height: 1730px;
+        display: block;
     }
     
     #second h2{
@@ -3285,18 +3356,16 @@ footer .copyright h2{
     } 
     
     #second img{
-        min-width: 60%;
-        max-width: 60%;
-        display: block;
+        text-align: left;
+        min-width: 50%;
+        max-width: 50%;
         margin-top: 50px;
-        margin-left: 110px;
-        margin-right: auto;  
     }
     
     #second .header-text{
         color: rgb(58, 58, 58);
         font-family: 'Exo', sans-serif;
-        font-size: 40px;
+        font-size: 28px;
         font-weight: 600;
         user-select: none; 
     }
@@ -3307,7 +3376,8 @@ footer .copyright h2{
         font-size: 28px;
         font-weight: 500;
         text-align: justify;
-        width: 500px;
+        word-break: break-all;
+        width: 230px;
         user-select: none; 
     }
     
@@ -3331,8 +3401,8 @@ footer .copyright h2{
     #third{
         background-color: rgb(46, 112, 183);
         padding: 30px 0px 0 0px; 
-        max-height: 590px;
-        min-height: 590px;
+        max-height: 680px;
+        min-height: 680px;
         
     }
     
@@ -3340,7 +3410,7 @@ footer .copyright h2{
         color: rgb(255, 255, 255);
         text-align: center;
         font-family: 'Exo', sans-serif;
-        font-size: 80px;
+        font-size: 70px;
         font-weight: 400;
         user-select: none; 
         text-align: center;
@@ -3349,22 +3419,32 @@ footer .copyright h2{
     
     #third .carousel-item{
         background-color: rgb(46, 112, 183);
-        max-height: 350px;
-        min-height: 350px;
+        max-height: 460px;
+        min-height: 460px;
     }
     
-    #third p{
+    #third img{
+        margin: 0 0px 0 330px;
+    }
+
+    #third .client{
+        font-size: 30px;
+    }
+
+    #third p.comment{
         color: rgb(255, 255, 255);
         text-align: center;
         font-family: 'Exo', sans-serif;
         font-weight: 300;
-        font-size: 30px;
+        max-height: 200px;
+        min-height: 200px;
+        font-size: 24px;
         user-select: none; 
         padding-right: 100px;
         padding-left: 100px;
     }
     
-    #third h4{
+    /* #third h4{
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         text-align: center;
@@ -3376,9 +3456,9 @@ footer .copyright h2{
         margin: 0px 0px 10px;
         padding-right: auto;
         padding-left: auto;
-    }
+    } */
 
-    #third h4.subtitle{
+    /* #third h4.subtitle{
         color: rgb(255, 255, 255);
         letter-spacing: 3px;
         text-align: center;
@@ -3390,18 +3470,18 @@ footer .copyright h2{
         margin-bottom: 30px;
         padding-right: auto;
         padding-left: auto;
-    }
+    } */
     
     #third .carousel-control-prev, #third .carousel-control-next{
-        max-height: 200px;
-        min-height: 200px;
+        max-height: 550px;
+        min-height: 550px;
     }
     
     #fourth{
         background-color: rgb(255, 255, 255);
         padding: 50px 0px; 
-        max-height: 770px;
-        min-height: 770px;
+        max-height: 780px;
+        min-height: 780px;
     }
     
     #fourth h2{
@@ -3440,13 +3520,14 @@ footer .copyright h2{
     
     #fourth .subtext{
         text-align: justify;
+        word-break: break-all;
         color: rgb(58, 58, 58);
         font-family: 'Exo', sans-serif;
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 500;
         max-height: 450px;
         min-height: 450px;
-        width: 750px;
+        width: 550px;
         margin-left: 100px;
         user-select: none; 
     }
@@ -3461,6 +3542,7 @@ footer .copyright h2{
     
     .carousel-control-prev-icon, .carousel-control-next-icon{
         filter: brightness(0);
+        margin: -220px 0 0 0;
     }
     
     #fifth{
@@ -3508,26 +3590,26 @@ footer .copyright h2{
     
     footer .map{
         border-radius: 10px;
-        width:450px;
-        height: 500px;
-        margin-bottom: 30px;
+        width: 746px;
+        height: 550px;
+        margin-bottom: 0px;
     }
     
     footer .first-ft-headtext{
         color: rgba(36, 36, 36, 0.941);
         font-family: 'Exo', sans-serif;
-        font-size: 70px;
+        font-size: 80px;
         text-align: center;
         margin-bottom: 30px;
     }
     
     footer .box{
         top: 0px;
-        left: 135px;
+        left: 50px;
         position: relative;
         max-height: 450px;
         min-height: 450px;
-        width: 400px;
+        width: 640px;
         margin-bottom: 30px;
         background: rgba(255, 255, 255, 0.48);
         border-radius: 16px;
@@ -3538,11 +3620,11 @@ footer .copyright h2{
     
     footer .box:hover{
         top: -2px;
-        left: 135px;
+        left: 50px;
         position: relative;
         max-height: 450px;
         min-height: 450px;
-        width: 400px;
+        width: 640px;
         box-shadow: 2px 10px 25px  rgba(0, 0, 0, 0.653);
         backdrop-filter: blur(11.5px);
         border: 1px solid rgb(255, 255, 255);
@@ -3576,6 +3658,7 @@ footer .copyright h2{
         font-family: 'Exo', sans-serif;
         font-weight: 300;
         padding: 0px 20px;
+        text-decoration: none;
     }
     
     .myfooter{
@@ -3620,4 +3703,627 @@ footer .copyright h2{
         margin-top: -145px;
         padding-top: 145px;  
     } 
-} */
+}
+
+@media (min-width: 480px) and (max-width: 767.98px)  { 
+
+    body{
+        background-color: rgb(70, 70, 70);
+        scroll-behavior: smooth;
+    }
+    
+    .container{
+        max-width: 1500px;
+    }
+    
+    .nav {
+        max-width: 500px;
+        min-width: 500px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        right: -502px;
+        padding: 0 20px;
+        -webkit-transition: right 0.3s;
+        -moz-transition: right 0.3s;
+        transition: right 0.3s;
+        background: rgba(52, 52, 52, 0.51);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(12.1px);
+        -webkit-backdrop-filter: blur(12.1px);
+        border: 1px solid rgba(0, 0, 0, 0.31);
+        z-index: 2000;
+    }
+    
+    .nav-toggle {
+        position: absolute;
+        right: 510px;
+        top: 0.50em;
+        background-color: rgba(0, 0, 0, 0.975);
+        color: #dadada;
+        font-size: 7em;
+        line-height: 0;
+        z-index: 2001;
+    }
+    
+    .nav-toggle:after {
+        content: '\2630';
+        text-decoration: none;
+        
+    }
+    
+    [id='nav-toggle']:checked ~ .nav > .nav-toggle {
+        left: auto;
+        right: 15px;
+        top: 0.50em;
+        
+    }
+    
+    [id='nav-toggle']:checked ~ .nav {
+        right: 0;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0, 0.5);
+        -moz-box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);
+        -webkit-box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);
+        overflow-y: auto;
+    }
+    
+    [id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
+        content: '\2715';
+    }
+    
+    .nav h2 {
+        font-family: 'Kelly Slab', cursive;
+        width: 100%;
+        padding: 0 10px;
+        margin: 170px 0 0px 0p;
+        max-height: 300px;
+        min-height: 300px;
+        text-align: center;
+        font-size: 4.5em;
+        font-weight: 600;
+        opacity: 0;
+    }
+    
+    .nav h2 a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    [id='nav-toggle']:checked ~ .nav h2 {
+        opacity: 1;
+    }
+    
+    .nav > ul {
+        margin-top: 0px;
+        display: block;
+        list-style: none;
+    }
+    
+    .nav > ul > li {
+        line-height: 2.5;
+        opacity: 0;
+        margin-bottom: 10px;
+    }
+    
+    [id='nav-toggle']:checked ~ .nav > ul > li {
+        opacity: 1;
+    }
+    
+    .nav > ul > li > a {
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.7em;
+        color: #dadada;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 20px 0 20px;
+        text-align: center;
+        transition: 0.50s;
+    }
+    
+    .nav > ul > li > a.active {
+        font-size: 1.7em;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        color: rgb(60, 60, 60);
+        padding: 0 150px 0 20px;
+        margin-right: 0;
+    }
+    
+    .nav > ul > li > div > a {
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.7em;
+        color: #dadada;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: rgb(45, 163, 163);
+        border-radius: 10px;
+        color: rgb(60, 60, 60);
+        padding: 0 150px 0 20px;
+        text-align: center;
+        transition: 0.50s;
+    }
+
+    .nav .logo{
+        display: block;
+        padding-bottom: 10px;
+        margin-top: 100px;
+    }
+
+    .nav .logo-ico{
+        margin-top: 170px;
+        margin-left: -85px;
+        padding-right: 5px;
+        position: absolute;
+        width: 190px;
+        height: 180px;
+    }
+    
+    #home{
+        background-image: url("../img/headimage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -650px;
+        margin-top: -86px;
+        padding-bottom: 370px;
+        max-height: 1200px;
+        min-height: 1200px;
+    }
+
+    .home{
+        display: flex;
+        align-items: center;
+        margin-top: -200px;
+        padding-bottom: 200px;
+    }
+    
+    .home .header-text{
+        user-select: none;
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-family: 'Cormorant Garamond', serif;
+        text-transform: uppercase;
+        font-size: 50px;
+        padding-top: 0px;
+        margin-top: -800px;
+        font-weight: 600;
+        text-align: center;
+        
+    }
+    
+    #home .subtext{
+        font-family: 'Kelly Slab', cursive;
+        font-size: 100px;
+        text-align: center;
+        color:white;
+    }
+    
+    #first{
+        padding: 30px 0px 50px;
+        background-color: rgb(237, 237, 237);
+    }
+    
+    #first h2{
+        color: rgb(58, 58, 58);
+        font-family: 'Exo', sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        user-select: none;
+        letter-spacing: 5px;
+        margin: 0px 0px 20px;
+        padding: 0px 0px 10px;
+    }
+    
+    #first h4{
+        color: rgb(58, 58, 58);
+        font-family: 'Exo', sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        user-select: none;
+        letter-spacing: 5px;
+        margin: 0px 0px 20px;
+        padding: 50px 0px 10px;
+    }
+    
+    #first p{
+        color: rgb(75, 75, 75);
+        font-family: 'Exo', sans-serif;
+        font-weight: 500;
+        text-align: justify;
+        font-size: 28px;
+        user-select: none; 
+    }
+
+    #second-mobile{
+        display: block;
+    }
+
+    #second{
+        background-color: rgb(255, 255, 255);
+        padding: 30px 0px; 
+        max-height: 1730px;
+        min-height: 1730px;
+        display: hidden;
+    }
+    
+    #second h2{
+        color: rgb(58, 58, 58);
+        text-align: center;
+        font-family: 'Exo', sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        user-select: none; 
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    #second h4{
+        color: rgb(32, 98, 155);
+        letter-spacing: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Exo', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        user-select: none; 
+        margin-bottom: 30px;
+        padding-right: auto;
+        padding-left: auto;
+    } 
+    
+    #second img{
+        text-align: left;
+        min-width: 50%;
+        max-width: 50%;
+        margin-top: 50px;
+    }
+    
+    #second .header-text{
+        color: rgb(58, 58, 58);
+        font-family: 'Exo', sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        user-select: none; 
+    }
+    
+    #second .subtext{
+        color: rgb(58, 58, 58);
+        font-family: 'Exo', sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        text-align: justify;
+        word-break: break-all;
+        width: 230px;
+        user-select: none; 
+    }
+    
+    #second hr{
+        color:rgb(0, 0, 0);
+        opacity: 1;
+        width: 40px;
+        height: 2px;
+        margin: 15px 367px 25px 0px;
+    }
+    
+    #second .carousel-control-prev, #second .carousel-control-next{
+        max-height: 400px;
+        min-height: 400px;
+    }
+    
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        filter: brightness(0);
+    }
+ 
+    #third{
+        background-color: rgb(46, 112, 183);
+        padding: 30px 0px 0 0px; 
+        max-height: 680px;
+        min-height: 680px;
+        
+    }
+    
+    #third h2{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Exo', sans-serif;
+        font-size: 70px;
+        font-weight: 400;
+        user-select: none; 
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    #third .carousel-item{
+        background-color: rgb(46, 112, 183);
+        max-height: 460px;
+        min-height: 460px;
+    }
+    
+    #third img{
+        margin: 0 0px 0 330px;
+    }
+
+    #third .client{
+        font-size: 30px;
+    }
+
+    #third p.comment{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Exo', sans-serif;
+        font-weight: 300;
+        max-height: 200px;
+        min-height: 200px;
+        font-size: 24px;
+        user-select: none; 
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    
+    /* #third h4{
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Exo', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        user-select: none; 
+        margin: 0px 0px 10px;
+        padding-right: auto;
+        padding-left: auto;
+    } */
+
+    /* #third h4.subtitle{
+        color: rgb(255, 255, 255);
+        letter-spacing: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Exo', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        user-select: none; 
+        margin-bottom: 30px;
+        padding-right: auto;
+        padding-left: auto;
+    } */
+    
+    #third .carousel-control-prev, #third .carousel-control-next{
+        max-height: 550px;
+        min-height: 550px;
+    }
+    
+    #fourth{
+        background-color: rgb(255, 255, 255);
+        padding: 50px 0px; 
+        max-height: 780px;
+        min-height: 780px;
+    }
+    
+    #fourth h2{
+        color: rgb(58, 58, 58);
+        text-align: center;
+        font-family: 'Exo', sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        user-select: none; 
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    #fourth h4{
+        color: rgb(32, 98, 155);
+        letter-spacing: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Exo', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        user-select: none; 
+        margin-bottom: 30px;
+        padding-right: auto;
+        padding-left: auto;
+    } 
+    
+    #fourth .header-text{
+        color: rgb(52, 52, 52);
+        font-family: 'Exo', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin-left: 100px;
+        user-select: none; 
+    }
+    
+    #fourth .subtext{
+        text-align: justify;
+        word-break: break-all;
+        color: rgb(58, 58, 58);
+        font-family: 'Exo', sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        max-height: 450px;
+        min-height: 450px;
+        width: 550px;
+        margin-left: 100px;
+        user-select: none; 
+    }
+    
+    #fourth hr{
+        color:rgb(0, 0, 0);
+        opacity: 1;
+        width: 30px;
+        height: 2px;
+        margin: 15px 367px 25px 100px;
+    }
+    
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        filter: brightness(0);
+        margin: -220px 0 0 0;
+    }
+    
+    #fifth{
+        background-color: rgb(220, 235, 244);
+        padding: 30px 0px; 
+    }
+    
+    #fifth h2{
+        color: rgb(58, 58, 58);
+        text-align: center;
+        font-family: 'Exo', sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        user-select: none; 
+        letter-spacing: 2px;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+    
+    #fifth img{
+        padding: 10px;
+        max-height: 190px;
+        min-height: 190px;
+        text-align: center;
+    } 
+    
+    #fifth ul{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .content-slider{
+        background-color: rgba(255, 0, 0, 0);
+        text-align: center;
+        background-color: #ffffff;
+    }
+    
+    #fifth .item{
+        background-color: #3a3a3a00;
+    }
+    
+    footer .contact{
+        background-color: rgb(237, 237, 237);
+        padding: 30px 0px;  
+    }
+    
+    footer .map{
+        border-radius: 10px;
+        width: 746px;
+        height: 550px;
+        margin-bottom: 0px;
+    }
+    
+    footer .first-ft-headtext{
+        color: rgba(36, 36, 36, 0.941);
+        font-family: 'Exo', sans-serif;
+        font-size: 80px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    footer .box{
+        top: 0px;
+        left: 50px;
+        position: relative;
+        max-height: 450px;
+        min-height: 450px;
+        width: 640px;
+        margin-bottom: 30px;
+        background: rgba(255, 255, 255, 0.48);
+        border-radius: 16px;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.359);
+        border: 1px solid rgba(255, 255, 255, 0.324);
+        transition: 0.3s;
+    }
+    
+    footer .box:hover{
+        top: -2px;
+        left: 50px;
+        position: relative;
+        max-height: 450px;
+        min-height: 450px;
+        width: 640px;
+        box-shadow: 2px 10px 25px  rgba(0, 0, 0, 0.653);
+        backdrop-filter: blur(11.5px);
+        border: 1px solid rgb(255, 255, 255);
+    }
+    
+    footer .box .information-text{
+        
+        font-size: 40px;
+        color: rgba(36, 36, 36, 0.941);
+        font-family: 'Exo', sans-serif;
+        font-weight: 500;
+        padding: 30px 0 0 20px;
+    }
+    
+    footer .box p{
+        color: rgba(36, 36, 36, 0.941);
+        font-family: 'Exo', sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 0px 25px;
+    }
+    
+    footer .box img{
+        margin-left: 270px;
+        width: 105px;
+        height: auto;
+    }
+    
+    footer .box a{
+        color: rgba(36, 36, 36, 0.941);
+        font-family: 'Exo', sans-serif;
+        font-weight: 300;
+        padding: 0px 20px;
+        text-decoration: none;
+    }
+    
+    .myfooter{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .copyright{
+        padding: 20px 0px;
+        background-color: rgba(116, 116, 116, 0.633);
+    }
+    
+    footer .copyright h2{
+        font-size: 16px;
+        font-family: 'Exo', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin: 0px 0px -4px;
+        color: rgb(255, 255, 255);
+    }
+    
+    #one{
+        margin-top: -545px;
+        padding-top: 545px;
+    }
+
+    #two{
+        margin-top: -745px;
+        padding-top: 745px;
+    } 
+    #three{
+        margin-top: -145px;
+        padding-top: 145px;
+    }
+    
+    #five{
+        margin-top: -900px;
+        padding-top: 900px;
+    }
+
+    #cntct{
+        margin-top: -145px;
+        padding-top: 145px;  
+    } 
+}

@@ -20,23 +20,22 @@ $(window).scroll(function(){
 function ScreenWidth(){
   width = document.body.clientWidth;
   
-  if(width >= 992){
+  if(width > 768){
     document.getElementById("nav-toggle").checked = true;
   }
 
-  if(width <= 768){
+  else if(width < 767){
     document.getElementById("nav-toggle").checked = false;
   }
 }
 
 window.addEventListener('resize', function(){
   width = document.body.clientWidth;
-  if(width >= 992){
+  if(width > 768){
     document.getElementById("nav-toggle").checked = true;
   }
-
-  if (width <= 768){
-    document.getElementById("nav-toggle").checked = false;
+  else if(width < 767){
+    document.getElementById("nav-toggle").checked = true;
   }
 })
 
@@ -46,7 +45,7 @@ var flag = false
   var width = $(window).width();
   if (width >= 768){
     var defaults = {
-        item: 2,
+        item: 3,
         autoWidth: false,
         slideMove: 1,
         slideMargin: 10,
@@ -71,7 +70,7 @@ var flag = false
         verticalHeight: 100,
         vThumbWidth: 300,
         thumbItem: 10,
-        pager: false,
+        pager:  false,
         gallery: false,
         galleryMargin: 5,
         thumbMargin: 5,
@@ -92,54 +91,6 @@ var flag = false
         
     };
   } 
-  if (width >= 992){
-    var defaults = {
-        item: 4,
-        autoWidth: false,
-        slideMove: 1,
-        slideMargin: 10,
-        addClass: '',
-        mode: 'slide',
-        useCSS: true,
-        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',
-        easing: 'linear', //'for jquery animation',//
-        speed: 400, //ms'
-        auto: true,
-        pauseOnHover: false,
-        loop: true,
-        slideEndAnimation: true,
-        pause: 2000,
-        keyPress: false,
-        controls: false,
-        prevHtml: '',
-        nextHtml: '',
-        rtl: false,
-        adaptiveHeight: true,
-        vertical: false,
-        verticalHeight: 100,
-        vThumbWidth: 300,
-        thumbItem: 10,
-        pager: false,
-        gallery: false,
-        galleryMargin: 5,
-        thumbMargin: 5,
-        currentPagerPosition: 'middle',
-        enableTouch: true,
-        enableDrag: true,
-        freeMove: true,
-        swipeThreshold: 40,
-        responsive: [],
-        /* jshint ignore:start */
-        onBeforeStart: function ($el) {},
-        onSliderLoad: function ($el) {},
-        onBeforeSlide: function ($el, scene) {},
-        onAfterSlide: function ($el, scene) {},
-        onBeforeNextSlide: function ($el, scene) {},
-        onBeforePrevSlide: function ($el, scene) {}
-        /* jshint ignore:end */
-        
-    };
-  }
   if (width >= 1200){
     var defaults = {
         item: 5,

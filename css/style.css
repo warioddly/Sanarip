@@ -13,6 +13,10 @@ body{
     max-width: 1500px;
 }
 
+.carousel-indicators{
+    display: none;
+}
+
 .nav {
     max-width: 500px;
     min-width: 500px;
@@ -308,7 +312,10 @@ body{
     background-color: rgb(46, 112, 183);
     max-height: 400px;
     min-height: 400px;
+
 }
+
+
 
 #third p{
     color: rgb(255, 255, 255);
@@ -401,12 +408,12 @@ body{
     filter: brightness(0);
 }
 
-#fifth{
+#sixth{
     background-color: rgb(220, 235, 244);
     padding: 30px 0px; 
 }
 
-#fifth h2{
+#sixth h2{
     color: rgba(36, 36, 36, 0.941);
     text-align: center;
     font-family: 'Exo', sans-serif;
@@ -418,30 +425,38 @@ body{
     padding-bottom: 20px;
 }
 
-#fifth img{
+#sixth img{
     max-height: 100px;
     min-height: 100px;
     text-align: center;
 } 
 
-#fifth ul{
+#sixth ul{
     background-color: rgba(0, 0, 0, 0);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.192);
 }
 
-#fifth .content-slider li{
+#sixth .content-slider li{
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
     text-align: center;
-    background-color: #ffffff;
+    background-color: #bfbfbf00;
+    transition: 0.60s;
 }
 
-#fifth .item{
+#sixth .content-slider li:hover{
+    border-radius: 10px;
+    text-align: center;
+    background-color: #bfbfbf56;
+}
+
+
+
+#sixth .item{
     padding: 20px 0px;
 }
 
 footer .contact{
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(245, 245, 245);
     padding: 30px 0px;  
 }
 
@@ -803,8 +818,7 @@ footer .copyright h2{
         padding: 30px 0px 10px;
     }
 
-    #first p{
-        
+    #first p{    
         text-align: justify;
         font-size: 16px;
         font-weight: 400;
@@ -815,7 +829,6 @@ footer .copyright h2{
         display: none;
     }
 
-    
     #second{
         background: rgb(255, 255, 255);
         padding: 30px 0px; 
@@ -889,8 +902,8 @@ footer .copyright h2{
     } */
 
     #third{
-        max-height: 430px;
-        min-height: 430px;
+        max-height: 400px;
+        min-height: 400px;
     }
 
     #third h2{
@@ -918,6 +931,7 @@ footer .copyright h2{
     }
      */
     #third .client-photo{
+        width: 130px;
         margin: 0 500px 0 520px;
         padding: 0;
     }
@@ -940,27 +954,26 @@ footer .copyright h2{
     }  */
 
     #third .carousel-control-prev{
-        max-height: 300px;
-        min-height: 300px;
-        margin-left: -60px;
+        max-height: 23px;
+        min-height: 230px;
     }
 
     #third .carousel-control-next{
-        max-height: 300px;
-        min-height: 300px;
-        margin-right: -60px;
+        max-height: 230px;
+        min-height: 230px;
     }
 
     #third .carousel-item{
-        max-height: 320px;
-        min-height: 320px;
+        background-color: rgb(46, 112, 183);
+        max-height: 290px;
+        min-height: 290px;
     }
 
     #fourth{
         background-color: rgb(255, 255, 255);
         padding: 30px 0px; 
-        max-height: 340px;
-        min-height: 340px;
+        max-height: 280px;
+        min-height: 280px;
     }
 
     #fourth h2{
@@ -984,6 +997,7 @@ footer .copyright h2{
     #fourth .header-text{
         font-size: 36px;
         margin-left: 90px;
+        margin-bottom: 0px;
     }
     
     #fourth .subtext{
@@ -1018,11 +1032,83 @@ footer .copyright h2{
         margin-right: -60px;
     }
 
+
     #fifth{
-        padding: 30px 0px 40px 0;
+        padding: 20px 0;
+        max-height: 420px;
+        min-height: 420px;
+        background-color: rgb(237, 247, 253);
     }
 
+    
+    #fifth .carousel-item{
+        background-color: rgb(237, 247, 253);
+        max-height: 320px;
+        min-height: 320px;  
+    }
+
+
     #fifth h2{
+        color: rgb(58, 58, 58);
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 43px;
+        font-weight: 500;
+        user-select: none; 
+        margin-bottom: 8px;
+        padding-bottom: 10px;
+    }
+    
+    #fifth p{
+        color: rgb(58, 58, 58);
+        text-align: center;
+        font-size: 16px;
+        padding: 0 250px 0 250px;
+        max-height: 130px;
+        min-height: 130px;
+    }
+    
+    #fifth .client-photo{
+        width: 130px;
+        margin: 0 500px 0 520px;
+        padding: 0;
+    }
+
+    #fifth .client{
+        color: rgb(58, 58, 58);
+        letter-spacing: 2px;
+        font-size: 26px;
+        font-weight: 700;
+        user-select: none; 
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #fifth img{
+        margin-left: 540px;
+        width: 100px;
+        height: auto;
+    }
+
+    
+    #fifth .carousel-control-prev{
+        max-height: 230px;
+        min-height: 230px;
+        margin-left: -60px;
+    }
+
+    #fifth .carousel-control-next{
+        max-height: 230px;
+        min-height: 230px;
+        margin-right: -60px;
+    }
+
+    #sixth{
+        padding: 30px 0px 40px 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #sixth h2{
         color: rgba(36, 36, 36, 0.941);
         letter-spacing: 2px;
         font-size: 46px;
@@ -1030,44 +1116,38 @@ footer .copyright h2{
         padding: 0 0 10px;
     }
 
-    #fifth img{
+    #sixth img{
         padding: 5px;
         max-height: 120px;
         min-height: 120px;
         text-align: center;
-
     } 
 
-    #fifth .usaid-logo{
-        padding: 5px;
-        width: 125px;
-        margin-top: -3px;
-        height: auto;
-        max-height: 185px;
-        text-align: center;
-    }
-
-    #fifth .item{
+    #sixth .item{
         padding: 0;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0);
     }
 
-    #fifth ul{
+    #sixth ul{
         background-color: rgba(0, 0, 0, 0);
     }
     
-    #fifth .content-slider li{
+    #sixth li{
         border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0);
         text-align: center;
-        background-color: #ffffff;
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    footer{
+        background-color: #ff000000;
     }
 
     footer .map{
         width: 575px;
         height: 500px;
         margin-bottom: 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.253);
     }
 
     footer .first-ft-headtext{
@@ -1527,8 +1607,8 @@ footer .copyright h2{
 
     #third{
         padding: 30px 0;
-        max-height: 460px;
-        min-height: 460px;
+        max-height: 400px;
+        min-height: 400px;
     }
 
     #third h2{
@@ -1544,8 +1624,8 @@ footer .copyright h2{
     #third p.comment{
         font-size: 15px;
         padding: 0 200px 0 200px;
-        max-height: 130px;
-        min-height: 130px;
+        max-height: 90px;
+        min-height: 90px;
     }
 
     #third p{
@@ -1556,6 +1636,7 @@ footer .copyright h2{
     }
     
     #third .client-photo{
+        width: 120px;
         margin: 0 500px 0 475px;
         padding: 0;
     }
@@ -1578,27 +1659,26 @@ footer .copyright h2{
     }  */
 
     #third .carousel-control-prev{
-        max-height: 280px;
-        min-height: 280px;
-        margin-left: -60px;
+        max-height: 220px;
+        min-height: 220px;
     }
 
     #third .carousel-control-next{
-        max-height: 280px;
-        min-height: 280px;
-        margin-right: -60px;
+        max-height: 220px;
+        min-height: 220px;
     }
 
     #third .carousel-item{
-        max-height: 350px;
-        min-height: 350px;
+        background-color: rgb(46, 112, 183);
+        max-height: 300px;
+        min-height: 300px;
     }
 
     #fourth{
         background-color: rgb(255, 255, 255);
         padding: 30px 0px; 
-        max-height: 290px;
-        min-height: 290px;
+        max-height: 250px;
+        min-height: 250px;
     }
 
     #fourth h2{
@@ -1657,11 +1737,11 @@ footer .copyright h2{
         margin-right: -60px;
     }
 
-    #fifth{
+    #sixth{
         padding: 30px 0px 30px 0;
     }
 
-    #fifth h2{
+    #sixth h2{
         color: rgba(36, 36, 36, 0.941);
         letter-spacing: 2px;
         font-size: 43px;
@@ -1669,7 +1749,7 @@ footer .copyright h2{
         padding: 0 0 10px;
     }
 
-    #fifth img{
+    #sixth img{
         padding: 5px;
         max-height: 120px;
         min-height: 120px;
@@ -1677,30 +1757,10 @@ footer .copyright h2{
 
     } 
 
-    #fifth .usaid-logo{
-        padding: 5px;
-        width: 125px;
-        margin-top: -3px;
-        height: auto;
-        max-height: 185px;
-        text-align: center;
-    }
-
-    #fifth .item{
+    #sixth .item{
         padding: 0;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0);
-    }
-
-    #fifth ul{
-        background-color: rgba(0, 0, 0, 0);
-    }
-    
-    #fifth .content-slider li{
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0);
-        text-align: center;
-        background-color: #ffffff;
     }
 
     footer .map{
@@ -2161,8 +2221,8 @@ footer .copyright h2{
 
     #third{
         padding: 20px 0;
-        max-height: 430px;
-        min-height: 430px;
+        max-height: 330px;
+        min-height: 330px;
     }
 
     #third h2{
@@ -2178,18 +2238,12 @@ footer .copyright h2{
     #third p.comment{
         font-size: 13px;
         padding: 0 230px 0 230px;
-        max-height: 110px;
-        min-height: 110px;
-    }
-
-    #third p{
-        font-size: 12px;
-        padding: 0 300px 0 300px;
-        max-height: 170px;
-        min-height: 170px;
+        max-height: 60px;
+        min-height: 60px;
     }
     
     #third .client-photo{
+        width: 110px;
         margin: 0 500px 0 415px;
         padding: 0;
     }
@@ -2212,35 +2266,28 @@ footer .copyright h2{
     }  */
 
     #third .carousel-control-prev{
-        max-height: 220px;
-        min-height: 250px;
-        margin-left: 0px;
+        max-height: 180px;
+        min-height: 180px;
     }
 
     #third .carousel-control-next{
         max-height: 180px;
         min-height: 180px;
-        margin-right: 0px;
     }
 
-    #third .carousel-control-prev-icon{
-        margin-left: 0px;
-    }
-
-    #third .carousel-control-next-icon{
-        margin-right: 0px;
-    }
 
     #third .carousel-item{
-        max-height: 320px;
-        min-height: 320px;
+        background-color: rgb(46, 112, 183);
+        max-height: 240px;
+        min-height: 240px;
+
     }
 
     #fourth{
         background-color: rgb(255, 255, 255);
         padding: 20px 0px; 
-        max-height: 270px;
-        min-height: 270px;
+        max-height: 210px;
+        min-height: 210px;
     }
 
     #fourth h2{
@@ -2269,10 +2316,10 @@ footer .copyright h2{
     
     #fourth .subtext{
         margin-left: 50px;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 500;
         text-align: justify;
-        width: 834px;
+        width: 830px;
         color: rgb(58, 58, 58);
         max-height: 105px;
         min-height: 105px;
@@ -2301,7 +2348,7 @@ footer .copyright h2{
     #fourth .carousel-control-prev-icon{
         max-height: 100px;
         min-height: 100px;
-        margin-left: -80px;
+        margin-left: -90px;
     }
 
     #fourth .carousel-control-next-icon{
@@ -2311,11 +2358,11 @@ footer .copyright h2{
         padding: 0;
     }
 
-    #fifth{
+    #sixth{
         padding: 20px 0px 30px 0;
     }
 
-    #fifth h2{
+    #sixth h2{
         color: rgba(36, 36, 36, 0.941);
         letter-spacing: 2px;
         font-size: 40px;
@@ -2323,38 +2370,15 @@ footer .copyright h2{
         padding: 0 0 10px;
     }
 
-    #fifth img{
-        padding: 5px;
-        max-height: 120px;
-        min-height: 120px;
-        text-align: center;
-
-    } 
-
-    #fifth .usaid-logo{
-        padding: 5px;
-        width: 125px;
-        margin-top: -3px;
-        height: auto;
-        max-height: 185px;
-        text-align: center;
-    }
-
-    #fifth .item{
+    #sixth .item{
         padding: 0;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0);
     }
 
-    #fifth ul{
+    #sixth li{
+        padding: 5px;
         background-color: rgba(0, 0, 0, 0);
-    }
-    
-    #fifth .content-slider li{
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0);
-        text-align: center;
-        background-color: #ffffff;
     }
 
     footer .map{
@@ -2428,33 +2452,33 @@ footer .copyright h2{
     }
 
     #one{
-        margin-top: -65px;
-        padding-top: 65px;
+        margin-top: -55px;
+        padding-top: 55px;
     }
 
     #two{
-        margin-top: -65px;
-        padding-top: 65px;
+        margin-top: -55px;
+        padding-top: 55px;
     }
 
     #three{
-        margin-top: -65px;
-        padding-top: 65px;
+        margin-top: -55px;
+        padding-top: 55px;
     }
     
     #four{
-        margin-top: -65px;
-        padding-top: 65px;
+        margin-top: -55px;
+        padding-top: 55px;
     }
     
     #five{
-        margin-top: -165px;
-        padding-top: 165px;
+        margin-top: -155px;
+        padding-top: 155px;
     }
 
     #cntct{
-        margin-top: -65px;
-        padding-top: 65px;  
+        margin-top: -55px;
+        padding-top: 55px;  
     }
 }
 
@@ -2801,6 +2825,7 @@ footer .copyright h2{
     }
     
     #third img{
+        width: 150px;
         margin: 0 0px 0 330px;
     }
 
@@ -2922,12 +2947,12 @@ footer .copyright h2{
         margin: -220px 0 0 0;
     }
     
-    #fifth{
+    #sixth{
         background-color: rgb(220, 235, 244);
         padding: 30px 0px; 
     }
     
-    #fifth h2{
+    #sixth h2{
         color: rgb(58, 58, 58);
         text-align: center;
         font-family: 'Exo', sans-serif;
@@ -2939,14 +2964,14 @@ footer .copyright h2{
         padding-bottom: 0px;
     }
     
-    #fifth img{
+    #sixth img{
         padding: 10px;
         max-height: 190px;
         min-height: 190px;
         text-align: center;
     } 
     
-    #fifth ul{
+    #sixth ul{
         background-color: rgba(0, 0, 0, 0);
     }
     
@@ -2956,7 +2981,7 @@ footer .copyright h2{
         background-color: #ffffff;
     }
     
-    #fifth .item{
+    #sixth .item{
         background-color: #3a3a3a00;
     }
     
@@ -3393,10 +3418,6 @@ footer .copyright h2{
         max-height: 400px;
         min-height: 400px;
     }
-    
-    .carousel-control-prev-icon, .carousel-control-next-icon{
-        filter: brightness(0);
-    }
  
     #third{
         background-color: rgb(46, 112, 183);
@@ -3424,7 +3445,8 @@ footer .copyright h2{
     }
     
     #third img{
-        margin: 0 0px 0 330px;
+        width: 150px;
+        margin: 0 0px 0 300px;
     }
 
     #third .client{
@@ -3436,12 +3458,12 @@ footer .copyright h2{
         text-align: center;
         font-family: 'Exo', sans-serif;
         font-weight: 300;
-        max-height: 200px;
-        min-height: 200px;
+        max-height: 170px;
+        min-height: 170px;
         font-size: 24px;
         user-select: none; 
-        padding-right: 100px;
-        padding-left: 100px;
+        padding-right: 70px;
+        padding-left: 70px;
     }
     
     /* #third h4{
@@ -3545,12 +3567,12 @@ footer .copyright h2{
         margin: -220px 0 0 0;
     }
     
-    #fifth{
+    #sixth{
         background-color: rgb(220, 235, 244);
         padding: 30px 0px; 
     }
     
-    #fifth h2{
+    #sixth h2{
         color: rgb(58, 58, 58);
         text-align: center;
         font-family: 'Exo', sans-serif;
@@ -3562,14 +3584,14 @@ footer .copyright h2{
         padding-bottom: 0px;
     }
     
-    #fifth img{
+    #sixth img{
         padding: 10px;
         max-height: 190px;
         min-height: 190px;
         text-align: center;
     } 
     
-    #fifth ul{
+    #sixth ul{
         background-color: rgba(0, 0, 0, 0);
     }
     
@@ -3579,7 +3601,7 @@ footer .copyright h2{
         background-color: #ffffff;
     }
     
-    #fifth .item{
+    #sixth .item{
         background-color: #3a3a3a00;
     }
     
@@ -3705,7 +3727,7 @@ footer .copyright h2{
     } 
 }
 
-@media (min-width: 480px) and (max-width: 767.98px)  { 
+@media (min-width: 601px) and (max-width: 767.98px)  { 
 
     body{
         background-color: rgb(70, 70, 70);
@@ -3717,8 +3739,8 @@ footer .copyright h2{
     }
     
     .nav {
-        max-width: 500px;
-        min-width: 500px;
+        max-width: 350px;
+        min-width: 350px;
         height: 100%;
         position: fixed;
         top: 0;
@@ -3743,7 +3765,7 @@ footer .copyright h2{
         top: 0.50em;
         background-color: rgba(0, 0, 0, 0.975);
         color: #dadada;
-        font-size: 7em;
+        font-size: 6em;
         line-height: 0;
         z-index: 2001;
     }
@@ -3781,7 +3803,7 @@ footer .copyright h2{
         max-height: 300px;
         min-height: 300px;
         text-align: center;
-        font-size: 4.5em;
+        font-size: 3.5em;
         font-weight: 600;
         opacity: 0;
     }
@@ -3797,7 +3819,8 @@ footer .copyright h2{
     }
     
     .nav > ul {
-        margin-top: 0px;
+        margin-top: -50px;
+        margin-left: -30px;
         display: block;
         list-style: none;
     }
@@ -3816,7 +3839,7 @@ footer .copyright h2{
         display: inline-block;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
-        font-size: 1.7em;
+        font-size: 1.5em;
         color: #dadada;
         text-transform: uppercase;
         text-decoration: none;
@@ -3826,7 +3849,7 @@ footer .copyright h2{
     }
     
     .nav > ul > li > a.active {
-        font-size: 1.7em;
+        font-size: 1.5em;
         display: flex;
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
@@ -3839,7 +3862,7 @@ footer .copyright h2{
         display: inline-block;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
-        font-size: 1.7em;
+        font-size: 1.5em;
         color: #dadada;
         text-transform: uppercase;
         text-decoration: none;
@@ -3854,7 +3877,7 @@ footer .copyright h2{
     .nav .logo{
         display: block;
         padding-bottom: 10px;
-        margin-top: 100px;
+        margin-top: 90px;
     }
 
     .nav .logo-ico{
@@ -3862,19 +3885,19 @@ footer .copyright h2{
         margin-left: -85px;
         padding-right: 5px;
         position: absolute;
-        width: 190px;
-        height: 180px;
+        width: 180px;
+        height: 170px;
     }
     
     #home{
         background-image: url("../img/headimage.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: -650px;
+        background-position: -550px;
         margin-top: -86px;
         padding-bottom: 370px;
-        max-height: 1200px;
-        min-height: 1200px;
+        max-height: 1000px;
+        min-height: 1000px;
     }
 
     .home{
@@ -3892,7 +3915,7 @@ footer .copyright h2{
         text-transform: uppercase;
         font-size: 50px;
         padding-top: 0px;
-        margin-top: -800px;
+        margin-top: -600px;
         font-weight: 600;
         text-align: center;
         
@@ -3906,30 +3929,30 @@ footer .copyright h2{
     }
     
     #first{
-        padding: 30px 0px 50px;
+        padding: 20px 0px 30px;
         background-color: rgb(237, 237, 237);
     }
     
     #first h2{
         color: rgb(58, 58, 58);
         font-family: 'Exo', sans-serif;
-        font-size: 80px;
+        font-size: 70px;
         font-weight: 400;
         user-select: none;
-        letter-spacing: 5px;
-        margin: 0px 0px 20px;
+        letter-spacing: 2px;
+        margin: 0px 0px 5px;
         padding: 0px 0px 10px;
     }
     
     #first h4{
         color: rgb(58, 58, 58);
         font-family: 'Exo', sans-serif;
-        font-size: 80px;
+        font-size: 70px;
         font-weight: 400;
         user-select: none;
-        letter-spacing: 5px;
-        margin: 0px 0px 20px;
-        padding: 50px 0px 10px;
+        letter-spacing: 2px;
+        margin: 0px 0px 5px;
+        padding: 40px 0px 10px;
     }
     
     #first p{
@@ -3937,88 +3960,61 @@ footer .copyright h2{
         font-family: 'Exo', sans-serif;
         font-weight: 500;
         text-align: justify;
-        font-size: 28px;
+        font-size: 23px;
         user-select: none; 
-    }
-
-    #second-mobile{
-        display: block;
     }
 
     #second{
-        background-color: rgb(255, 255, 255);
-        padding: 30px 0px; 
-        max-height: 1730px;
-        min-height: 1730px;
         display: hidden;
     }
+
+    #second-mobile{
+        background-color: rgb(255, 255, 255);
+        padding: 30px 0px; 
+        max-height: 1780px;
+        min-height: 1780px;
+        display: block;
+    }
     
-    #second h2{
+    #second-mobile h2{
         color: rgb(58, 58, 58);
         text-align: center;
         font-family: 'Exo', sans-serif;
-        font-size: 80px;
+        font-size: 70px;
         font-weight: 400;
         user-select: none; 
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
+        margin: 0;
     }
-    
-    #second h4{
-        color: rgb(32, 98, 155);
-        letter-spacing: 3px;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: 'Exo', sans-serif;
-        font-size: 30px;
-        font-weight: 700;
-        user-select: none; 
-        margin-bottom: 30px;
-        padding-right: auto;
-        padding-left: auto;
-    } 
-    
-    #second img{
+     
+    #second-mobile img{
         text-align: left;
-        min-width: 50%;
-        max-width: 50%;
+        min-width: 40%;
+        max-width: 40%;
         margin-top: 50px;
     }
     
-    #second .header-text{
+    #second-mobile .header-text{
         color: rgb(58, 58, 58);
         font-family: 'Exo', sans-serif;
-        font-size: 28px;
+        word-break: break-all;
+        margin-top: 10px;
+        font-size: 23px;
         font-weight: 600;
+        width: 290px;
         user-select: none; 
     }
     
-    #second .subtext{
+    #second-mobile .subtext{
         color: rgb(58, 58, 58);
         font-family: 'Exo', sans-serif;
-        font-size: 28px;
+        font-size: 23px;
         font-weight: 500;
         text-align: justify;
         word-break: break-all;
-        width: 230px;
+        width: 290px;
         user-select: none; 
-    }
-    
-    #second hr{
-        color:rgb(0, 0, 0);
-        opacity: 1;
-        width: 40px;
-        height: 2px;
-        margin: 15px 367px 25px 0px;
-    }
-    
-    #second .carousel-control-prev, #second .carousel-control-next{
-        max-height: 400px;
-        min-height: 400px;
-    }
-    
-    .carousel-control-prev-icon, .carousel-control-next-icon{
-        filter: brightness(0);
     }
  
     #third{
@@ -4033,7 +4029,7 @@ footer .copyright h2{
         color: rgb(255, 255, 255);
         text-align: center;
         font-family: 'Exo', sans-serif;
-        font-size: 70px;
+        font-size: 50px;
         font-weight: 400;
         user-select: none; 
         text-align: center;
@@ -4047,7 +4043,8 @@ footer .copyright h2{
     }
     
     #third img{
-        margin: 0 0px 0 330px;
+        width: 160px;
+        margin: 0 0px 0 230px;
     }
 
     #third .client{
@@ -4059,12 +4056,12 @@ footer .copyright h2{
         text-align: center;
         font-family: 'Exo', sans-serif;
         font-weight: 300;
-        max-height: 200px;
-        min-height: 200px;
+        max-height: 180px;
+        min-height: 180px;
         font-size: 24px;
         user-select: none; 
-        padding-right: 100px;
-        padding-left: 100px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
     
     /* #third h4{
@@ -4099,12 +4096,23 @@ footer .copyright h2{
         max-height: 550px;
         min-height: 550px;
     }
+
+    #third .carousel-control-prev-icon, #third .carousel-control-next-icon{
+        display: none;
+    }
     
+
+    #third .carousel-indicators{
+        display: flex;
+        position: absolute;
+        margin-right: 121px;
+    }
+
     #fourth{
         background-color: rgb(255, 255, 255);
         padding: 50px 0px; 
-        max-height: 780px;
-        min-height: 780px;
+        max-height: 720px;
+        min-height: 720px;
     }
     
     #fourth h2{
@@ -4168,12 +4176,12 @@ footer .copyright h2{
         margin: -220px 0 0 0;
     }
     
-    #fifth{
+    #sixth{
         background-color: rgb(220, 235, 244);
         padding: 30px 0px; 
     }
     
-    #fifth h2{
+    #sixth h2{
         color: rgb(58, 58, 58);
         text-align: center;
         font-family: 'Exo', sans-serif;
@@ -4185,14 +4193,14 @@ footer .copyright h2{
         padding-bottom: 0px;
     }
     
-    #fifth img{
+    #sixth img{
         padding: 10px;
         max-height: 190px;
         min-height: 190px;
         text-align: center;
     } 
     
-    #fifth ul{
+    #sixth ul{
         background-color: rgba(0, 0, 0, 0);
     }
     
@@ -4202,7 +4210,7 @@ footer .copyright h2{
         background-color: #ffffff;
     }
     
-    #fifth .item{
+    #sixth .item{
         background-color: #3a3a3a00;
     }
     
@@ -4213,7 +4221,7 @@ footer .copyright h2{
     
     footer .map{
         border-radius: 10px;
-        width: 746px;
+        width: 406px;
         height: 550px;
         margin-bottom: 0px;
     }
@@ -4232,7 +4240,7 @@ footer .copyright h2{
         position: relative;
         max-height: 450px;
         min-height: 450px;
-        width: 640px;
+        width: 340px;
         margin-bottom: 30px;
         background: rgba(255, 255, 255, 0.48);
         border-radius: 16px;
@@ -4247,14 +4255,13 @@ footer .copyright h2{
         position: relative;
         max-height: 450px;
         min-height: 450px;
-        width: 640px;
+        width: 340px;
         box-shadow: 2px 10px 25px  rgba(0, 0, 0, 0.653);
         backdrop-filter: blur(11.5px);
         border: 1px solid rgb(255, 255, 255);
     }
     
     footer .box .information-text{
-        
         font-size: 40px;
         color: rgba(36, 36, 36, 0.941);
         font-family: 'Exo', sans-serif;
@@ -4265,7 +4272,7 @@ footer .copyright h2{
     footer .box p{
         color: rgba(36, 36, 36, 0.941);
         font-family: 'Exo', sans-serif;
-        font-size: 30px;
+        font-size: 23px;
         font-weight: 500;
         padding: 0px 25px;
     }
@@ -4326,4 +4333,12 @@ footer .copyright h2{
         margin-top: -145px;
         padding-top: 145px;  
     } 
+}
+
+@media (min-width: 481px) and (max-width: 600.98px){
+
+}
+
+@media (min-width: 320px) and (max-width: 480.98px){
+
 }

@@ -597,7 +597,7 @@ footer .copyright h2{
 
     .nav h2 .subtext {
         font-size: 16px;
-        margin: 43px 0 0 160px;
+        margin: 43px 0 0 164px;
         position: absolute;
         color: #ffffff;
         text-decoration: none;
@@ -607,7 +607,7 @@ footer .copyright h2{
     
     .nav h2 a{
         margin-top: -7px;
-        margin-left: 10px;
+        margin-left: 15px;
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
@@ -660,14 +660,6 @@ footer .copyright h2{
         transition: 0.60s;
     }
 
-    .nav .logo-ico{
-        margin-top: 2px;
-        padding-right: 5px;
-        position: relative;
-        width: 70px;
-        height: 65px;
-        transition: 0.60s;
-    }
 
     .nav .vl{
         border-left: 1px solid rgb(199, 199, 199);
@@ -713,12 +705,24 @@ footer .copyright h2{
     }
     
     .nav.sticky h2 a {
+        margin-top: -2px;
+        margin-left: 30px;
+        font-size: 45px;
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
     }
 
-
+    .nav.sticky h2 .subtext {
+        font-size: 15px;
+        margin: 38px 0 0 164px;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.60s;
+    }
+    
     .nav.sticky > ul {
         float: right;
         margin: 0;
@@ -762,14 +766,38 @@ footer .copyright h2{
         text-align: center;
     }
 
-    .nav.sticky .logo-ico{
+    
+
+    .nav .logo-ico{
+        /* background-color: grey; */
+        background-image: url("/img/sanarip-logo/sanarip-logo-white-ico.png");
+        background-repeat: no-repeat;
+        background-size: contain;
         margin-top: 6px;
-        padding-right: 9px;
-        padding-left: 9px;
+        padding-right: 60px;
+        padding-left: 0px;
+        margin-right: 5px;
         position: relative;
-        width: 55x;
-        height: 52px;
+        width: 70px;
+        height: 60px;
+        transition: 0.40s ease-in-out;
     }
+
+    .nav.sticky .logo-ico{
+        /* background-color: grey; */
+        background-image: url("/img/sanarip-logo/sanarip-logo-color-ico.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 7px;
+        padding-right: 48px;
+        margin-right: 5px;
+        margin-left: 6px;
+        position: relative;
+        width: 65px;
+        height: 50px;
+        transition: 0.40s ease-in-out;
+    }
+
 
     .container{
         max-width: 1200px;
@@ -1035,16 +1063,16 @@ footer .copyright h2{
 
     #fifth{
         padding: 20px 0;
-        max-height: 420px;
-        min-height: 420px;
+        max-height: 320px;
+        min-height: 320px;
         background-color: rgb(237, 247, 253);
     }
 
     
     #fifth .carousel-item{
         background-color: rgb(237, 247, 253);
-        max-height: 320px;
-        min-height: 320px;  
+        max-height: 220px;
+        min-height: 220px;  
     }
 
 
@@ -1068,12 +1096,6 @@ footer .copyright h2{
         min-height: 130px;
     }
     
-    #fifth .client-photo{
-        width: 130px;
-        margin: 0 500px 0 520px;
-        padding: 0;
-    }
-
     #fifth .client{
         color: rgb(58, 58, 58);
         letter-spacing: 2px;
@@ -1084,13 +1106,6 @@ footer .copyright h2{
         text-align: center;
     }
 
-    #fifth img{
-        margin-left: 540px;
-        width: 100px;
-        height: auto;
-    }
-
-    
     #fifth .carousel-control-prev{
         max-height: 230px;
         min-height: 230px;
@@ -1237,8 +1252,8 @@ footer .copyright h2{
     }
     
     #five{
-        margin-top: -165px;
-        padding-top: 165px;
+        margin-top: -65px;
+        padding-top: 65px;
     }
 
     #cntct{

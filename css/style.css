@@ -408,12 +408,12 @@ body{
     filter: brightness(0);
 }
 
-#fifth{
+#sixth{
     background-color: rgb(220, 235, 244);
     padding: 30px 0px; 
 }
 
-#fifth h2{
+#sixth h2{
     color: rgba(36, 36, 36, 0.941);
     text-align: center;
     font-family: 'Exo', sans-serif;
@@ -425,25 +425,25 @@ body{
     padding-bottom: 20px;
 }
 
-#fifth img{
+#sixth img{
     max-height: 100px;
     min-height: 100px;
     text-align: center;
 } 
 
-#fifth ul{
+#sixth ul{
     background-color: rgba(0, 0, 0, 0);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.192);
 }
 
-#fifth .content-slider li{
+#sixth .content-slider li{
     border-radius: 10px;
     text-align: center;
     background-color: #bfbfbf00;
     transition: 0.60s;
 }
 
-#fifth .content-slider li:hover{
+#sixth .content-slider li:hover{
     border-radius: 10px;
     text-align: center;
     background-color: #bfbfbf56;
@@ -451,7 +451,7 @@ body{
 
 
 
-#fifth .item{
+#sixth .item{
     padding: 20px 0px;
 }
 
@@ -818,8 +818,7 @@ footer .copyright h2{
         padding: 30px 0px 10px;
     }
 
-    #first p{
-        
+    #first p{    
         text-align: justify;
         font-size: 16px;
         font-weight: 400;
@@ -830,7 +829,6 @@ footer .copyright h2{
         display: none;
     }
 
-    
     #second{
         background: rgb(255, 255, 255);
         padding: 30px 0px; 
@@ -974,8 +972,8 @@ footer .copyright h2{
     #fourth{
         background-color: rgb(255, 255, 255);
         padding: 30px 0px; 
-        max-height: 340px;
-        min-height: 340px;
+        max-height: 280px;
+        min-height: 280px;
     }
 
     #fourth h2{
@@ -1033,11 +1031,81 @@ footer .copyright h2{
         margin-right: -60px;
     }
 
+
     #fifth{
-        padding: 30px 0px 40px 0;
+        padding: 20px 0;
+        max-height: 420px;
+        min-height: 420px;
+        background-color: rgb(237, 237, 237);
     }
 
     #fifth h2{
+        color: rgb(58, 58, 58);
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 43px;
+        font-weight: 500;
+        user-select: none; 
+        margin-bottom: 8px;
+        padding-bottom: 10px;
+    }
+    
+    #fifth p{
+        color: rgb(58, 58, 58);
+        text-align: center;
+        font-size: 16px;
+        padding: 0 250px 0 250px;
+        max-height: 130px;
+        min-height: 130px;
+    }
+    
+    #fifth .client-photo{
+        width: 130px;
+        margin: 0 500px 0 520px;
+        padding: 0;
+    }
+
+    #fifth .client{
+        color: rgb(58, 58, 58);
+        letter-spacing: 2px;
+        font-size: 26px;
+        font-weight: 700;
+        user-select: none; 
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #fifth img{
+        margin-left: 540px;
+        width: 100px;
+        height: auto;
+    }
+
+    
+    #fifth .carousel-control-prev{
+        max-height: 230px;
+        min-height: 230px;
+        margin-left: -60px;
+    }
+
+    #fifth .carousel-control-next{
+        max-height: 230px;
+        min-height: 230px;
+        margin-right: -60px;
+    }
+
+
+    #fifth .carousel-item{
+        background-color: rgb(237, 237, 237);
+        max-height: 320px;
+        min-height: 320px;  
+    }
+
+    #sixth{
+        padding: 30px 0px 40px 0;
+    }
+
+    #sixth h2{
         color: rgba(36, 36, 36, 0.941);
         letter-spacing: 2px;
         font-size: 46px;
@@ -1045,24 +1113,24 @@ footer .copyright h2{
         padding: 0 0 10px;
     }
 
-    #fifth img{
+    #sixth img{
         padding: 5px;
         max-height: 120px;
         min-height: 120px;
         text-align: center;
     } 
 
-    #fifth .item{
+    #sixth .item{
         padding: 0;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0);
     }
 
-    #fifth ul{
+    #sixth ul{
         background-color: rgba(0, 0, 0, 0);
     }
     
-    #fifth li{
+    #sixth li{
         border-radius: 10px;
         text-align: center;
         background-color: rgba(255, 0, 0, 0);
@@ -1601,8 +1669,8 @@ footer .copyright h2{
     #fourth{
         background-color: rgb(255, 255, 255);
         padding: 30px 0px; 
-        max-height: 290px;
-        min-height: 290px;
+        max-height: 250px;
+        min-height: 250px;
     }
 
     #fourth h2{
@@ -1661,11 +1729,11 @@ footer .copyright h2{
         margin-right: -60px;
     }
 
-    #fifth{
+    #sixth{
         padding: 30px 0px 30px 0;
     }
 
-    #fifth h2{
+    #sixth h2{
         color: rgba(36, 36, 36, 0.941);
         letter-spacing: 2px;
         font-size: 43px;
@@ -1673,7 +1741,7 @@ footer .copyright h2{
         padding: 0 0 10px;
     }
 
-    #fifth img{
+    #sixth img{
         padding: 5px;
         max-height: 120px;
         min-height: 120px;
@@ -1681,7 +1749,7 @@ footer .copyright h2{
 
     } 
 
-    #fifth .item{
+    #sixth .item{
         padding: 0;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0);
@@ -2210,8 +2278,8 @@ footer .copyright h2{
     #fourth{
         background-color: rgb(255, 255, 255);
         padding: 20px 0px; 
-        max-height: 270px;
-        min-height: 270px;
+        max-height: 210px;
+        min-height: 210px;
     }
 
     #fourth h2{
@@ -2282,11 +2350,11 @@ footer .copyright h2{
         padding: 0;
     }
 
-    #fifth{
+    #sixth{
         padding: 20px 0px 30px 0;
     }
 
-    #fifth h2{
+    #sixth h2{
         color: rgba(36, 36, 36, 0.941);
         letter-spacing: 2px;
         font-size: 40px;
@@ -2294,13 +2362,13 @@ footer .copyright h2{
         padding: 0 0 10px;
     }
 
-    #fifth .item{
+    #sixth .item{
         padding: 0;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0);
     }
 
-    #fifth li{
+    #sixth li{
         padding: 5px;
         background-color: rgba(0, 0, 0, 0);
     }
@@ -2871,12 +2939,12 @@ footer .copyright h2{
         margin: -220px 0 0 0;
     }
     
-    #fifth{
+    #sixth{
         background-color: rgb(220, 235, 244);
         padding: 30px 0px; 
     }
     
-    #fifth h2{
+    #sixth h2{
         color: rgb(58, 58, 58);
         text-align: center;
         font-family: 'Exo', sans-serif;
@@ -2888,14 +2956,14 @@ footer .copyright h2{
         padding-bottom: 0px;
     }
     
-    #fifth img{
+    #sixth img{
         padding: 10px;
         max-height: 190px;
         min-height: 190px;
         text-align: center;
     } 
     
-    #fifth ul{
+    #sixth ul{
         background-color: rgba(0, 0, 0, 0);
     }
     
@@ -2905,7 +2973,7 @@ footer .copyright h2{
         background-color: #ffffff;
     }
     
-    #fifth .item{
+    #sixth .item{
         background-color: #3a3a3a00;
     }
     
@@ -3491,12 +3559,12 @@ footer .copyright h2{
         margin: -220px 0 0 0;
     }
     
-    #fifth{
+    #sixth{
         background-color: rgb(220, 235, 244);
         padding: 30px 0px; 
     }
     
-    #fifth h2{
+    #sixth h2{
         color: rgb(58, 58, 58);
         text-align: center;
         font-family: 'Exo', sans-serif;
@@ -3508,14 +3576,14 @@ footer .copyright h2{
         padding-bottom: 0px;
     }
     
-    #fifth img{
+    #sixth img{
         padding: 10px;
         max-height: 190px;
         min-height: 190px;
         text-align: center;
     } 
     
-    #fifth ul{
+    #sixth ul{
         background-color: rgba(0, 0, 0, 0);
     }
     
@@ -3525,7 +3593,7 @@ footer .copyright h2{
         background-color: #ffffff;
     }
     
-    #fifth .item{
+    #sixth .item{
         background-color: #3a3a3a00;
     }
     
@@ -4035,8 +4103,8 @@ footer .copyright h2{
     #fourth{
         background-color: rgb(255, 255, 255);
         padding: 50px 0px; 
-        max-height: 780px;
-        min-height: 780px;
+        max-height: 720px;
+        min-height: 720px;
     }
     
     #fourth h2{
@@ -4100,12 +4168,12 @@ footer .copyright h2{
         margin: -220px 0 0 0;
     }
     
-    #fifth{
+    #sixth{
         background-color: rgb(220, 235, 244);
         padding: 30px 0px; 
     }
     
-    #fifth h2{
+    #sixth h2{
         color: rgb(58, 58, 58);
         text-align: center;
         font-family: 'Exo', sans-serif;
@@ -4117,14 +4185,14 @@ footer .copyright h2{
         padding-bottom: 0px;
     }
     
-    #fifth img{
+    #sixth img{
         padding: 10px;
         max-height: 190px;
         min-height: 190px;
         text-align: center;
     } 
     
-    #fifth ul{
+    #sixth ul{
         background-color: rgba(0, 0, 0, 0);
     }
     
@@ -4134,7 +4202,7 @@ footer .copyright h2{
         background-color: #ffffff;
     }
     
-    #fifth .item{
+    #sixth .item{
         background-color: #3a3a3a00;
     }
     

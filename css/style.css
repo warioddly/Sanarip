@@ -456,7 +456,7 @@ body{
 }
 
 footer .contact{
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(245, 245, 245);
     padding: 30px 0px;  
 }
 
@@ -997,6 +997,7 @@ footer .copyright h2{
     #fourth .header-text{
         font-size: 36px;
         margin-left: 90px;
+        margin-bottom: 0px;
     }
     
     #fourth .subtext{
@@ -1036,8 +1037,16 @@ footer .copyright h2{
         padding: 20px 0;
         max-height: 420px;
         min-height: 420px;
-        background-color: rgb(237, 237, 237);
+        background-color: rgb(237, 247, 253);
     }
+
+    
+    #fifth .carousel-item{
+        background-color: rgb(237, 247, 253);
+        max-height: 320px;
+        min-height: 320px;  
+    }
+
 
     #fifth h2{
         color: rgb(58, 58, 58);
@@ -1094,15 +1103,9 @@ footer .copyright h2{
         margin-right: -60px;
     }
 
-
-    #fifth .carousel-item{
-        background-color: rgb(237, 237, 237);
-        max-height: 320px;
-        min-height: 320px;  
-    }
-
     #sixth{
         padding: 30px 0px 40px 0;
+        background-color: rgb(255, 255, 255);
     }
 
     #sixth h2{
@@ -1136,10 +1139,15 @@ footer .copyright h2{
         background-color: rgba(255, 0, 0, 0);
     }
 
+    footer{
+        background-color: #ff000000;
+    }
+
     footer .map{
         width: 575px;
         height: 500px;
         margin-bottom: 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.253);
     }
 
     footer .first-ft-headtext{

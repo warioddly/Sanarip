@@ -547,7 +547,7 @@ footer .copyright h2{
 
 /* MEDIA QUERES */
 
-@media (min-width: 1354px) { 
+@media (min-width: 1354px){ 
 
     .nav {
         max-width: 100%;
@@ -595,24 +595,6 @@ footer .copyright h2{
         transition: 0.60s;
     } */
 
-    .nav h2 .subtext {
-        font-size: 16px;
-        margin: 43px 0 0 164px;
-        position: absolute;
-        color: #ffffff;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: 0.60s;
-    }
-    
-    .nav h2 a{
-        margin-top: -7px;
-        margin-left: 15px;
-        color: #ffffff;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: 0.60s;
-    }
 
     .nav > ul {
         float: right;
@@ -703,10 +685,30 @@ footer .copyright h2{
         font-size: 50px;
         opacity: 0;
     }
+
+    .nav h2 .subtext {
+        font-size: 16px;
+        margin: 43px 0 0 164px;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.40s ease-in-out;
+    }
+    
+    .nav h2 a{
+        margin-top: -7px;
+        margin-left: 17px;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.40s ease-in-out;
+    }
+
     
     .nav.sticky h2 a {
-        margin-top: -2px;
-        margin-left: 30px;
+        margin-top: -3px;
+        margin-left: 27px;
         font-size: 45px;
         color: #ffffff;
         text-decoration: none;
@@ -715,12 +717,11 @@ footer .copyright h2{
 
     .nav.sticky h2 .subtext {
         font-size: 15px;
-        margin: 38px 0 0 164px;
+        margin: 38px 0 0 160px;
         position: absolute;
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
-        transition: 0.60s;
     }
     
     .nav.sticky > ul {
@@ -766,10 +767,7 @@ footer .copyright h2{
         text-align: center;
     }
 
-    
-
     .nav .logo-ico{
-        /* background-color: grey; */
         background-image: url("/img/sanarip-logo/sanarip-logo-white-ico.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -784,7 +782,6 @@ footer .copyright h2{
     }
 
     .nav.sticky .logo-ico{
-        /* background-color: grey; */
         background-image: url("/img/sanarip-logo/sanarip-logo-color-ico.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -946,18 +943,12 @@ footer .copyright h2{
     
     #third p.comment{
         font-size: 16px;
-        padding: 0 250px 0 250px;
-        max-height: 80px;
-        min-height: 80px;
+        text-align: center;
+        margin: 0 200px 0 200px;
+        max-height: 100px;
+        min-height: 100px;
     }
 
-    /* #third p{
-        font-size: 16px;
-        padding: 0 300px 0 300px;
-        max-height: 1z0px;
-        min-height: 110px;
-    }
-     */
     #third .client-photo{
         width: 130px;
         margin: 0 500px 0 520px;
@@ -973,22 +964,16 @@ footer .copyright h2{
         margin-top: 10px;
     }
 
-    /* #third h4.subtitle{
-        letter-spacing: 2px;
-        font-size: 16px;
-        font-weight: 600;
-        color: rgb(255, 255, 255);
-        margin: 0 0 30px;
-    }  */
-
     #third .carousel-control-prev{
-        max-height: 23px;
+        max-height: 230px;
         min-height: 230px;
+        margin-left: -60px;
     }
 
     #third .carousel-control-next{
         max-height: 230px;
         min-height: 230px;
+        margin-right: -60px;
     }
 
     #third .carousel-item{
@@ -1263,11 +1248,12 @@ footer .copyright h2{
 }
 
 @media (min-width: 1200px) and (max-width: 1353.98px){ 
+
     .nav {
         max-width: 100%;
         min-width: 100%;
         width: auto;
-        height: 70px;
+        height: 75px;
         top: 0;
         left: 0;
         padding: 0 15px;
@@ -1294,44 +1280,14 @@ footer .copyright h2{
         max-height: 0;
         min-height: 0;
         text-align: left;
-        font-size: 45px;
         opacity: 0;
-        transition: 0.60s;
-    }
-
-    /* .nav h2 .subtext {
-        font-size: 16px;
-        margin: 34px 0 0 320px;
-        position: absolute;
-        color: #ffffff;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: 0.60s;
-    } */
-
-    .nav .subtext {
-        font-size: 14px;
-        margin: 39px 0 10px 143px;
-        position: absolute;
-        color: #ffffff;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: 0.60s;
-    }
-    
-    .nav h2 a{
-        margin-top: -3px;
-        margin-left: 10px;
-        color: #ffffff;
-        text-decoration: none;
-        text-transform: uppercase;
         transition: 0.60s;
     }
 
     .nav > ul {
         float: right;
         margin: 0;
-        margin: 13.5px 0 0 0;
+        margin: 17.5px 0 0 0;
         display: flex;
         list-style: none;
         transition: 0.60s;
@@ -1374,18 +1330,27 @@ footer .copyright h2{
         transition: 0.60s;
     }
 
-    .nav .logo-ico{
-        margin-top: 4px;
-        padding-right: 5px;
-        position: relative;
-        width: 65px;
+
+    .nav .vl{
+        border-left: 1px solid rgb(199, 199, 199);
         height: 55px;
+        position: absolute;
+        margin-left: 62px;
+        top: 11px;
         transition: 0.60s;
+    }
+
+    .nav.sticky .vl{
+        border-left: 1px solid rgb(199, 199, 199);
+        height: 35px;
+        position: absolute;
+        margin-left: 62.5px;
+        top: 14px;
     }
 
     .nav.sticky{
         width: auto;
-        height: 60px;
+        height: 63px;
         top: 0;
         left: 0;
         padding: 0 15px;
@@ -1405,30 +1370,52 @@ footer .copyright h2{
         max-height: 0;
         min-height: 0;
         text-align: left;
-        font-size: 45px;
+        font-size: 50px;
         opacity: 0;
     }
+
+    .nav h2 .subtext {
+        font-size: 14px;
+        margin: 40px 0 0 147px;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.40s;
+    }
     
+    .nav h2 a{
+        margin-top: -6px;
+        margin-left: 7px;
+        font-size: 45px;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.40s;
+    }
+
     .nav.sticky h2 a {
-        margin-top: -5px;
+        margin-top: -2px;
+        margin-left: 17px;
+        font-size: 42px;
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
     }
 
-    .nav.sticky .subtext {
-        font-size: 14px;
-        margin: 36px 0 0 143px;
+    .nav.sticky h2 .subtext {
+        font-size: 13px;
+        margin: 37px 0 0 143px;
         position: absolute;
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
-        transition: 0.60s;
     }
+    
     .nav.sticky > ul {
         float: right;
         margin: 0;
-        margin: 9px 0 0 0;
+        margin: 11px 0 0 0;
         display: flex;
         list-style: none;
     }
@@ -1439,7 +1426,6 @@ footer .copyright h2{
     }
     
     .nav.sticky > ul > li > a {
-        font-size: 13px;
         color: rgb(255, 255, 255);
         display: block;
         font-weight: 400;
@@ -1468,38 +1454,41 @@ footer .copyright h2{
         text-align: center;
     }
 
-    .nav.sticky .logo-ico{
+    .nav .logo-ico{
+        background-image: url("/img/sanarip-logo/sanarip-logo-white-ico.png");
+        background-repeat: no-repeat;
+        background-size: contain;
         margin-top: 5px;
-        padding-right: 6px;
-        padding-left: 6px;
+        padding-right: 60px;
+        padding-left: 0px;
+        margin-right: 5px;
         position: relative;
         width: 65px;
+        height: 55px;
+        transition: 0.40s;
+    }
+
+    .nav.sticky .logo-ico{
+        background-image: url("/img/sanarip-logo/sanarip-logo-color-ico.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 7px;
+        padding-right: 48px;
+        margin-right: 5px;
+        margin-left: 3px;
+        position: relative;
+        width: 62px;
         height: 48px;
+        transition: 0.40s;
     }
 
-    .nav .vl{
-        border-left: 1px solid rgb(199, 199, 199);
-        height: 50px;
-        position: absolute;
-        margin-left:60px;
-        top: 10.5px;
-        transition: 0.60s;
-    }
-
-    .nav.sticky .vl{
-        border-left: 1px solid rgb(199, 199, 199);
-        height: 30px;
-        position: absolute;
-        margin-left:60px;
-        top: 14.5px;
-    }
 
     .container{
         max-width: 1100px;
     }
 
     #home{
-        padding-bottom: 350px;
+        padding-bottom: 370px;
         max-height: 638px;
         min-height: 638px;
     }
@@ -1507,89 +1496,93 @@ footer .copyright h2{
     .home{
         display: flex;
         align-items: center;
-        margin-right: 20px;
-        margin-left: 20px;
     }    
 
     .home .header-text{
-        font-size: 45px;
+        font-size: 46px;
         padding-top: 0px;
         margin-top: -170px;
-        margin-right: 30px;
+        margin-left: -10px;
     }
     
     #first{
         padding: 30px 0;
-        height: 320px;
+        height: 355px;
     }
     
     #first h2{
         color: rgb(58, 58, 58);
-        font-size: 43px;
+        font-size: 46px;
         font-weight: 500;
         user-select: none;
-        letter-spacing: 1px;
-        margin: 0 0 5px;
+        letter-spacing: 2px;
+        margin: 0 0 10px;
         padding: 0;
     }
     
     #first h4{
         color: rgb(58, 58, 58);
-        font-size: 43px;
+        font-size: 46px;
         user-select: none;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         font-weight: 500;
         margin: 0;
-        padding: 20px 0px 5px;
+        padding: 30px 0px 10px;
     }
 
-    #first p{
+    #first p{    
         text-align: justify;
-        font-size: 15px;
-        font-weight: 300;
+        font-size: 16px;
+        font-weight: 400;
         margin: 0;
     }
-    
+
     #second-mobile{
         display: none;
     }
 
-
     #second{
         background: rgb(255, 255, 255);
         padding: 30px 0px; 
-        max-height: 650px;
-        min-height: 650px;
+        max-height: 740px;
+        min-height: 740px;
         display: block;
     }
     
     #second h2{
-        font-size: 43px;
-        font-weight: 400;
-        color: rgba(43, 43, 43, 0.941);
-        margin: 0px;
+        font-size: 46px;
+        font-weight: 500;
+        color: rgba(43, 43, 43, 0.941)
     }
     
     #second img{
-        width: 70px;
+        width: 80px;
         height: auto;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     
     #second .header-text{
         margin: 0;
-        font-size: 20px;
+        font-size: 23px;
         color: rgba(17, 17, 17, 0.941);
         padding: 0 0 5px 0;
     }
     
     #second .subtext{
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
         text-align: left;
         color: rgb(58, 58, 58);
         user-select: none; 
     }
+    
+    #second h4{
+        letter-spacing: 2px;
+        font-size: 16px;
+        color: rgba(59, 116, 164, 0.941);
+        font-weight: 700;
+        margin-bottom: 0px;
+    } 
 
     /* #second hr{
         color:rgb(0, 0, 0);
@@ -1621,111 +1614,98 @@ footer .copyright h2{
     } */
 
     #third{
-        padding: 30px 0;
         max-height: 400px;
         min-height: 400px;
     }
 
     #third h2{
         color: rgb(255, 255, 255);
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         font-size: 43px;
         font-weight: 500;
         user-select: none; 
-        margin-bottom: 2px;
+        margin-bottom: 8px;
         padding-bottom: 10px;
     }
     
     #third p.comment{
-        font-size: 15px;
-        padding: 0 200px 0 200px;
-        max-height: 90px;
-        min-height: 90px;
+        font-size: 16px;
+        text-align: center;
+        margin: 0 200px 0 200px;
+        max-height: 100px;
+        min-height: 100px;
     }
 
-    #third p{
-        font-size: 13px;
-        padding: 0 300px 0 300px;
-        max-height: 170px;
-        min-height: 170px;
-    }
-    
     #third .client-photo{
-        width: 120px;
-        margin: 0 500px 0 475px;
+        width: 130px;
+        margin: 0 500px 0 520px;
         padding: 0;
     }
 
     #third .client{
         color: rgb(247, 247, 247);
-        letter-spacing: 1px;
-        font-size: 23px;
-        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 26px;
+        font-weight: 700;
         user-select: none; 
         margin-top: 10px;
     }
 
-    /* #third h4.subtitle{
-        letter-spacing: 2px;
-        font-size: 16px;
-        font-weight: 600;
-        color: rgb(255, 255, 255);
-        margin: 0 0 30px;
-    }  */
-
     #third .carousel-control-prev{
-        max-height: 220px;
-        min-height: 220px;
+        max-height: 230px;
+        min-height: 230px;
+        margin-left: -60px;
     }
 
     #third .carousel-control-next{
-        max-height: 220px;
-        min-height: 220px;
+        max-height: 230px;
+        min-height: 230px;
+        margin-right: -60px;
     }
 
     #third .carousel-item{
         background-color: rgb(46, 112, 183);
-        max-height: 300px;
-        min-height: 300px;
+        max-height: 290px;
+        min-height: 290px;
     }
 
     #fourth{
         background-color: rgb(255, 255, 255);
         padding: 30px 0px; 
-        max-height: 250px;
-        min-height: 250px;
+        max-height: 280px;
+        min-height: 280px;
     }
 
     #fourth h2{
         color: rgba(36, 36, 36, 0.941);
-        letter-spacing: 1px;
-        font-size: 43px;
+        letter-spacing: 2px;
+        font-size: 46px;
         font-weight: 500;
         user-select: none; 
-        margin-bottom: 0px;
+        margin-bottom: 8px;
         padding-bottom: 10px;
     }
     
     #fourth h4{
         letter-spacing: 2px;
-        font-size: 15px;
+        font-size: 16px;
         color: rgba(36, 36, 36, 0.941);
         font-weight: 700;
         margin-bottom: 0px;
     } 
     
     #fourth .header-text{
-        font-size: 30px;
-        margin-left: 70px;
+        font-size: 36px;
+        margin-left: 90px;
         margin-bottom: 0px;
     }
     
     #fourth .subtext{
-        margin-left: 70px;
-        font-size: 15px;
-        font-weight: 500;
+        margin-left: 90px;
+        font-size: 16px;
+        font-weight: 400;
         text-align: justify;
-        width: 930px;
+        width: 1000px;
         color: rgb(58, 58, 58);
         max-height: 105px;
         min-height: 105px;
@@ -1736,30 +1716,89 @@ footer .copyright h2{
         color:rgb(0, 0, 0);
         opacity: 1;
         width: 40px;
-        height: 2px;
-        margin: 5px 0 10px 70px;
+        height: 3px;
+        margin: 15px 0 15px 90px;
     }
     
     #fourth .carousel-control-prev{
-        max-height: 100px;
-        min-height: 100px;
+        max-height: 140px;
+        min-height: 140px;
         margin-left: -60px;
     }
 
     #fourth .carousel-control-next{
-        max-height: 100px;
-        min-height: 100px;
+        max-height: 140px;
+        min-height: 140px;
+        margin-right: -60px;
+    }
+
+
+    #fifth{
+        padding: 20px 0;
+        max-height: 320px;
+        min-height: 320px;
+        background-color: rgb(237, 247, 253);
+    }
+
+    
+    #fifth .carousel-item{
+        background-color: rgb(237, 247, 253);
+        max-height: 220px;
+        min-height: 220px;  
+    }
+
+
+    #fifth h2{
+        color: rgb(58, 58, 58);
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 43px;
+        font-weight: 500;
+        user-select: none; 
+        margin-bottom: 8px;
+        padding-bottom: 10px;
+    }
+    
+    #fifth p{
+        color: rgb(58, 58, 58);
+        text-align: center;
+        font-size: 16px;
+        padding: 0 250px 0 250px;
+        max-height: 130px;
+        min-height: 130px;
+    }
+    
+    #fifth .client{
+        color: rgb(58, 58, 58);
+        letter-spacing: 2px;
+        font-size: 26px;
+        font-weight: 700;
+        user-select: none; 
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #fifth .carousel-control-prev{
+        max-height: 230px;
+        min-height: 230px;
+        margin-left: -60px;
+    }
+
+    #fifth .carousel-control-next{
+        max-height: 230px;
+        min-height: 230px;
         margin-right: -60px;
     }
 
     #sixth{
-        padding: 30px 0px 30px 0;
+        padding: 30px 0px 40px 0;
+        background-color: rgb(255, 255, 255);
     }
 
     #sixth h2{
         color: rgba(36, 36, 36, 0.941);
         letter-spacing: 2px;
-        font-size: 43px;
+        font-size: 46px;
         font-weight: 500;
         padding: 0 0 10px;
     }
@@ -1769,7 +1808,6 @@ footer .copyright h2{
         max-height: 120px;
         min-height: 120px;
         text-align: center;
-
     } 
 
     #sixth .item{
@@ -1778,15 +1816,30 @@ footer .copyright h2{
         background-color: rgba(0, 0, 0, 0);
     }
 
+    #sixth ul{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    #sixth li{
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    footer{
+        background-color: #ff000000;
+    }
+
     footer .map{
-        width: 535px;
-        height: 470px;
+        width: 575px;
+        height: 500px;
         margin-bottom: 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.253);
     }
 
     footer .first-ft-headtext{
         color: rgba(36, 36, 36, 0.941);
-        font-size: 43px;
+        font-size: 46px;
         text-align: left;
     }
 
@@ -1796,7 +1849,7 @@ footer .copyright h2{
         position: relative;
         max-height: 310px;
         min-height: 310px;
-        width: 500px;
+        width: 550px;
         margin-bottom: 0;
     }
 
@@ -1805,20 +1858,20 @@ footer .copyright h2{
         left: 0;
         max-height: 310px;
         min-height: 310px;
-        width: 500px;
+        width: 550px;
         margin-bottom: 0;
     }
 
     footer .box .information-text{
         padding: 10px 10px 0 25px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     footer .box p{
         color: rgb(59, 59, 59);
         font-family: 'Exo', sans-serif;
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 700;
         padding: 0px 25px;
     }
 
@@ -1826,16 +1879,23 @@ footer .copyright h2{
         color: rgb(59, 59, 59);
         font-family: 'Exo', sans-serif;
         text-decoration: none;
-        font-size: 15px;
-        font-weight: 600;
-        padding: 0px 25px;
+        font-size: 16px;
+        font-weight: 500;
     }
 
     footer .box img{
-        margin-left: 320px;
+        margin-left: 370px;
         margin-top: -150px;
         width: 100px;
         height: auto;
+    }
+
+    footer .data{
+        text-align: left;
+        position: absolute;
+        margin: -130px 10px 0 120px;
+        padding: 10px 0 30px 0;
+        background-color: blue;
     }
 
     .myfooter{
@@ -1843,38 +1903,34 @@ footer .copyright h2{
         justify-content: space-between;
     }
     
-    .copyright{
-        padding: 20px 0;
-    }
-
     #one{
-        margin-top: -55px;
-        padding-top: 55px;
+        margin-top: -65px;
+        padding-top: 65px;
     }
 
     #two{
-        margin-top: -55px;
-        padding-top: 55px;
+        margin-top: -65px;
+        padding-top: 65px;
     }
 
     #three{
-        margin-top: -55px;
-        padding-top: 55px;
+        margin-top: -65px;
+        padding-top: 65px;
     }
     
     #four{
-        margin-top: -55px;
-        padding-top: 55px;
+        margin-top: -65px;
+        padding-top: 65px;
     }
     
     #five{
-        margin-top: -155px;
-        padding-top: 155px;
+        margin-top: -65px;
+        padding-top: 65px;
     }
 
     #cntct{
-        margin-top: -55px;
-        padding-top: 55px;  
+        margin-top: -65px;
+        padding-top: 65px;  
     }
 }
 

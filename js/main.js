@@ -19,23 +19,21 @@ $(window).scroll(function(){
 
 function ScreenWidth(){
   width = document.body.clientWidth;
-  
-  if(width > 768){
+  if(width > 991.98){
     document.getElementById("nav-toggle").checked = true;
   }
-
-  else if(width < 767){
+  else if(width < 991.97){
     document.getElementById("nav-toggle").checked = false;
   }
 }
 
 window.addEventListener('resize', function(){
   width = document.body.clientWidth;
-  if(width > 768){
+  if(width > 991.98){
     document.getElementById("nav-toggle").checked = true;
   }
-  else if(width < 767){
-    document.getElementById("nav-toggle").checked = true;
+  else if(width < 991.97){
+    document.getElementById("nav-toggle").checked = false;
   }
 })
 
@@ -43,7 +41,7 @@ var flag = false
 (function ($, undefined) {
   'use strict';
   var width = $(window).width();
-  if (width >= 768){
+  if (width < 820){
     var defaults = {
         item: 3,
         autoWidth: false,
@@ -91,7 +89,7 @@ var flag = false
         
     };
   } 
-  if (width >= 1200){
+  if (width >= 992){
     var defaults = {
         item: 5,
         autoWidth: false,
@@ -139,7 +137,6 @@ var flag = false
         
     };
   }
-
   $.fn.lightSlider = function (options) {
       if (this.length === 0) {
           return this;

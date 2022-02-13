@@ -766,27 +766,26 @@ footer .copyright h2{
         transition: 0.40s ease-in-out;
     }
 
-
     .container{
         max-width: 1200px;
     }
 
     #home{
         padding-bottom: 370px;
-        max-height: 696px;
-        min-height: 696px;
+        min-height: 720px;
     }
 
     .home{
-        display: flex;
         align-items: center;
+        display: flex;
+        width: 80%;
     }    
 
     .home .header-text{
         font-size: 50px;
         padding-top: 0px;
-        margin-top: -230px;
-        margin-left: -10px;
+        margin-top: -200px;
+        margin-left: -30px;
     }
     
     #first{
@@ -1430,8 +1429,7 @@ footer .copyright h2{
 
     #home{
         padding-bottom: 370px;
-        max-height: 638px;
-        min-height: 638px;
+        min-height: 662px;
     }
 
     .home{
@@ -1442,8 +1440,8 @@ footer .copyright h2{
     .home .header-text{
         font-size: 46px;
         padding-top: 0px;
-        margin-top: -170px;
-        margin-left: -10px;
+        margin-top: -165px;
+        margin-left: -90px;
     }
     
     #first{
@@ -2073,8 +2071,7 @@ footer .copyright h2{
 
     #home{
         padding-bottom: 370px;
-        max-height: 569px;
-        min-height: 569px;
+        min-height: 593px;
     }
 
     .home{
@@ -2085,8 +2082,8 @@ footer .copyright h2{
     .home .header-text{
         font-size: 40px;
         padding-top: 0px;
-        margin-top: -100px;
-        margin-left: -10px;
+        margin-top: -120px;
+        margin-left: -80px;
     }
     
     #first{
@@ -2199,15 +2196,13 @@ footer .copyright h2{
         margin-top: 10px;
     }
 
-    #third .carousel-control-prev{
-        max-height: 190px;
-        min-height: 190px;
+    #third .carousel-control-prev-icon{
+        margin-top: -40px;
         margin-left: -60px;
     }
 
-    #third .carousel-control-next{
-        max-height: 190px;
-        min-height: 190px;
+    #third .carousel-control-next-icon{
+        margin-top: -40px;
         margin-right: -60px;
     }
 
@@ -2244,16 +2239,16 @@ footer .copyright h2{
     
     #fourth .header-text{
         font-size: 33px;
-        margin-left: 50px;
+        margin-left: 70px;
         margin-bottom: 0px;
     }
     
     #fourth .subtext{
-        margin-left: 50px;
+        margin-left: 70px;
         font-size: 13px;
         font-weight: 400;
         text-align: justify;
-        width: 840px;
+        width: 85%;
         color: rgb(58, 58, 58);
         max-height: 105px;
         min-height: 105px;
@@ -2265,21 +2260,19 @@ footer .copyright h2{
         opacity: 1;
         width: 40px;
         height: 2px;
-        margin: 5px 0 10px 50px;
+        margin: 5px 0 10px 70px;
     }
     
-    #fourth .carousel-control-prev{
-        max-height: 100px;
-        min-height: 100px;
+
+    #fourth .carousel-control-prev-icon{
+        margin-top: -40px;
         margin-left: -60px;
     }
 
-    #fourth .carousel-control-next{
-        max-height: 100px;
-        min-height: 100px;
+    #fourth .carousel-control-next-icon{
+        margin-top: -40px;
         margin-right: -60px;
     }
-
 
     #fifth{
         padding: 20px 0;
@@ -2326,15 +2319,14 @@ footer .copyright h2{
         text-align: center;
     }
 
-    #fifth .carousel-control-prev{
-        max-height: 120px;
-        min-height: 120px;
+
+    #fifth .carousel-control-prev-icon{
+        margin-top: -40px;
         margin-left: -60px;
     }
 
-    #fifth .carousel-control-next{
-        max-height: 120px;
-        min-height: 120px;
+    #fifth .carousel-control-next-icon{
+        margin-top: -40px;
         margin-right: -60px;
     }
 
@@ -7016,5 +7008,3 @@ footer .copyright h2{
         padding-top: 0px;  
     } 
 }
-
-

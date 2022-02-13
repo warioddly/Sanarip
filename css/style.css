@@ -2469,7 +2469,7 @@ footer .copyright h2{
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px){ 
+@media (min-width: 820px) and (max-width: 991.98px){ 
 
     body{
         background-color: rgb(70, 70, 70);
@@ -2660,7 +2660,8 @@ footer .copyright h2{
         text-transform: uppercase;
         font-size: 50px;
         padding-top: 0px;
-        margin-top: -800px;
+        margin-top: -500px;
+        margin-left: -20px;
         font-weight: 600;
         text-align: center;
         
@@ -3278,7 +3279,8 @@ footer .copyright h2{
         text-transform: uppercase;
         font-size: 50px;
         padding-top: 0px;
-        margin-top: -600px;
+        margin-top: -400px;
+        margin-left: -20px;
         font-weight: 600;
         text-align: center;
         
@@ -3900,7 +3902,8 @@ footer .copyright h2{
         text-transform: uppercase;
         font-size: 50px;
         padding-top: 0px;
-        margin-top: -600px;
+        margin-top: -440px;
+        margin-left: -20px;
         font-weight: 600;
         text-align: center;
         
@@ -4522,9 +4525,9 @@ footer .copyright h2{
         font-family: 'Cormorant Garamond', serif;
         text-transform: uppercase;
         font-size: 30px;
-        padding-top: 500px;
         padding-top: 0px;
-        margin-top: -500px;
+        margin-top: -340px;
+        margin-left: -20px;
         font-weight: 600;
         text-align: center;
         
@@ -5182,10 +5185,10 @@ footer .copyright h2{
         font-family: 'Cormorant Garamond', serif;
         text-transform: uppercase;
         font-size: 30px;
-        padding-top: 500px;
         padding-top: 0px;
-        margin-top: -500px;
+        margin-top: -350px;
         font-weight: 600;
+        margin-left: -10px;
         text-align: center;
         
     }
@@ -5848,9 +5851,9 @@ footer .copyright h2{
         font-family: 'Cormorant Garamond', serif;
         text-transform: uppercase;
         font-size: 30px;
-        padding-top: 500px;
         padding-top: 0px;
-        margin-top: -500px;
+        margin-top: -350px;
+        margin-left: -15px;
         font-weight: 600;
         text-align: center;
         
@@ -6531,7 +6534,8 @@ footer .copyright h2{
         font-size: 22px;
         padding-top: 500px;
         padding-top: 0px;
-        margin-top: -500px;
+        margin-top: -350px;
+        margin-left: -15px;
         font-weight: 600;
         text-align: center;
         
